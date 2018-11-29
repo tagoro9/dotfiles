@@ -9,6 +9,7 @@ My dotfiles.
 * Install [hyper.js](https://hyper.is/)
 * Install [hub](https://github.com/github/hub)
 * Install [vim-plug](https://github.com/junegunn/vim-plug)
+* Install [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 
 ## Installation
 
