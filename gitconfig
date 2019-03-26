@@ -3,7 +3,7 @@
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [user]
 	name = Victor
 	email = victor@turo.com
@@ -27,7 +27,8 @@
     untracked = cyan
 [alias]
     co = checkout
-    # Checkout a branch by its issue id	 
+    chp = cherry-pick
+    # Checkout a branch by its issue id
     coi= "!f(){ git branch -ra | grep -m 1 $1| xargs git co ;};f"
     brdi = "!f(){ git branch -ra | grep -m 1 $1| xargs git br -D ;};f"
     ci = commit
@@ -50,8 +51,8 @@
     # Get the current branch name (not so useful in itself, but used in
     # other aliases)
     branch-name = "!git rev-parse --abbrev-ref HEAD"
-    cob = "! f() { [[ -n $@ ]] && git co -b \"$@\" \"origin/$@\"; }; f" 
-    cor = "! f() { [[ -n $@ ]] && git co \"origin/$@\"; }; f" 
+    cob = "! f() { [[ -n $@ ]] && git co -b \"$@\" \"origin/$@\"; }; f"
+    cor = "! f() { [[ -n $@ ]] && git co \"origin/$@\"; }; f"
     # Push the current branch to the remote "origin", and set it to track
     # the upstream branch
     publish = "!git push -u origin $(git branch-name)"
