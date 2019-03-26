@@ -20,6 +20,7 @@ zplug plugins/osx, from:oh-my-zsh
 zplug plugins/z, from:oh-my-zsh
 zplug plugins/gem, from:oh-my-zsh
 zplug plugins/vi-mode, from:oh-my-zsh
+zplug lukechilds/zsh-nvm
 
 zplug zsh-users/zsh-syntax-highlighting, defer:2
 zplug zsh-users/zsh-autosuggestions
