@@ -11,5 +11,9 @@ call plug#end()
 
 " Show line numbers
 set number
+
+" Enable 256 colors
+set t_Co=256
+
 " Enable color theme
 colorscheme nord
