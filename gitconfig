@@ -4,9 +4,6 @@
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
-[user]
-	name = Victor
-	email = victor@turo.com
 [color]
     branch = auto
     diff = auto
