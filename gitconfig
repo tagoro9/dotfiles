@@ -28,6 +28,8 @@
 [alias]
     co = checkout
     chp = cherry-pick
+    chpc = cherry-pick --continue
+    chpa = cherry-pick --abort
     # Checkout a branch by its issue id
     coi= "!f(){ git branch -ra | grep -m 1 $1| xargs git co ;};f"
     brdi = "!f(){ git branch -ra | grep -m 1 $1| xargs git br -D ;};f"
@@ -43,6 +45,7 @@
     type = cat-file -t
     dump = cat-file -p
     dsf = "!f() { [ \"$GIT_PREFIX\" != \"\" ] && cd "$GIT_PREFIX"; git diff --color $@ | diff-so-fancy | less --tabs=4 -RFX; }; f"
+    rom=reset --hard origin/master
     unstage = reset --
     pr = pull-request
     files = diff-tree --no-commit-id --name-only -r
@@ -59,6 +62,7 @@
     pf = push -f
     frb = "!git fetch && git rb origin/master"
     frbi = "!git fetch && git rb -i origin/master"
+    rbiom=rb -i origin/master
     # Delete the remote version of the current branch
     unpublish = "!git push origin :$(git branch-name)"
     # Delete a branch and recreate it from master — useful if you have, say,
