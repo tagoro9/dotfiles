@@ -4,6 +4,9 @@
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
+[user]
+	name = Victor
+	email = victor@turo.com
 [color]
     branch = auto
     diff = auto
@@ -48,6 +51,7 @@
     files = diff-tree --no-commit-id --name-only -r
     resolve-ours = "!grep -lr '<<<<<<<' $@ | xargs git checkout --ours"
     resolve-theirs = "!grep -lr '<<<<<<<' $@ | xargs git checkout --theirs"
+    rh = reset HEAD .
     # Get the current branch name (not so useful in itself, but used in
     # other aliases)
     branch-name = "!git rev-parse --abbrev-ref HEAD"
@@ -131,3 +135,5 @@
 	trustExitCode = false
 [mergetool]
 	keepBackup = false
+[rebase]
+	autosquash = true
