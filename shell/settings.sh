@@ -10,4 +10,7 @@ export CLICOLOR='Yes'
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 # Path configuration
-export PATH="$HOME/.yarn/bin:$HOME/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/bin:$HOME/.jenv/bin:$PATH"
+
+# Confiure jenv
+eval "$(jenv init -)"

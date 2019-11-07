@@ -10,6 +10,7 @@ My dotfiles.
 * Install [hub](https://github.com/github/hub)
 * Install [vim-plug](https://github.com/junegunn/vim-plug)
 * Install [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+* Install [jenv](https://github.com/jenv/jenv)
 
 ## Installation
 
