@@ -88,7 +88,8 @@
     rebaseme = "!git ci -m \"rebase me\""
     # Interactively rebase all the commits on the current branch
     rebase-branch = "!git rebase -i `git merge-base master HEAD`"
-
+    # Rebase the current branch into the first branch that matches the specified arg (g rbb 1234 will rebase the current branch on top of f/jira-123_some_desc)
+    rbb = "!f() { git branch -ra | grep -m 1 $1 | xargs -o git rb -i; }; f"
     #
     # Working with files
     #
@@ -137,3 +138,5 @@
 	keepBackup = false
 [rebase]
 	autosquash = true
+[diff]
+	renameLimit = 3305
