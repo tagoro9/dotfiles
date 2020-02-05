@@ -35,6 +35,7 @@
     brdi = "!f(){ git branch -ra | grep -m 1 $1| xargs git br -D ;};f"
     ci = commit
     cia = commit --amend
+    cian = commit --amend --no-edit
     st = status
     br = branch
     rb = rebase
@@ -53,6 +54,7 @@
     resolve-theirs = "!grep -lr '<<<<<<<' $@ | xargs git checkout --theirs"
     rh = reset HEAD .
     r1 = reset HEAD~
+    wip = "!git add . && git ci -m WIP --no-verify"
     # Get the current branch name (not so useful in itself, but used in
     # other aliases)
     branch-name = "!git rev-parse --abbrev-ref HEAD"
