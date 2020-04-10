@@ -136,3 +136,5 @@ ii() {
 if [ -f ~/.local_shell_aliases ]; then
     source ~/.local_shell_aliases
 fi
+
+alias pwmetrics='CHROME_PATH="/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" pwmetrics'
