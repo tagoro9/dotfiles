@@ -11,6 +11,7 @@ My dotfiles.
 * Install [vim-plug](https://github.com/junegunn/vim-plug)
 * Install [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 * Install [jenv](https://github.com/jenv/jenv)
+* Install [pyenv](https://github.com/pyenv/pyenv)
 
 ## Installation
 

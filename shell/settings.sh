@@ -5,7 +5,7 @@ export EDITOR=vim
 export ANT_OPTS='-Xms768m -Xmx1024m'
 
 # Increase node memory by default
-export NODE_OPTIONS='--max-old-space-size=2048'
+export NODE_OPTIONS='--max-old-space-size=3096'
 
 # Color configuration
 export LS_OPTIONS='--color=auto'
@@ -16,7 +16,12 @@ export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 GOPATH=$HOME/go
 
 # Path configuration
-export PATH="$HOME/.yarn/bin:$HOME/bin:$HOME/.jenv/bin:/usr/local/go/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/.jenv/bin:/usr/local/go/bin:$GOPATH/bin:$HOME/flutter/bin:$PATH"
 
 # Confiure jenv
 eval "$(jenv init -)"
+
+# Configure pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
