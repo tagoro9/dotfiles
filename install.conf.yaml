@@ -11,6 +11,7 @@
     ~/.gitconfig:
     ~/.gitignore_global:
     ~/.hyper.js:
+    ~/.p10k.zsh:
     ~/.shell:
     ~/.vimrc:
     ~/.zshrc:

@@ -12,6 +12,7 @@ My dotfiles.
 * Install [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 * Install [jenv](https://github.com/jenv/jenv)
 * Install [pyenv](https://github.com/pyenv/pyenv)
+* Install [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
 
 ## Installation
 

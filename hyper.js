@@ -2,7 +2,7 @@ module.exports = {
   config: {
     fontSize: 14,
     fontFamily:
-      'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      'MesloLGS NF, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     cursorColor: "rgba(248,28,229,0.8)",
     cursorShape: "BLOCK",
     borderColor: "#333",
@@ -13,8 +13,8 @@ module.exports = {
     bell: false,
     copyOnSelect: true,
     summon: {
-      hotkey: "F12"
-    }
+      hotkey: "F12",
+    },
   },
   plugins: [
     "hyperterm-summon",
@@ -22,7 +22,7 @@ module.exports = {
     "hyperlinks",
     "hyper-nord",
     "hyper-statusline",
-    "hyper-search"
+    "hyper-search",
   ],
-  localPlugins: []
+  localPlugins: [],
 };
