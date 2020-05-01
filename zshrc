@@ -28,6 +28,7 @@ zplug plugins/z, from:oh-my-zsh
 zplug plugins/gem, from:oh-my-zsh
 zplug plugins/vi-mode, from:oh-my-zsh
 zplug lukechilds/zsh-nvm
+zplug zpm-zsh/title
 
 zplug zsh-users/zsh-syntax-highlighting, defer:2
 zplug zsh-users/zsh-autosuggestions
@@ -42,6 +43,8 @@ if ! zplug check --verbose; then
       echo; zplug install
    fi
 fi
+
+PROMPT_TITLE='$PWD'
 
  # Then, source plugins and add commands to $PATH
  zplug load
