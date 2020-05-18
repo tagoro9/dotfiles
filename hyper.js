@@ -20,6 +20,7 @@ module.exports = {
     "hyperterm-summon",
     "hypercwd",
     "hyperlinks",
+//    "hyper-one-light",
     "hyper-nord",
     "hyper-statusline",
     "hyper-search",
