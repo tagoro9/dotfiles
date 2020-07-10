@@ -27,6 +27,7 @@ zplug plugins/osx, from:oh-my-zsh
 zplug plugins/z, from:oh-my-zsh
 zplug plugins/gem, from:oh-my-zsh
 zplug plugins/vi-mode, from:oh-my-zsh
+zplug plugins/terraform, from:oh-my-zsh
 zplug lukechilds/zsh-nvm
 zplug zpm-zsh/title
 
@@ -48,6 +49,9 @@ PROMPT_TITLE='$PWD'
 
  # Then, source plugins and add commands to $PATH
  zplug load
+
+# Update fpath to include custom completions
+fpath=( ~/.completions "${fpath[@]}" )
 
 source ~/.bashrc
 
