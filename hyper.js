@@ -17,11 +17,11 @@ module.exports = {
     },
   },
   plugins: [
+    "hyper-nord",
+    // "hyper-one-light",
     "hyperterm-summon",
     "hypercwd",
     "hyperlinks",
-//    "hyper-one-light",
-    "hyper-nord",
     "hyper-statusline",
     "hyper-search",
   ],
