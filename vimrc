@@ -9,11 +9,14 @@ Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
+" Enable color theme
+colorscheme nord
+
 " Show line numbers
 set number
 
 " Enable 256 colors
-set t_Co=256
+if (has("termguicolors"))
+  set termguicolors
+endif
 
-" Enable color theme
-colorscheme nord
