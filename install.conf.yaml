@@ -13,6 +13,8 @@
     ~/.hyper.js:
     ~/.p10k.zsh:
     ~/.shell:
+    ~/.tmux.conf:
+    ~/.tmux.conf.local:
     ~/.vimrc:
     ~/.zshrc:
     ~/bin/:
