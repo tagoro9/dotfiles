@@ -15,8 +15,6 @@
     ~/.shell:
     ~/.vimrc:
     ~/.zshrc:
-    ~/.tmux.conf:
-    ~/.tmux.conf.local:
     ~/bin/:
       glob: true
       path: bin/*
