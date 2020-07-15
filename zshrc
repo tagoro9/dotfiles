@@ -17,8 +17,9 @@ zplug romkatv/powerlevel10k, as:theme, depth:1
 
 # Plugins
 zplug mafredri/zsh-async, from:github
-zplug plugins/compleat, from:oh-my-zsh
+zplug plugins/aws, from:oh-my-zsh
 zplug plugins/docker, from:oh-my-zsh
+zplug plugins/fzf, from:oh-my-zsh
 zplug plugins/git, from:oh-my-zsh
 zplug plugins/git-extras, from:oh-my-zsh
 zplug plugins/node, from:oh-my-zsh
