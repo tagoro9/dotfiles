@@ -36,6 +36,7 @@ zplug zsh-users/zsh-syntax-highlighting, defer:2
 zplug zsh-users/zsh-autosuggestions
 zplug zsh-users/zsh-completions
 zplug zsh-users/zsh-history-substring-search
+zplug Aloxaf/fzf-tab, from:github
 
 
 # Install plugins if there are plugins that have not been installed
@@ -53,6 +54,9 @@ PROMPT_TITLE='$PWD'
 
 # Update fpath to include custom completions
 fpath=( ~/.completions "${fpath[@]}" )
+
+# Bind back fzf keys as they get overriden by the vi mode
+bindkey '^I' fzf-tab-complete
 
 source ~/.bashrc
 

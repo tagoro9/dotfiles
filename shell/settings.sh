@@ -25,3 +25,10 @@ eval "$(jenv init -)"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# Configure FZF
+
+# Do not use full screen mode
+export FZF_DEFAULT_OPTS='--height 50% --reverse'
+# Use ripgrep instead of grep
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
