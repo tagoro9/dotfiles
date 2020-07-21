@@ -1,12 +1,12 @@
 [core]
-	excludesfile = /Users/victor/.gitignore_global
+	excludesfile = /Users/llosimura/.gitignore_global
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path =
 [user]
-	name = Victor
-	email = victor@turo.com
+	name = Alfonso
+	email = alfonso@turo.com
 [color]
     branch = auto
     diff = auto
