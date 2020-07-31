@@ -58,6 +58,7 @@
     # Get the current branch name (not so useful in itself, but used in
     # other aliases)
     branch-name = "!git rev-parse --abbrev-ref HEAD"
+    bn = branch-name
     cob = "! f() { [[ -n $@ ]] && git co -b \"$@\" \"origin/$@\"; }; f"
     cor = "! f() { [[ -n $@ ]] && git co \"origin/$@\"; }; f"
     # Push the current branch to the remote "origin", and set it to track
