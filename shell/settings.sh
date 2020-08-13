@@ -32,3 +32,7 @@ fi
 export FZF_DEFAULT_OPTS='--height 50% --reverse'
 # Use ripgrep instead of grep
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
+
+# Configure AWS
+
+export AWS_REGION=us-east-1
