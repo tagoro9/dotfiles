@@ -46,7 +46,8 @@
     type = cat-file -t
     dump = cat-file -p
     dsf = "!f() { [ \"$GIT_PREFIX\" != \"\" ] && cd "$GIT_PREFIX"; git diff --color $@ | diff-so-fancy | less --tabs=4 -RFX; }; f"
-    rom=reset --hard origin/master
+    default-branch="!git remote show origin | grep 'HEAD branch' | sed 's/.*: //'"
+    rom="!git reset --hard origin/$(git default-branch)"
     unstage = reset --
     pr = pull-request
     files = diff-tree --no-commit-id --name-only -r
@@ -65,19 +66,19 @@
     # the upstream branch
     publish = "!git push -u origin $(git branch-name)"
     pf = push -f
-    frb = "!git fetch && git rb origin/master"
-    frbi = "!git fetch && git rb -i origin/master"
-    rbiom=rb -i origin/master
+    frb = "!git fetch && git rb origin/$(git default-branch)"
+    frbi = "!git fetch && git rb -i origin/$(git default-branch)"
+    rbiom="!git rb -i origin/$(git default-branch)"
     # Delete the remote version of the current branch
     unpublish = "!git push origin :$(git branch-name)"
-    # Delete a branch and recreate it from master — useful if you have, say,
-    # a development branch and a master branch and they could conceivably go
+    # Delete a branch and recreate it from the default branch — useful if you have, say,
+    # a development branch and a default branch and they could conceivably go
     # out of sync
-    recreate = "!f() { [[ -n $@ ]] && git checkout \"$@\" && git unpublish && git checkout master && git branch -D \"$@\" && git checkout -b \"$@\" && git publish; }; f"
+    recreate = "!f() { [[ -n $@ ]] && git checkout \"$@\" && git unpublish && git checkout $(git default-branch) && git branch -D \"$@\" && git checkout -b \"$@\" && git publish; }; f"
 
     # Fire up your difftool (e.g. Kaleidescope) with all the changes that
     # are on the current branch.
-    code-review = difftool origin/master...
+    code-review ="!git difftool origin/$(git default-branch)..."
 
     # Given a merge commit, find the span of commits that exist(ed) on that
     # branch. Again, not so useful in itself, but used by other aliases.
@@ -91,7 +92,7 @@
     merge-difftool = "!git difftool `git merge-span ... $1`"
     rebaseme = "!git ci -m \"rebase me\""
     # Interactively rebase all the commits on the current branch
-    rebase-branch = "!git rebase -i `git merge-base master HEAD`"
+    rebase-branch = "!git rebase -i `git merge-base $(git default-branch) HEAD`"
     # Rebase the current branch into the first branch that matches the specified arg (g rbb 1234 will rebase the current branch on top of f/jira-123_some_desc)
     rbb = "!f() { git branch -ra | grep -m 1 $1 | xargs -o git rb -i; }; f"
     #
@@ -117,9 +118,9 @@
     # Checkout their version of a file and add it
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
 
-    # Delete any branches that have been merged into master
+    # Delete any branches that have been merged into the default branch
     # See also: https://gist.github.com/robmiller/5133264
-    delete-merged-branches = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+    delete-merged-branches = "!git co $(git default-branch) && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
     find = "!f(){ git branch -ra | grep $1; }; f"
 
     update-submodules = submodule update --init --recursive
