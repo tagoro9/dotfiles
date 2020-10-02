@@ -30,6 +30,8 @@
     chp = cherry-pick
     chpc = cherry-pick --continue
     chpa = cherry-pick --abort
+    # Checkout the repository default branch
+    cod=!git checkout $(git default-branch)
     # Checkout a branch by its issue id
     coi= "!f(){ git branch -ra | grep -m 1 $1| xargs git co ;};f"
     brdi = "!f(){ git branch -ra | grep -m 1 $1| xargs git br -D ;};f"
