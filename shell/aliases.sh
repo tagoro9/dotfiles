@@ -17,6 +17,7 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 
 # Navigation aliases
 alias cd..='cd ../'
+alias cdr='cd $(git rev-parse --show-toplevel)'
 alias ..='cd ../'
 alias ...='cd ../../'
 alias .3='cd ../../../'
@@ -88,7 +89,7 @@ extract () {
 alias qfind="find . -name "
 # Find file under the current directory
 ff () { /usr/bin/find . -name "$@" ; }
-# Find file whose name starts with a given string    
+# Find file whose name starts with a given string
 ffs () { /usr/bin/find . -name "$@"'*' ; }
 # Find file whose name ends with a given string
 ffe () { /usr/bin/find . -name '*'"$@" ; }
