@@ -139,3 +139,5 @@ if [ -f ~/.local_shell_aliases ]; then
 fi
 
 alias pwmetrics='CHROME_PATH="/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary" pwmetrics'
+
+alias weather='curl wttr.in\?1F'
