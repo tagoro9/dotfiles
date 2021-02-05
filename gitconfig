@@ -71,6 +71,7 @@
     frb = "!git fetch && git rb origin/$(git default-branch)"
     frbi = "!git fetch && git rb -i origin/$(git default-branch)"
     rbiom="!git rb -i origin/$(git default-branch)"
+    rbom="!git rb origin/$(git default-branch)"
     # Delete the remote version of the current branch
     unpublish = "!git push origin :$(git branch-name)"
     # Delete a branch and recreate it from the default branch — useful if you have, say,
