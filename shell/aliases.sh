@@ -102,7 +102,7 @@ findPid () { lsof -t -c "$@" ; }
 # Networking
 
 # Get tublic facing IP Address
-alias myip='curl ip.appspot.com'
+alias myip='curl checkip.amazonaws.com'
 # Show all open TCP/IP sockets
 alias netCons='lsof -i'
 # Flush out the DNS Cache
