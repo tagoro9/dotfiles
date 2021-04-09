@@ -6,14 +6,23 @@ Plug 'tpope/vim-sensible'
 Plug 'elzr/vim-json'
 Plug 'tpope/vim-fugitive'
 Plug 'arcticicestudio/nord-vim'
+Plug 'itchyny/lightline.vim'
+Plug 'dense-analysis/ale'
+Plug 'sheerun/vim-polyglot'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
 " Enable color theme
 colorscheme nord
 
+syntax on
+
 " Show line numbers
 set number
+
+set exrc " .vimrc in local project dir
+set secure
 
 " Enable 256 colors
 if exists('+termguicolors')
