@@ -7,6 +7,7 @@
 [user]
 	name = Victor
 	email = victor@turo.com
+	signingkey = 1CF6A7AAD76D5F8F5956C773D9AB22C76BD88A2B
 [color]
     branch = auto
     diff = auto
