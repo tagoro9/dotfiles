@@ -36,3 +36,6 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.g
 # Configure AWS
 
 export AWS_REGION=us-east-1
+
+# Configure PGP TTY
+export GPG_TTY=$(tty)
