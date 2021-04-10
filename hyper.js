@@ -17,8 +17,7 @@ module.exports = {
     },
   },
   plugins: [
-    "hyper-nord",
-    // "hyper-one-light",
+    "hyper-one-light",
     "hyperterm-summon",
     "hypercwd",
     "hyperlinks",
