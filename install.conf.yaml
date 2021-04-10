@@ -10,6 +10,7 @@
     ~/.bashrc:
     ~/.gitconfig:
     ~/.gitignore_global:
+    ~/.gnupg/gpg-agent.conf: gpg-agent.conf
     ~/.hyper.js:
     ~/.p10k.zsh:
     ~/.shell:
