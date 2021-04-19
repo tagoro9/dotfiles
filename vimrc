@@ -5,16 +5,20 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'elzr/vim-json'
 Plug 'tpope/vim-fugitive'
-Plug 'arcticicestudio/nord-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'rakr/vim-one'
 
 call plug#end()
 
-" Enable color theme
-colorscheme nord
+" Set theme
+let g:airline_theme='one'
+colorscheme one
+set background=light
 
 syntax on
 
