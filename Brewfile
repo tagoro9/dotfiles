@@ -19,6 +19,7 @@ brew "ripgrep"
 brew "thefuck"
 brew "tmux"
 brew "tree"
+brew "urlview"
 brew "vim"
 brew "zsh"
 
