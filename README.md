@@ -9,8 +9,24 @@ My dotfiles.
 3. Install the [nord-iterm2](https://github.com/arcticicestudio/nord-iterm2) color profile.
 4. Install and configure [meslo-nerd-font-patched-for-powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) font.
 
+## Folder structure
+
+All the configuration is inside the `config` folder:
+
+```
+config
+├── bin # Any executable. Everything here makes it to the user path
+├── git
+├── gpg
+├── shells
+│   ├── bash
+│   ├── common
+│   └── zsh
+└── terminals
+```
+
 ## Local overrides
 
 Create the following local files to extend the default configuration:
 
-- `~/.local_shell_aliases` to add more aliases
+- `~/.local_shell_aliases` to add shell aliases that should not be in VCS

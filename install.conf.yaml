@@ -6,19 +6,18 @@
 - clean: ['~']
 
 - link:
-    ~/.bash_profile:
-    ~/.bashrc:
-    ~/.gitconfig:
-    ~/.gitignore_global:
-    ~/.gnupg/gpg-agent.conf: gpg-agent.conf
-    ~/.hyper.js:
-    ~/.p10k.zsh:
-    ~/.shell:
-    ~/.tmux.conf:
-    ~/.tmux.conf.local:
-    ~/.vimrc:
-    ~/.zshrc:
+    ~/.bash_profile: config/shells/bash/bash_profile
+    ~/.bashrc: config/shells/bash/bashrc
     ~/bin/:
       glob: true
-      path: bin/*
+      path: config/bin/*
       relink: true
+    ~/.config/shells: config/shells
+    ~/.gitconfig: config/git/gitconfig
+    ~/.gitignore_global: config/git/gitignore_global
+    ~/.gnupg/gpg-agent.conf: config/gpg/gpg-agent.conf
+    ~/.hyper.js: config/terminals/hyper.js
+    ~/.zshrc: config/shells/zsh/zshrc
+    ~/.tmux.conf: config/tmux/tmux.conf
+    ~/.tmux.conf.local: config/tmux/tmux.conf.local
+    ~/.vimrc: config/vim/vimrc
