@@ -19,5 +19,4 @@
     ~/.hyper.js: config/terminals/hyper.js
     ~/.zshrc: config/shells/zsh/zshrc
     ~/.tmux.conf: config/tmux/tmux.conf
-    ~/.tmux.conf.local: config/tmux/tmux.conf.local
     ~/.vimrc: config/vim/vimrc
