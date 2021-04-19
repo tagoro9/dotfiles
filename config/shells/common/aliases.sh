@@ -79,6 +79,8 @@ alias dant='ANT_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,a
 
 alias weather='curl wttr.in\?1F'
 
+alias op-login='eval $(op signin my.1password.com)'
+
 # Load any local shell aliases
 
 if [ -f ~/.local_shell_aliases ]; then
