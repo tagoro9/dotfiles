@@ -36,7 +36,9 @@ if [ -f "Brewfile" ] && [ "$(uname -s)" = "Darwin" ]; then
   }
 
   # Set zsh as default terminal
-  eval $(chsh -s /usr/local/bin/zsh)
+  if [ "$SHELL" != "/usr/local/bin/zsh"]; then
+    eval $(chsh -s /usr/local/bin/zsh)
+  fi
 fi
 
 # Install oh-my-zsh if not there
