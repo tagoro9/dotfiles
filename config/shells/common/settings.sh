@@ -13,7 +13,7 @@ export CLICOLOR='Yes'
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 # GO configuration
-GOPATH=$HOME/go
+export GOPATH=$HOME/go
 
 # Path configuration
 export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/.jenv/bin:/usr/local/go/bin:$GOPATH/bin:$HOME/flutter/bin:$PATH"
@@ -34,7 +34,6 @@ export FZF_DEFAULT_OPTS='--height 50% --reverse'
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
 # Configure AWS
-
 export AWS_REGION=us-east-1
 
 # Configure PGP TTY

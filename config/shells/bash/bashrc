@@ -1,0 +1,7 @@
+source ~/.config/shells/common/common.sh
+
+# Settings
+source ~/.config/shells/common/settings.sh
+
+# Aliases
+source ~/.shell/aliases.sh

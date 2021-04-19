@@ -19,10 +19,7 @@ module.exports = {
   plugins: [
     "hyper-one-light",
     "hyperterm-summon",
-    "hypercwd",
-    "hyperlinks",
-    "hyper-statusline",
-    "hyper-search",
+    "hypercwd"
   ],
   localPlugins: [],
 };
