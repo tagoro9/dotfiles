@@ -17,7 +17,7 @@ module.exports = {
     },
   },
   plugins: [
-    "hyper-one-light",
+    "hyper-dracula",
     "hyperterm-summon",
     "hypercwd"
   ],
