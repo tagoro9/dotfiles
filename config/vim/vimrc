@@ -9,16 +9,15 @@ Plug 'itchyny/lightline.vim'
 Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'rakr/vim-one'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
 " Set theme
-let g:airline_theme='one'
-colorscheme one
-set background=light
+set termguicolors
+let g:dracula_colorterm = 0
+colorscheme dracula
+set background=dark
 
 syntax on
 
