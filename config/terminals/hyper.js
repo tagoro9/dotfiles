@@ -15,6 +15,7 @@ module.exports = {
     summon: {
       hotkey: "F12",
     },
+    webGLRenderer: true
   },
   plugins: [
     "hyper-dracula",
