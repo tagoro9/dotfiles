@@ -1,9 +1,7 @@
+
 [core]
 	excludesfile = /Users/victor/.gitignore_global
-	pager = diff-so-fancy | less --tabs=4 -RFX
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	pager = delta
 [user]
 	name = Victor
 	email = victor@turo.com
@@ -133,7 +131,6 @@
     update-submodules = submodule update --init --recursive
 [merge]
 	conflictstyle = diff3
-	tool = p4mergetool
 [rerere]
 	enabled = 1
 [push]
@@ -143,9 +140,6 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
-[mergetool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
-	trustExitCode = false
 [mergetool]
 	keepBackup = false
 [rebase]
@@ -156,3 +150,12 @@
 	gpgsign = true
 [tag]
 	forceSignAnnotated = true
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    features = side-by-side line-numbers decorations
+    whitespace-error-style = 22 reverse
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold yellow ul
+    file-decoration-style = none
