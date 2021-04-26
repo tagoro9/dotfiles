@@ -36,7 +36,8 @@ if [ -f "Brewfile" ] && [ "$(uname -s)" = "Darwin" ]; then
   }
 
   # Set zsh as default terminal
-  if [ "$SHELL" != "/usr/local/bin/zsh"]; then
+  if [ "$SHELL" != "/usr/local/bin/zsh" ]; then
+    echo -e "🛠   Setting zsh as default shell…"
     eval $(chsh -s /usr/local/bin/zsh)
   fi
 fi
@@ -69,6 +70,14 @@ TPM=~/.tmux/plugins/tpm
 if [ ! -d "$TPM" ]; then
   echo -e "🛠   Installing tpm…"
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
+# Install paq-nvim if not there
+PAQ_NVIM=~/.local/share/nvim/site/pack/paqs/opt/paq-nvim
+if [ ! -d "$PAQ_NVIM" ]; then
+  echo -e "🛠   Installing paq-nvim…"
+  git clone https://github.com/savq/paq-nvim.git \
+    "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/opt/paq-nvim
 fi
 
 echo -e $COLOR_GREEN"✅  Done\n"$COLOR_RESET

@@ -5,8 +5,8 @@ My dotfiles.
 ## Installation
 
 1. Clone this repository.
-2. Run `./script/setup`.
-3. Install and configure [meslo-nerd-font-patched-for-powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) font.
+1. Run `./script/setup`.
+1. Install and configure [meslo-nerd-font-patched-for-powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k) font.
 
 ## Folder structure
 

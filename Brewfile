@@ -12,6 +12,8 @@ brew "hub"
 brew "jenv"
 brew "k9s"
 brew "kubectx"
+brew "luajit", args: ['HEAD']
+brew "neovim", args: ['HEAD']
 brew "pinentry-mac"
 brew "pyenv"
 brew "reattach-to-user-namespace"
