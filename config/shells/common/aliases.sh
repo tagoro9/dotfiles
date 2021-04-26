@@ -1,6 +1,10 @@
 # Alias Hub to get a better Github integration
 eval "$(hub alias -s)"
 
+# Alias vim to our default editor
+alias vim='${EDITOR:-vim}'
+alias vi='${EDITOR:-vim}'
+
 # Some better aliases
 alias cp='cp -iv'
 alias mv='mv -iv'
