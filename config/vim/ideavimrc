@@ -1,0 +1,8 @@
+" Show line numbers
+set number
+set relativenumber
+
+" Allow to copy / paste more easily
+set clipboard+=unnamed
+" Enable vim-surround (https://youtrack.jetbrains.com/issue/VIM-769)
+set surround

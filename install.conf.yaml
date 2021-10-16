@@ -21,3 +21,4 @@
     ~/.zshrc: config/shells/zsh/zshrc
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.vimrc: config/vim/vimrc
+    ~/.ideavimrc: config/vim/ideavimrc
