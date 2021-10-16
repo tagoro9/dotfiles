@@ -46,6 +46,10 @@ alias y='yarn'
 alias yt='yarn test'
 alias ys='yarn start'
 
+# Terraform aliases
+alias ti='terraform init'
+alias tp='terraform plan'
+
 # Search
 
 # Search for a file
