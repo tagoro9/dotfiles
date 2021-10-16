@@ -34,8 +34,22 @@ map('n', '<leader>pv',  ':Vexplore<CR>', options)
 map('i', 'jk' , '<ESC>', options)
 map('i', 'kj' , '<ESC>', options)
 
- -- Don't use arrow keys in  insert mode
+-- Don't use arrow keys in  insert mode
 map('i', '<up>', '<nop>', options)
 map('i', '<down>', '<nop>', options)
 map('i', '<left>', '<nop>', options)
 map('i', '<right>', '<nop>', options)
+
+-- Completion
+vim.o.completeopt = "menuone,noinsert,noselect"
+vim.o.shortmess = vim.o.shortmess .. "c"
+
+map('i', '<Tab>', 'pumvisible() ? "\\<C-n>" : "\\<Tab>"', {expr = true})
+map('i', '<S-Tab>', 'pumvisible() ? "\\<C-p>" : "\\<Tab>"', {expr = true})
+
+-- lsp provider to find the cursor word definition and reference
+map('n', 'gh', ':lua require("lspsaga.provider").lsp_finder()<CR>', {noremap = true, silent = true})
+map('n', '<leader>ca', ':lua require("lspsaga.codeaction").code_action()<CR>', {noremap = true, silent = true})
+map('n', 'K', '<cmd>:lua require("lspsaga.hover").render_hover_doc()<CR>', {noremap = true, silent = true})
+map('n', '[e', '<cmd>:lua require("lspsaga.diagnostic").lsp_jump_diagnostic_prev()<CR>', {noremap = true, silent = true})
+map('n', ']e', '<cmd>:lua require("lspsaga.diagnostic").lsp_jump_diagnostic_next()<CR>', {noremap = true, silent = true})
