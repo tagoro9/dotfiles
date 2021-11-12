@@ -20,15 +20,18 @@ export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 # GO configuration
 export GOPATH=$HOME/go
 
+# Pyenv configuration
+export PYENV_ROOT="$HOME/.pyenv"
+
 # Path configuration
-export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/.jenv/bin:/usr/local/go/bin:$GOPATH/bin:$HOME/flutter/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/.jenv/bin:/usr/local/go/bin:$GOPATH/bin:$HOME/flutter/bin:$PYENV_ROOT/bin:$PATH"
 
 # Confiure jenv
 eval "$(jenv init -)"
 
 # Configure pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+  eval "$(pyenv init --path)"
 fi
 
 # Configure FZF
