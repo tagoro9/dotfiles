@@ -15,6 +15,7 @@ zplug plugins/docker, from:oh-my-zsh
 zplug plugins/fzf, from:oh-my-zsh
 zplug Aloxaf/fzf-tab, from:github
 zplug plugins/git, from:oh-my-zsh
+zplug plugins/github, from:oh-my-zsh
 zplug plugins/git-extras, from:oh-my-zsh
 zplug plugins/node, from:oh-my-zsh
 zplug plugins/npm, from:oh-my-zsh
