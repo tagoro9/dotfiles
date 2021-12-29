@@ -1,11 +1,11 @@
 
 [core]
-	excludesfile = /Users/victor/.gitignore_global
+	excludesfile = /Users/victormora/.gitignore_global
 	pager = delta
 [user]
 	name = Victor
 	email = victor@turo.com
-	signingkey = 1CF6A7AAD76D5F8F5956C773D9AB22C76BD88A2B
+	signingkey = 5EAAE1A4E47FCF18562F8562E68C708305366B4C
 [color]
     branch = auto
     diff = auto
