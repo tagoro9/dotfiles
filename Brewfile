@@ -24,6 +24,8 @@ brew "tree"
 brew "urlview"
 brew "vim"
 brew "zsh"
+tap "hashicorp/tap"
+brew "hashicorp/tap/packer"
 
 tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font"
