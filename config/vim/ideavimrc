@@ -6,3 +6,4 @@ set relativenumber
 set clipboard+=unnamed
 " Enable vim-surround (https://youtrack.jetbrains.com/issue/VIM-769)
 set surround
+set ideajoin
