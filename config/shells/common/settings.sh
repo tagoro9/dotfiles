@@ -17,17 +17,22 @@ export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
+# Path configuration
+# Load homebrew environment
+# I want my tools to have precedence over homebrew bins
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/flutter/bin:$PYENV_ROOT/bin:$PATH"
+
 # GO configuration
-export GOPATH=$HOME/go
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
 
 # Pyenv configuration
 export PYENV_ROOT="$HOME/.pyenv"
-
-# Path configuration
-export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/.jenv/bin:/usr/local/go/bin:$GOPATH/bin:$HOME/flutter/bin:$PYENV_ROOT/bin:$PATH"
-
-# Confiure jenv
-eval "$(jenv init -)"
 
 # Configure pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
