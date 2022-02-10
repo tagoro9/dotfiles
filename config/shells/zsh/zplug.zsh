@@ -19,7 +19,7 @@ zplug plugins/github, from:oh-my-zsh
 zplug plugins/git-extras, from:oh-my-zsh
 zplug plugins/node, from:oh-my-zsh
 zplug plugins/npm, from:oh-my-zsh
-zplug plugins/osx, from:oh-my-zsh
+zplug plugins/macos, from:oh-my-zsh
 zplug plugins/z, from:oh-my-zsh
 zplug plugins/gem, from:oh-my-zsh
 zplug plugins/vi-mode, from:oh-my-zsh
