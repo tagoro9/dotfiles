@@ -5,7 +5,9 @@
 [user]
 	name = Victor
 	email = victor@turo.com
-	signingkey = 5EAAE1A4E47FCF18562F8562E68C708305366B4C
+	signingkey = 0F9749E4575486C06D66DC95A81190E799DFA173
+[credential "https://github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [color]
     branch = auto
     diff = auto
@@ -159,3 +161,7 @@
     commit-decoration-style = bold yellow box ul
     file-style = bold yellow ul
     file-decoration-style = none
+[url "https://github.com/"]
+    insteadOf = git@github.com:
+[init]
+    defaultBranch = main
