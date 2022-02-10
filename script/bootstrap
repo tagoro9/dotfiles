@@ -80,4 +80,12 @@ if [ ! -d "$PAQ_NVIM" ]; then
     "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/opt/paq-nvim
 fi
 
+SDK_EXE=$(/usr/bin/which sdk || echo 0)
+if [ "$SDK_EXE" == "0" ]; then
+  echo -e "🛠  Installing sdkman..."
+  curl -s "https://get.sdkman.io" | /bin/bash
+fi
+
+mdkir -p ~/.completions
+
 echo -e $COLOR_GREEN"✅  Done\n"$COLOR_RESET
