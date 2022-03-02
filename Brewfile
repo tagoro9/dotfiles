@@ -1,6 +1,7 @@
 brew "awscli"
 brew "bat"
 brew "cli53"
+brew "exa"
 brew "fd"
 brew "fzf"
 brew "git-delta"

@@ -1,17 +1,13 @@
-# Alias vim to our default editor
-alias vim='${EDITOR:-vim}'
-alias vi='${EDITOR:-vim}'
-
 # Some better aliases
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
-alias ls='ls -GFh'
-alias ll='ls -FGlAhp'
+alias exa='exa -Fh --icons'
+alias ell='exa -l --icons --git'
 alias less='less -FSRXc'
 
 # Full recursive directory listing
-alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
+alias lr='exa -T'
 
 # Navigation aliases
 alias cd..='cd ../'
