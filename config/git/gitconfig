@@ -36,7 +36,7 @@
     # Checkout a branch by its issue id
     coi= "!f(){ git branch -ra | grep -m 1 $1| xargs git co ;};f"
     # Delete all branches that match the specified prefixes
-    brdi = "!f(){ for prefix in "$@"; do git branch -ra | grep -m 1 $prefix | xargs git br -D; done }; f"
+    brdi = "!f(){ for prefix in "$@"; do git branch --list "*$prefix*" | xargs git br -D; done }; f"
     chd = checkout HEAD .
     ci = commit
     cia = commit --amend
@@ -54,6 +54,7 @@
     dsf = "!f() { [ \"$GIT_PREFIX\" != \"\" ] && cd "$GIT_PREFIX"; git diff --color $@ | diff-so-fancy | less --tabs=4 -RFX; }; f"
     default-branch="!git remote show origin | grep 'HEAD branch' | sed 's/.*: //'"
     rom="!git reset --hard origin/$(git default-branch)"
+    ror = "!git reset --hard origin/$(git branch-name)"
     unstage = reset --
     pr = pull-request
     files = diff-tree --no-commit-id --name-only -r
@@ -165,3 +166,5 @@
     insteadOf = git@github.com:
 [init]
     defaultBranch = main
+[pull]
+	ff = only
