@@ -1,6 +1,6 @@
 require('plugins/airline')
 require('plugins/treesitter')
-require('plugins/lsp')
+-- require('plugins/lsp')
 require('plugins/reload')
 require('plugins/autopairs')
 
@@ -10,7 +10,7 @@ require'nvim_comment'.setup {
     operator_mapping = "<leader>/"
 }
 
-require 'colorizer'.setup() 
+require 'colorizer'.setup()
 
 require'nvim-tree'.setup()
 

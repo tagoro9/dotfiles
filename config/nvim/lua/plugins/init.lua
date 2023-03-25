@@ -1,6 +1,6 @@
 local cmd = vim.cmd
 cmd 'packadd paq-nvim'
-local paq = require('paq-nvim').paq
+local paq = require('paq').paq
 
 -- Plugin management
 paq{'savq/paq-nvim', opt=true}
@@ -19,11 +19,11 @@ paq { 'nvim-telescope/telescope.nvim' }
 paq 'nvim-telescope/telescope-fzy-native.nvim'
 
 -- lsp and completion
-paq { 'kabouzeid/nvim-lspinstall' }
+-- paq { 'kabouzeid/nvim-lspinstall' }
 paq { 'neovim/nvim-lspconfig' }
 paq { 'hrsh7th/nvim-compe' }
 paq { 'glepnir/lspsaga.nvim' }
-paq { 'simrat39/symbols-outline.nvim' }
+-- paq { 'simrat39/symbols-outline.nvim' }
 
 -- auto pairs
 paq { 'windwp/nvim-autopairs' }
