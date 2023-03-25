@@ -2,10 +2,18 @@
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
-alias exa='exa -Fh --icons'
-alias ell='exa -l --icons --git'
 alias less='less -FSRXc'
 
+# Use nvim
+alias vim='nvim'
+alias vi='nvim'
+
+# Use bat for cat
+alias cat='bat'
+
+# Use exa for ls
+alias l='exa -lh --group-directories-first --color=auto --git --icons --no-permissions --no-user'
+alias ll='exa -lahF --group-directories-first --color=auto --git --icons'
 # Full recursive directory listing
 alias lr='exa -T'
 
