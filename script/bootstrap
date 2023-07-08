@@ -73,11 +73,11 @@ if [ ! -d "$TPM" ]; then
 fi
 
 # Install paq-nvim if not there
-PAQ_NVIM=~/.local/share/nvim/site/pack/paqs/opt/paq-nvim
+PAQ_NVIM=~/.local/share/nvim/site/pack/paqs/start/paq-nvim
 if [ ! -d "$PAQ_NVIM" ]; then
   echo -e "🛠   Installing paq-nvim…"
-  git clone https://github.com/savq/paq-nvim.git \
-    "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/opt/paq-nvim
+  git clone --depth=1 https://github.com/savq/paq-nvim.git \
+    "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/start/paq-nvim
 fi
 
 SDK_EXE=$(/usr/bin/which sdk || echo 0)
