@@ -7,7 +7,6 @@ module.exports = {
     cursorShape: "BLOCK",
     borderColor: "#333",
     padding: "12px 14px",
-    shell: "/bin/zsh",
     shellArgs: ["--login"],
     env: {},
     bell: false,
