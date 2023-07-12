@@ -12,7 +12,8 @@
       glob: true
       path: config/bin/*
       relink: true
-    ~/.config/nvim: config/nvim
+    ~/.config/nvim: config/astrovim
+    ~/.config/nvim/lua/user: config/nvim/lua/user
     ~/.config/shells: config/shells
     ~/.gitconfig: config/git/gitconfig
     ~/.gitignore_global: config/git/gitignore_global
