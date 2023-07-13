@@ -88,4 +88,7 @@ fi
 
 mdkir -p ~/.completions
 
+# Custom completions
+wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -O ~/.completions/_tmuxinator
+
 echo -e $COLOR_GREEN"✅  Done\n"$COLOR_RESET
