@@ -27,9 +27,6 @@ alias .4='cd ../../../../'
 alias .5='cd ../../../../../'
 alias .6='cd ../../../../../../'
 
-# Open current directory in finder
-alias f='open -a Finder ./'
-
 #Clear terminal
 alias c='clear'
 
@@ -78,6 +75,10 @@ alias ipInfo1='ipconfig getpacket en1'
 alias openPorts='sudo lsof -i | grep LISTEN'
 # All ipfw rules inc/ blocked IPs
 alias showBlocked='sudo ipfw list'
+
+# Fotingo aliases
+alias f='fotingo'
+alias fr='fotingo open repo'
 
 # Misc
 
