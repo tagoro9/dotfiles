@@ -28,6 +28,7 @@ brew "zsh"
 tap "hashicorp/tap"
 brew "hashicorp/tap/packer"
 brew "watch"
+brew "tmuxinator"
 
 tap "homebrew/cask-fonts"
 cask "font-hack-nerd-font"
