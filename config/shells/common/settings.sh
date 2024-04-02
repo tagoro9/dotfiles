@@ -28,8 +28,8 @@ export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/flutter/bin:$PYENV
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
-export PATH="$GOROOT/bin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
+#export PATH="$GOROOT/bin:$PATH"
+#export PATH="$PATH:$GOPATH/bin"
 
 # Pyenv configuration
 export PYENV_ROOT="$HOME/.pyenv"
