@@ -11,14 +11,10 @@ module.exports = {
     env: {},
     bell: false,
     copyOnSelect: true,
-    summon: {
-      hotkey: "F12",
-    },
     webGLRenderer: true
   },
   plugins: [
     "hyper-dracula",
-    "hyperterm-summon",
     "hypercwd"
   ],
   localPlugins: [],
