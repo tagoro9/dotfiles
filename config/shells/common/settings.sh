@@ -6,16 +6,8 @@ else
   export EDITOR=vim
 fi
 
-# Ant configuration
-export ANT_OPTS='-Xms768m -Xmx1024m'
-
 # Increase node memory by default
 export NODE_OPTIONS='--max-old-space-size=3096'
-
-# Color configuration
-export LS_OPTIONS='--color=auto'
-export CLICOLOR='Yes'
-export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
 # Path configuration
 # Load homebrew environment
@@ -23,28 +15,6 @@ export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/flutter/bin:$PYENV_ROOT/bin:$PATH"
-
-# GO configuration
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-eval "$(goenv init -)"
-#export PATH="$GOROOT/bin:$PATH"
-#export PATH="$PATH:$GOPATH/bin"
-
-# Pyenv configuration
-export PYENV_ROOT="$HOME/.pyenv"
-
-# Configure pyenv
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init --path)"
-fi
-
-# Configure FZF
-
-# Do not use full screen mode
-export FZF_DEFAULT_OPTS='--height 50% --reverse'
-# Use ripgrep instead of grep
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
 # Configure AWS
 export AWS_REGION=us-east-1

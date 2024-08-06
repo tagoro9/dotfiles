@@ -1,21 +1,30 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# This fixes slowness when pasting commands
-DISABLE_MAGIC_FUNCTIONS=true
-
 [[ ! -f ~/.config/shells/common/common.sh ]] || source ~/.config/shells/common/common.sh
 [[ ! -f ~/.config/shells/zsh/zplug.zsh ]] || source ~/.config/shells/zsh/zplug.zsh
-[[ ! -f ~/.config/shells/zsh/p10k.zsh ]] || source ~/.config/shells/zsh/p10k.zsh
-[[ ! -f ~/.config/shells/zsh/fzf.zsh ]] || source ~/.config/shells/zsh/fzf.zsh
 
 # Update fpath to include custom completions
 fpath=( ~/.completions "${fpath[@]}" )
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-# export SDKMAN_DIR="$HOME/.sdkman"
+# Init completions
+autoload -Uz compinit && compinit
+
+# fzf
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+
+# starship
+eval "$(starship init zsh)"
+# zoxide
+eval "$(zoxide init zsh)"
+
+# sdkman
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# Python configuration
+export PYENV_ROOT="$HOME/.pyenv"
+if command -v pyenv 1>/dev/null 2>&1; then
+ eval "$(pyenv init --path)"
+fi
+
+# GO configuration
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"

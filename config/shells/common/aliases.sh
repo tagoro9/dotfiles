@@ -22,22 +22,9 @@ alias cd..='cd ../'
 alias cdr='cd $(git rev-parse --show-toplevel)'
 alias ..='cd ../'
 alias ...='cd ../../'
-alias .3='cd ../../../'
-alias .4='cd ../../../../'
-alias .5='cd ../../../../../'
-alias .6='cd ../../../../../../'
-
-#Clear terminal
-alias c='clear'
 
 # Better path output
 alias path='echo -e ${PATH//:/\\n}'
-
-alias show_options='shopt'
-
-# Open any file in quicklook preview
-ql () { qlmanage -p "$*" >& /dev/null; }
-
 # Yarn aliases
 
 alias y='yarn'
@@ -47,11 +34,6 @@ alias ys='yarn start'
 # Terraform aliases
 alias ti='terraform init'
 alias tp='terraform plan'
-
-# Search
-
-# Search for a file
-alias qfind="find . -name "
 
 # Networking
 
@@ -87,10 +69,7 @@ alias pwmetrics='CHROME_PATH="/Applications/Google Chrome Canary.app/Contents/Ma
 
 # Alias for ant with debugging enabled
 alias dant='ANT_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005 -Xms768m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m" ant'
-
 alias weather='curl wttr.in\?1F'
-
-alias op-login='eval $(op signin my.1password.com)'
 
 # Load any local shell aliases
 

@@ -12,9 +12,9 @@
       glob: true
       path: config/bin/*
       relink: true
-    ~/.config/nvim: config/astrovim
-    ~/.config/nvim/lua/user: config/nvim/lua/user
+    ~/.config/nvim: config/astronvim
     ~/.config/shells: config/shells
+    ~/.config/starship.toml: config/starship/starship.toml
     ~/.gitconfig: config/git/gitconfig
     ~/.gitignore_global: config/git/gitignore_global
     ~/.gnupg/gpg-agent.conf: config/gpg/gpg-agent.conf
