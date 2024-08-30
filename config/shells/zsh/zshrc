@@ -1,5 +1,5 @@
-[[ ! -f ~/.config/shells/common/common.sh ]] || source ~/.config/shells/common/common.sh
 [[ ! -f ~/.config/shells/zsh/zplug.zsh ]] || source ~/.config/shells/zsh/zplug.zsh
+[[ ! -f ~/.config/shells/common/common.sh ]] || source ~/.config/shells/common/common.sh
 
 # Update fpath to include custom completions
 fpath=( ~/.completions "${fpath[@]}" )

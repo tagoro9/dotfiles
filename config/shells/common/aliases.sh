@@ -12,6 +12,7 @@ alias vi='nvim'
 alias cat='bat'
 
 # Use exa for ls
+alias ls='exa --icons -F -H --group-directories-first --git -1'
 alias l='exa -lh --group-directories-first --color=auto --git --icons --no-permissions --no-user'
 alias ll='exa -lahF --group-directories-first --color=auto --git --icons'
 # Full recursive directory listing
