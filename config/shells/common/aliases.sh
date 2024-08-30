@@ -17,11 +17,12 @@ alias ll='exa -lahF --group-directories-first --color=auto --git --icons'
 # Full recursive directory listing
 alias lr='exa -T'
 
+# Use zoxide for cd
+alias cd='z'
+
 # Navigation aliases
 alias cd..='cd ../'
 alias cdr='cd $(git rev-parse --show-toplevel)'
-alias ..='cd ../'
-alias ...='cd ../../'
 
 # Better path output
 alias path='echo -e ${PATH//:/\\n}'
