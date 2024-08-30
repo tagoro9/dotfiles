@@ -86,6 +86,14 @@ if [ "$SDK_EXE" == "0" ]; then
   curl -s "https://get.sdkman.io" | /bin/bash
 fi
 
+# Install rust if not there
+if [ ! -d "$HOME/.cargo" ]; then
+  echo -e "🛠  Installing rust..."
+  curl https://sh.rustup.rs -sSf | sh
+fi
+
+
+
 mdkir -p ~/.completions
 
 # Custom completions
