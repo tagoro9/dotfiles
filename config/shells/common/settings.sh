@@ -17,7 +17,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/flutter/bin:$PYENV_ROOT/bin:$PATH"
 
 # Configure AWS
-export AWS_REGION=us-east-1
+#export AWS_REGION=us-east-1
 
 # Configure PGP TTY
 export GPG_TTY=$(tty)

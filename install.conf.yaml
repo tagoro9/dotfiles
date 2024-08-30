@@ -15,11 +15,13 @@
     ~/.config/nvim: config/astronvim
     ~/.config/shells: config/shells
     ~/.config/starship.toml: config/starship/starship.toml
+    ~/.config/wezterm: config/terminals/wezterm
+    ~/.config/zellij: config/zellij
     ~/.gitconfig: config/git/gitconfig
     ~/.gitignore_global: config/git/gitignore_global
     ~/.gnupg/gpg-agent.conf: config/gpg/gpg-agent.conf
     ~/.hyper.js: config/terminals/hyper.js
-    ~/.zshrc: config/shells/zsh/zshrc
+    ~/.ideavimrc: config/vim/ideavimrc
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.vimrc: config/vim/vimrc
-    ~/.ideavimrc: config/vim/ideavimrc
+    ~/.zshrc: config/shells/zsh/zshrc

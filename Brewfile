@@ -29,6 +29,7 @@ brew "hashicorp/tap/packer"
 brew "watch"
 brew "tmuxinator"
 brew "starship"
+brew "zellij"
 brew "zoxide"
 
 tap "homebrew/cask-fonts"
