@@ -1,7 +1,7 @@
 themes {
   dracula {
     fg 249 249 243
-    bg 40 42 54
+    bg 124 127 138
     black 0 0 0
     red 255 85 85
     green 80 250 123
