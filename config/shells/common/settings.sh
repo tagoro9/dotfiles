@@ -9,6 +9,9 @@ fi
 # Increase node memory by default
 export NODE_OPTIONS='--max-old-space-size=3096'
 
+# Speed up go and terraform. See https://yaleman.org/post/2021/2021-01-01-apple-m1-terraform-and-golang/
+export GODEBUG=asyncpreemptoff=1
+
 # Path configuration
 # Load homebrew environment
 # I want my tools to have precedence over homebrew bins
