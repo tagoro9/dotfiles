@@ -16,6 +16,7 @@
     ~/.config/shells: config/shells
     ~/.config/starship.toml: config/starship/starship.toml
     ~/.config/wezterm: config/terminals/wezterm
+    ~/.config/ghostty: config/terminals/ghostty
     ~/.config/zellij: config/zellij
     ~/.gitconfig: config/git/gitconfig
     ~/.gitignore_global: config/git/gitignore_global

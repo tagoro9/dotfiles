@@ -33,6 +33,7 @@ brew "zellij"
 brew "zoxide"
 
 tap "homebrew/cask-fonts"
+cask "ghostty"
 cask "font-hack-nerd-font"
 cask "hyper"
 cask "spotify"
