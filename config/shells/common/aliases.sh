@@ -11,12 +11,12 @@ alias vi='nvim'
 # Use bat for cat
 alias cat='bat'
 
-# Use exa for ls
-alias ls='exa --icons -F -H --group-directories-first --git -1'
-alias l='exa -lh --group-directories-first --color=auto --git --icons --no-permissions --no-user'
-alias ll='exa -lahF --group-directories-first --color=auto --git --icons'
+# Use eza for ls
+alias ls='eza --icons -F -H --group-directories-first --git -1'
+alias l='eza -lh --group-directories-first --color=auto --git --icons --no-permissions --no-user'
+alias ll='eza -lahF --group-directories-first --color=auto --git --icons'
 # Full recursive directory listing
-alias lr='exa -T'
+alias lr='eza -T'
 
 # Use zoxide for cd
 alias cd='z'
