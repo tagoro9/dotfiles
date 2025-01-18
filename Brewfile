@@ -31,6 +31,7 @@ brew "tmuxinator"
 brew "starship"
 brew "zellij"
 brew "zoxide"
+brew "lazygit"
 
 tap "homebrew/cask-fonts"
 cask "ghostty"
