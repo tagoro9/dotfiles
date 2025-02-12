@@ -62,6 +62,7 @@
     resolve-theirs = "!grep -lr '<<<<<<<' $@ | xargs git checkout --theirs"
     rh = reset HEAD .
     r1 = reset HEAD~
+    fixup = "!f() { git commit --fixup=$(git rev-parse HEAD~$(($1 - 1))); }; f"
     wip = "!git add . && git ci -m WIP --no-verify"
     # Get the current branch name (not so useful in itself, but used in
     # other aliases)
