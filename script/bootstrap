@@ -49,12 +49,10 @@ if [ ! -d "$OH_MY_ZSH" ]; then
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-# Install zplug if not there
-ZPLUG=~/.zplug
-if [ ! -d "$ZPLUG" ]; then
-  echo -e "🛠   Installing zplug"
-  unset ZPLUG_HOME
-  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+ANTIDOTE=~/.antidote
+if [ ! -d "$ANTIDOTE" ]; then
+  # Install antidote if not there
+  git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/.antidote
 fi
 
 # Install vim-plug if not there

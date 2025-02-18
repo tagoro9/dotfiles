@@ -26,3 +26,4 @@
     ~/.tmux.conf: config/tmux/tmux.conf
     ~/.vimrc: config/vim/vimrc
     ~/.zshrc: config/shells/zsh/zshrc
+    ~/.zsh_plugins.txt: config/shells/zsh/zsh_plugins.txt
