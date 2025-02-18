@@ -22,7 +22,6 @@ alias lr='eza -T'
 alias cd='z'
 
 # Navigation aliases
-alias cd..='cd ../'
 alias cdr='cd $(git rev-parse --show-toplevel)'
 
 # Better path output
@@ -64,7 +63,7 @@ alias showBlocked='sudo ipfw list'
 alias f='fotingo'
 alias fr='fotin-go open repo'
 alias fpr='fotin-go open pr'
-alias fi='fotin-go open issue'
+alias fis='fotin-go open issue'
 
 # Misc
 
@@ -76,6 +75,6 @@ alias weather='curl wttr.in\?1F'
 
 # Load any local shell aliases
 
-if [ -f ~/.local_shell_aliases ]; then
-    source ~/.local_shell_aliases
+if [ -f "$HOME/.local_shell_aliases" ]; then
+    source "$HOME/.local_shell_aliases"
 fi
