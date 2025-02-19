@@ -6,7 +6,6 @@
 # Init completions
 autoload -Uz compinit && compinit
 
-# [[ ! -f ~/.config/shells/zsh/zplug.zsh ]] || source ~/.config/shells/zsh/zplug.zsh
 [[ ! -f ~/.config/shells/zsh/antidote.zsh ]] || source ~/.config/shells/zsh/antidote.zsh
 [[ ! -f ~/.config/shells/common/common.sh ]] || source ~/.config/shells/common/common.sh
 
@@ -24,19 +23,7 @@ eval "$(zoxide init zsh)"
 # # sdkman
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# # Python configuration
-# export PYENV_ROOT="$HOME/.pyenv"
-# if command -v pyenv 1>/dev/null 2>&1; then
-#  eval "$(pyenv init --path)"
-# fi
-
-# # GO configuration
-# export GOENV_ROOT="$HOME/.goenv"
-# export PATH="$GOENV_ROOT/bin:$PATH"
-# eval "$(goenv init -)"
-
 # # Rust configuration
-# #
 . "$HOME/.cargo/env"
 
 # zprof
