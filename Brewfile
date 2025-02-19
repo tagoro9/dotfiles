@@ -32,6 +32,8 @@ brew "starship"
 brew "zellij"
 brew "zoxide"
 brew "lazygit"
+tap "jesseduffield/lazydocker"
+brew "jesseduffield/lazydocker/lazydocker"
 
 tap "homebrew/cask-fonts"
 cask "ghostty"
