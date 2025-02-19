@@ -17,7 +17,7 @@ export GODEBUG=asyncpreemptoff=1
 # I want my tools to have precedence over homebrew bins
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/flutter/bin:$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.yarn/bin:$HOME/bin:$HOME/flutter/bin:$PATH"
 
 # Configure AWS
 #export AWS_REGION=us-east-1
