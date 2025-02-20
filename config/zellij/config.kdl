@@ -185,12 +185,12 @@ keybinds {
     bind "Alt -" { Resize "Decrease"; }
     bind "Alt [" { PreviousSwapLayout; }
     bind "Alt ]" { NextSwapLayout; }
-//    bind "Ctrl y" {
-//      LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
-//        "LOAD_ZELLIJ_BINDINGS" "true"
-//        floating true
-//      }
-//    }
+    bind "Ctrl f" {
+      LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
+        "LOAD_ZELLIJ_BINDINGS" "true"
+        floating true
+      }
+    }
     bind "Ctrl y" {
       LaunchOrFocusPlugin "file:~/.config/zellij/plugins/room.wasm" {
         floating true
