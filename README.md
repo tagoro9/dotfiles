@@ -1,35 +1,31 @@
-# Dotfiles
+# dotfiles
 
-My dotfiles.
+## Initial setup
 
-## Installation
+Run `./script/bootstrap`
 
-1. Clone this repository.
-1. Run `./script/setup`.
-1. If `brew` is not installed, it will be installed and then the program will exit (the brew installation will ask you to execute some cmds to add brew to
-the path). After that, execute the script again and everything will be configured.
-## Folder structure
+## Overview
 
-All the configuration is inside the `config` folder:
+This repository uses [devbox](https://www.jetify.com/devbox) and [brew](https://brew.sh/) to manage applications. It tries to use devbox
+as much as possible, but there are some applications that are not supported by devbox yet.
 
+### Git signing key
+
+To generate a git signing key, run:
+
+```shell
+# Generate a 4096-bit RSA key that doesn't expire
+gpg --full-generate-key --expert
+
+# Select these options:
+# 4) RSA (sign only)
+# 4) 4096 bits
+# 0) key does not expire
+# Then fill in your name and email
 ```
-config
-├── bin # Any executable. Everything here makes it to the user path
-├── git
-├── gpg
-├── shells
-│   ├── bash
-│   ├── common
-│   └── zsh
-└── terminals
+
+After generating the key, get your key ID with:
+
+```shell
+gpg --list-secret-keys --keyid-format=long
 ```
-
-## Local overrides
-
-Create the following local files to extend the default configuration:
-
-- `~/.local_shell_aliases` to add shell aliases that should not be in VCS
-
-## neovim
-
-When opening vim the first time, there will be a couple of errors. Execute `:PaqInstall` and then `:Reload` to have everything configured.

@@ -1,100 +1,25 @@
 #!/usr/bin/env bash
 
-set -e
-
-# Bash color variables
-COLOR_GREEN="\x1b[32;01m"
-COLOR_RESET="\x1b[39;49;00m"
-
-# Check that an executable exists
-function executableCheck() {
-  local EXE=$1
-  local NAME=$2
-  if [ "$EXE" == "0" ]; then
-    echo -e $COLOR_RED"💥  ${NAME} was not found. Check the installation requirements"$COLOR_RESET
-    exit 1
-  fi
-}
-
-echo -e "🚀  Bootstrapping @tagoro9 dotfiles..."
+# Install devbox
+if ! command -v devbox 2>&1 >/dev/null; then
+  curl -fsSL https://get.jetify.com/devbox | bash
+fi
 
 if [ -f "Brewfile" ] && [ "$(uname -s)" = "Darwin" ]; then
-  # Install homebrew if it's not there
-  BREW_EXE=$(/usr/bin/which brew || echo 0)
+  BREW_EXE=$(/usr/bin/which /opt/homebrew/bin/brew || echo 0)
   if [ "$BREW_EXE" == "0" ]; then
     echo -e "🛠  Installing Homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     exit 1
   else
     echo -e "🛠  Updating brew"
-    brew update >/dev/null 2>&1
+    /opt/homebrew/bin/brew update >/dev/null 2>&1
   fi
 
-  brew bundle check >/dev/null 2>&1 || {
+  /opt/homebrew/bin/brew bundle check >/dev/null 2>&1 || {
     echo -e "🛠  Installing Homebrew dependencies…"
-    brew bundle
+    /opt/homebrew/bin/brew bundle
   }
-
-  # Set zsh as default terminal
-  if [ "$SHELL" != "/usr/local/bin/zsh" ]; then
-    echo -e "🛠   Setting zsh as default shell…"
-    eval $(chsh -s /usr/local/bin/zsh)
-  fi
 fi
 
-# Install oh-my-zsh if not there
-OH_MY_ZSH=~/.oh-my-zsh
-if [ ! -d "$OH_MY_ZSH" ]; then
-  echo -e "🛠   Installing oh-my-zsh…"
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
-
-ANTIDOTE=~/.antidote
-if [ ! -d "$ANTIDOTE" ]; then
-  # Install antidote if not there
-  git clone --depth=1 https://github.com/mattmc3/antidote.git ${ZDOTDIR:-~}/.antidote
-fi
-
-# Install vim-plug if not there
-VIM_PLUG=~/.vim/autoload/plug.vim
-if [ ! -f "$VIM_PLUG" ]; then
-  echo -e "🛠   Installing vim-plug…"
-  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-fi
-
-# Install tpm if not there
-TPM=~/.tmux/plugins/tpm
-if [ ! -d "$TPM" ]; then
-  echo -e "🛠   Installing tpm…"
-  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-fi
-
-# Install paq-nvim if not there
-PAQ_NVIM=~/.local/share/nvim/site/pack/paqs/start/paq-nvim
-if [ ! -d "$PAQ_NVIM" ]; then
-  echo -e "🛠   Installing paq-nvim…"
-  git clone --depth=1 https://github.com/savq/paq-nvim.git \
-    "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/pack/paqs/start/paq-nvim
-fi
-
-SDK_EXE=$(/usr/bin/which sdk || echo 0)
-if [ "$SDK_EXE" == "0" ]; then
-  echo -e "🛠  Installing sdkman..."
-  curl -s "https://get.sdkman.io" | /bin/bash
-fi
-
-# Install rust if not there
-if [ ! -d "$HOME/.cargo" ]; then
-  echo -e "🛠  Installing rust..."
-  curl https://sh.rustup.rs -sSf | sh
-fi
-
-
-
-mdkir -p ~/.completions
-
-# Custom completions
-wget https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.zsh -O ~/.completions/_tmuxinator
-
-echo -e $COLOR_GREEN"✅  Done\n"$COLOR_RESET
+devbox global install
