@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# When running devbox global add <package>, it modifies the files outside of chezmoi's control.
+# This scripts makes it easy to import the changes into chezmoi.
+chezmoi add ~/.local/share/devbox/global/default/devbox.json
+chezmoi add ~/.local/share/devbox/global/default/devbox.lock

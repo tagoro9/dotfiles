@@ -29,3 +29,10 @@ After generating the key, get your key ID with:
 ```shell
 gpg --list-secret-keys --keyid-format=long
 ```
+
+### Devbox mac apps
+
+By default devbox installs mac apps in a specific folder, so they won't show up in launchpad and other places.
+
+To make them appear in there, open the folder where they are installed
+in finder, right click -> make alias -> copy to Applications.

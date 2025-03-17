@@ -1,0 +1,17 @@
+#!/bin/env zsh
+
+# Uncomment this and the zprof line to enable profiling
+# zmodload zsh/zprof
+
+autoload -Uz compinit && compinit
+
+[[ ! -f ~/.config/shell/common.sh ]] || source ~/.config/shell/common.sh
+[[ ! -f ~/.config/shell/antidote.zsh ]] || source ~/.config/shell/antidote.zsh
+[[ ! -f ~/.config/shell/completions.zsh ]] || source ~/.config/shell/completions.zsh
+
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+# zprof

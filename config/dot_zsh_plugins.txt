@@ -1,0 +1,35 @@
+#!/bin/zsh
+
+# Theme
+dracula/zsh
+
+# Init
+mafredri/zsh-async path:async.zsh
+ohmyzsh/ohmyzsh path:plugins/vi-mode
+mattmc3/ez-compinit
+
+# completions
+zsh-users/zsh-completions
+
+# fzf
+Aloxaf/fzf-tab
+unixorn/fzf-zsh-plugin
+ohmyzsh/ohmyzsh path:plugins/fzf
+
+# Languages
+ohmyzsh/ohmyzsh path:plugins/aws
+ohmyzsh/ohmyzsh path:plugins/docker kind:fpath
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/node
+ohmyzsh/ohmyzsh path:plugins/npm
+ohmyzsh/ohmyzsh path:plugins/nvm kind:defer
+https://gitlab.com/riverglide/zsh-goenv kind:defer
+mattberther/zsh-pyenv kind:defer
+ohmyzsh/ohmyzsh path:plugins/terraform
+ohmyzsh/ohmyzsh path:plugins/macos
+
+
+# Utils
+zdharma-continuum/fast-syntax-highlighting
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
