@@ -1,1 +1,2 @@
 theme = dracula
+copy-on-select = clipboard
