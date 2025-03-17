@@ -1,9 +1,0 @@
-*~
-.DS_Store
-.idea/
-.imdone/
-.fotingo
-.vscode/
-jsconfig.json
-front-end.code-workspace
-**/config/development.json
