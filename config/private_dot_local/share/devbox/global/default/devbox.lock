@@ -49,34 +49,6 @@
         }
       }
     },
-    "arc-browser@latest": {
-      "last_modified": "2025-03-11T17:52:14Z",
-      "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#arc-browser",
-      "source": "devbox-search",
-      "version": "1.83.0-59042",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/4ijv2lwadd4s48sqmvmib8vskp9ly5vx-arc-browser-1.83.0-59042",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/4ijv2lwadd4s48sqmvmib8vskp9ly5vx-arc-browser-1.83.0-59042"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/sm7pmpbkp4ip1j0dq4cyd0yz7aam7j40-arc-browser-1.83.0-59042",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/sm7pmpbkp4ip1j0dq4cyd0yz7aam7j40-arc-browser-1.83.0-59042"
-        }
-      }
-    },
     "awscli@latest": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#awscli",
