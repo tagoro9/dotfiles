@@ -1,11 +1,3 @@
-# Default editor
-if type nvim > /dev/null 2>&1;
-then
-  export EDITOR=nvim
-else
-  export EDITOR=vim
-fi
-
 # Increase node memory by default
 export NODE_OPTIONS='--max-old-space-size=3096'
 
@@ -27,6 +19,14 @@ export GPG_TTY=$(tty)
 
 # Load devbox environment
 eval "$(devbox global shellenv)"
+
+# Default editor
+if type hx > /dev/null 2>&1;
+then
+  export EDITOR=hx
+else
+  export EDITOR=vim
+fi
 
 export FZF_PATH="$DEVBOX_PACKAGES_DIR/share/fzf"
 
