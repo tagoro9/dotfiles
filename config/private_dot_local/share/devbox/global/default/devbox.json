@@ -29,7 +29,12 @@
     "nerdfonts@latest",
     "zellij@latest",
     "ripgrep@latest",
-    "antidote@latest"
+    "antidote@latest",
+    "shellcheck@latest",
+    "shfmt@latest",
+    "golangci-lint@latest",
+    "gomarkdoc@latest",
+    "helix@latest"
   ],
   "shell": {
     "init_hook": ["echo 'Welcome to devbox!' > /dev/null"],
