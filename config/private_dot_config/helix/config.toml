@@ -1,4 +1,28 @@
 theme = "dracula"
 
 [editor]
+bufferline = "multiple"
+cursorline = true
 line-number = "relative"
+rulers = [120]
+end-of-line-diagnostics = "hint"
+auto-format = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+character = "╎"
+render = true
+
+[editor.lsp]
+display-messages = true
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control", "file-name"]
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+other-lines = "disable"
