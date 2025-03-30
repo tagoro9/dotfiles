@@ -44,8 +44,22 @@ jobs:
           app-id: ${{ secrets.RENOVATE_BOT_APP_ID }}
           owner: ${{ github.repository_owner }}
           repositories: ${{ github.event.repository.name }}
+      - name: Create temporary config file
+        run: |
+          cat << 'EOF' > ${{ runner.temp }}/devbox.json
+          {
+            "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+            "packages": [],
+            "shell": {
+              "init_hook": ["echo 'Welcome to devbox!' > /dev/null"],
+              "scripts": {}
+            }
+          }
+          EOF
       - name: Install devbox
         uses: jetify-com/devbox-install-action@v0.11.0
+        with:
+          project-path: ${{ runner.temp }}/devbox.json
       - name: Update dependencies
         if: steps.check.outputs.should-run == 'true'
         uses: open-turo/action-renovate@v1
