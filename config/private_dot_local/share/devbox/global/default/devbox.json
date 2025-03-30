@@ -18,7 +18,7 @@
     "golangci-lint@2.0.0",
     "gomarkdoc@latest",
     "helix@0.6.0",
-    "htop@latest",
+    "htop@3.4.0",
     "httpie@3.2.4",
     "imagemagick@latest",
     "k9s@0.40.10",
