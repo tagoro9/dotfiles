@@ -1792,6 +1792,54 @@
         }
       }
     },
+    "teller@2.0.7": {
+      "last_modified": "2025-03-23T05:31:05Z",
+      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#teller",
+      "source": "devbox-search",
+      "version": "2.0.7",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fy8rjzzg8qg50n7k19qf1wh0v9xciziy-teller-2.0.7",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fy8rjzzg8qg50n7k19qf1wh0v9xciziy-teller-2.0.7"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/dznh4xq7xipf4l53g3k05smbryhnvbql-teller-2.0.7",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/dznh4xq7xipf4l53g3k05smbryhnvbql-teller-2.0.7"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0miws7hizrjf0p7kk7r209d4c4xw66ly-teller-2.0.7",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0miws7hizrjf0p7kk7r209d4c4xw66ly-teller-2.0.7"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9ssz9ywlwr182cf2x5sa2kicjsrgq7nw-teller-2.0.7",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9ssz9ywlwr182cf2x5sa2kicjsrgq7nw-teller-2.0.7"
+        }
+      }
+    },
     "terraform-docs@0.19.0": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#terraform-docs",
