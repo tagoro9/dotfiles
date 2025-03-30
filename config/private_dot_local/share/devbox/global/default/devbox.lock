@@ -285,31 +285,31 @@
         }
       }
     },
-    "chatgpt@1.2025.057": {
-      "last_modified": "2025-03-11T17:52:14Z",
-      "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#chatgpt",
+    "chatgpt@1.2025.063": {
+      "last_modified": "2025-03-23T05:31:05Z",
+      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#chatgpt",
       "source": "devbox-search",
-      "version": "1.2025.057",
+      "version": "1.2025.063",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/xssk3133hdh5nkc8janmqwglhm9ip9q5-chatgpt-1.2025.057",
+              "path": "/nix/store/03iv676v97h28cpdbn009s089jj1a6s0-chatgpt-1.2025.063",
               "default": true
             }
           ],
-          "store_path": "/nix/store/xssk3133hdh5nkc8janmqwglhm9ip9q5-chatgpt-1.2025.057"
+          "store_path": "/nix/store/03iv676v97h28cpdbn009s089jj1a6s0-chatgpt-1.2025.063"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/9ssqlibjqvf852magp7vjwff03y5l73k-chatgpt-1.2025.057",
+              "path": "/nix/store/qcl48ag5cs4yzqf6lscvsfif20krcgid-chatgpt-1.2025.063",
               "default": true
             }
           ],
-          "store_path": "/nix/store/9ssqlibjqvf852magp7vjwff03y5l73k-chatgpt-1.2025.057"
+          "store_path": "/nix/store/qcl48ag5cs4yzqf6lscvsfif20krcgid-chatgpt-1.2025.063"
         }
       }
     },
