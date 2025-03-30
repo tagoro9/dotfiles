@@ -33,3 +33,4 @@ ohmyzsh/ohmyzsh path:plugins/macos
 zdharma-continuum/fast-syntax-highlighting
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-history-substring-search
+fdw/yazi-zoxide-zsh

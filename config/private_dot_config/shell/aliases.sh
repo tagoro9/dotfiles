@@ -28,7 +28,6 @@ alias cdr='cd $(git rev-parse --show-toplevel)'
 alias path='echo -e ${PATH//:/\\n}'
 # Yarn aliases
 
-alias y='yarn'
 alias yt='yarn test'
 alias ys='yarn start'
 

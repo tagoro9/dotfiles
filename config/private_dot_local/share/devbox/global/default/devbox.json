@@ -20,6 +20,7 @@
     "helix@latest",
     "htop@latest",
     "httpie@latest",
+    "imagemagick@latest",
     "k9s@latest",
     "kubectl@latest",
     "kubectx@latest",
@@ -34,6 +35,7 @@
     "starship@latest",
     "terraform-docs@latest",
     "tfswitch@latest",
+    "yazi@latest",
     "zellij@latest",
     "zoxide@latest",
     "zsh@latest"
