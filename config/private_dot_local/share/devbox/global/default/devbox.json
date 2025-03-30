@@ -27,7 +27,7 @@
     "lazygit@latest",
     "nerdfonts@latest",
     "pinentry_mac@latest",
-    "pre-commit@latest",
+    "pre-commit@4.0.1",
     "raycast@latest",
     "ripgrep@14.1.1",
     "shellcheck@latest",
