@@ -29,7 +29,7 @@
     "pinentry_mac@latest",
     "pre-commit@latest",
     "raycast@latest",
-    "ripgrep@latest",
+    "ripgrep@13.0.0",
     "shellcheck@latest",
     "shfmt@latest",
     "starship@latest",
