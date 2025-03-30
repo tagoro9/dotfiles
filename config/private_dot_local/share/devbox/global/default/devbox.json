@@ -19,7 +19,7 @@
     "gomarkdoc@latest",
     "helix@latest",
     "htop@latest",
-    "httpie@latest",
+    "httpie@3.2.4",
     "imagemagick@latest",
     "k9s@latest",
     "kubectl@latest",
