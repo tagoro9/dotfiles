@@ -32,7 +32,7 @@
     "ripgrep@latest",
     "shellcheck@latest",
     "shfmt@latest",
-    "starship@latest",
+    "starship@1.22.1",
     "terraform-docs@latest",
     "tfswitch@latest",
     "yazi@latest",
