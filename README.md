@@ -2,7 +2,12 @@
 
 ## Initial setup
 
-Run `./script/bootstrap`
+```shell
+mkdir -p ~/.local/share/chezmoi
+git clone https://github.com/tagoro9/dotfiles ~/.local/share/chezmoi/dotfiles
+cd ~/.local/share/chezmoi
+./script/bootstrap
+```
 
 ## Overview
 
