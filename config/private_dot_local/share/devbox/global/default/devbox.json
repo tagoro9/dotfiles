@@ -6,7 +6,7 @@
     "bash@latest",
     "bat@latest",
     "chatgpt@latest",
-    "chezmoi@latest",
+    "chezmoi@2.60.1",
     "code-cursor@latest",
     "delta@latest",
     "eza@latest",
