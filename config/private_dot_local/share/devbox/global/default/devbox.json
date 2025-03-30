@@ -25,7 +25,7 @@
     "kubectl@latest",
     "kubectx@latest",
     "lazygit@latest",
-    "nerdfonts@latest",
+    "nerdfonts@3.2.1",
     "pinentry_mac@latest",
     "pre-commit@latest",
     "raycast@latest",
