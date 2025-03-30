@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Sort packages alphabetically in devbox.json
+tmp_file=$(mktemp)
+jq --sort-keys '.packages = (.packages | sort)' ~/.local/share/devbox/global/default/devbox.json > $tmp_file
+mv $tmp_file ~/.local/share/devbox/global/default/devbox.json
+chmod 644 ~/.local/share/devbox/global/default/devbox.json
+
 # When running devbox global add <package>, it modifies the files outside of chezmoi's control.
 # This scripts makes it easy to import the changes into chezmoi.
 chezmoi add ~/.local/share/devbox/global/default/devbox.json
