@@ -20,10 +20,24 @@ jobs:
   update-dependencies:
     runs-on: ubuntu-latest
     name: Update dependencies
-    if: (github.event_name == 'issues' && github.event.issue.user.login == secrets.RENOVATE_BOT_USERNAME && github.event.action == 'edited') || (github.event_name == 'issue_comment' && github.event.issue.user.login == secrets.RENOVATE_BOT_USERNAME) || (github.event_name == 'pull_request' && github.event.pull_request.user.login == secrets.RENOVATE_BOT_USERNAME && (github.event.action == 'edited')) || github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch'
     steps:
+      - name: Check conditions
+        id: check
+        env:
+          RENOVATE_BOT_USERNAME: ${{ secrets.RENOVATE_BOT_USERNAME }}
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]] || \
+             [[ "${{ github.event_name }}" == "repository_dispatch" ]] || \
+             ([[ "${{ contains(fromJSON('["issues", "issue_comment", "pull_request"]'), github.event_name) }}" == "true" ]] && \
+              [[ "${{ github.event.issue.user.login }}" == "$RENOVATE_BOT_USERNAME" ]] && \
+              [[ "${{ github.event.action }}" == "edited" || "${{ github.event_name }}" == "issue_comment" ]]); then
+            echo "should-run=true" >> $GITHUB_OUTPUT
+          else
+            echo "should-run=false" >> $GITHUB_OUTPUT
+          fi
       - name: Get token
         id: get_token
+        if: steps.check.outputs.should-run == 'true'
         uses: actions/create-github-app-token@v1
         with:
           private-key: ${{ secrets.RENOVATE_BOT_PRIVATE_KEY }}
@@ -31,6 +45,7 @@ jobs:
           owner: ${{ github.repository_owner }}
           repositories: ${{ github.event.repository.name }}
       - name: Update dependencies
+        if: steps.check.outputs.should-run == 'true'
         uses: open-turo/action-renovate@v1
         with:
           github-token: "${{ steps.get_token.outputs.token }}"
