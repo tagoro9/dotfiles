@@ -1,0 +1,39 @@
+name: Update dependencies
+concurrency: update-dependencies
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  issues:
+    types:
+      - edited
+  issue_comment:
+    types:
+      - edited
+  pull_request:
+    types:
+      - edited
+      - synchronize
+
+jobs:
+  update-dependencies:
+    runs-on: ubuntu-latest
+    name: Update dependencies
+    if: (github.event_name == 'issues' && github.event.issue.user.login == secrets.RENOVATE_BOT_USERNAME && github.event.action == 'edited') || (github.event_name == 'issue_comment' && github.event.issue.user.login == secrets.RENOVATE_BOT_USERNAME) || (github.event_name == 'pull_request' && github.event.pull_request.user.login == secrets.RENOVATE_BOT_USERNAME && (github.event.action == 'edited')) || github.event_name == 'workflow_dispatch' || github.event_name == 'repository_dispatch'
+    steps:
+      - name: Get token
+        id: get_token
+        uses: actions/create-github-app-token@v1
+        with:
+          private-key: ${{ secrets.RENOVATE_BOT_PRIVATE_KEY }}
+          app-id: ${{ secrets.RENOVATE_BOT_APP_ID }}
+          owner: ${{ github.repository_owner }}
+          repositories: ${{ github.event.repository.name }}
+      - name: Update dependencies
+        uses: open-turo/action-renovate@v1
+        with:
+          github-token: "${{ steps.get_token.outputs.token }}"
+        env:
+          RENOVATE_USERNAME: ${{ secrets.RENOVATE_BOT_USERNAME }}
+          RENOVATE_GIT_AUTHOR: ${{ secrets.RENOVATE_BOT_GIT_AUTHOR }}
