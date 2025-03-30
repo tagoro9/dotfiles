@@ -10,7 +10,7 @@
     "code-cursor@latest",
     "delta@latest",
     "eza@latest",
-    "fd@latest",
+    "fd@10.2.0",
     "fzf@latest",
     "gh@2.69.0",
     "git@latest",
