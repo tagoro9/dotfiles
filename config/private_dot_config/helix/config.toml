@@ -26,3 +26,6 @@ left = ["mode", "spinner", "version-control", "file-name"]
 [editor.inline-diagnostics]
 cursor-line = "error"
 other-lines = "disable"
+
+[editor.file-picker]
+hidden = false
