@@ -1,3 +1,13 @@
 {
-  "extends": ["github>open-turo/renovate-config#v1"]
+  "extends": ["github>open-turo/renovate-config#v1"],
+  "packageRules": [
+    {
+      "packageRules": [
+        {
+          "matchDatasources": ["devbox"],
+          "rangeStrategy": "pin"
+        }
+      ]
+    }
+  ]
 }
