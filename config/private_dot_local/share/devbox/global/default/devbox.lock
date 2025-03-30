@@ -1712,6 +1712,102 @@
         }
       }
     },
+    "terraform-docs@latest": {
+      "last_modified": "2025-03-11T17:52:14Z",
+      "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#terraform-docs",
+      "source": "devbox-search",
+      "version": "0.19.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gxn01559259xq6zwn1i4ssa0h0vvj4b8-terraform-docs-0.19.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gxn01559259xq6zwn1i4ssa0h0vvj4b8-terraform-docs-0.19.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gx50ndypnvc660k5qy666368jvwiq2f9-terraform-docs-0.19.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gx50ndypnvc660k5qy666368jvwiq2f9-terraform-docs-0.19.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jkq47sp8c2ayhd0fzi70c8ng2q7w7904-terraform-docs-0.19.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jkq47sp8c2ayhd0fzi70c8ng2q7w7904-terraform-docs-0.19.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wd2c1qgpqfg6xlhcmwk7lmriwwwfgm7d-terraform-docs-0.19.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wd2c1qgpqfg6xlhcmwk7lmriwwwfgm7d-terraform-docs-0.19.0"
+        }
+      }
+    },
+    "tfswitch@latest": {
+      "last_modified": "2025-03-25T17:32:05Z",
+      "resolved": "github:NixOS/nixpkgs/25d1b84f5c90632a623c48d83a2faf156451e6b1#tfswitch",
+      "source": "devbox-search",
+      "version": "1.4.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/6l4aqbwaihr6c4y44v5k5jg3528l8ldp-tfswitch-1.4.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/6l4aqbwaihr6c4y44v5k5jg3528l8ldp-tfswitch-1.4.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4f4add4rfx5f39xnpr3dq8sr9q10fygi-tfswitch-1.4.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4f4add4rfx5f39xnpr3dq8sr9q10fygi-tfswitch-1.4.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wb5z1g6yd7ggbqcwgh08nr4z5w26llcc-tfswitch-1.4.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wb5z1g6yd7ggbqcwgh08nr4z5w26llcc-tfswitch-1.4.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/k1b9xh40y2w0i887jl0xz3r05dgfbx7s-tfswitch-1.4.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/k1b9xh40y2w0i887jl0xz3r05dgfbx7s-tfswitch-1.4.2"
+        }
+      }
+    },
     "zellij@latest": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#zellij",
