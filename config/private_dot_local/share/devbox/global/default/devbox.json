@@ -15,7 +15,7 @@
     "gh@latest",
     "git@latest",
     "gnupg@latest",
-    "golangci-lint@latest",
+    "golangci-lint@2.0.0",
     "gomarkdoc@latest",
     "helix@latest",
     "htop@latest",
