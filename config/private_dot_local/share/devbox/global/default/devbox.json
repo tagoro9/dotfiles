@@ -12,7 +12,7 @@
     "eza@latest",
     "fd@latest",
     "fzf@latest",
-    "gh@latest",
+    "gh@2.69.0",
     "git@latest",
     "gnupg@latest",
     "golangci-lint@2.0.0",
