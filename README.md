@@ -9,6 +9,29 @@ cd ~/.local/share/chezmoi
 ./script/bootstrap
 ```
 
+### fzf
+
+When installing fzf with devbox, it will complain about its config file. We have to create it manually:
+
+```shell
+sudo tee "$DEVBOX_PACKAGES_DIR/share/fzf/fzf.zsh" > /dev/null <<EOF
+# Setup fzf
+# ---------
+#if [[ ! "$PATH" == *${FZF_PATH}/bin* ]]; then
+#  export PATH="$PATH:${FZF_PATH}/bin"
+#fi
+
+# Auto-completion
+# ---------------
+[[ $- == *i* ]] && source "${FZF_PATH}/completion.zsh" 2> /dev/null
+
+# Key bindings
+# ------------
+source "${FZF_PATH}/key-bindings.zsh"
+EOF
+sudo chmod 755 "$DEVBOX_PACKAGES_DIR/share/fzf/fzf.zsh"
+```
+
 ## Overview
 
 This repository uses [devbox](https://www.jetify.com/devbox) and [brew](https://brew.sh/) to manage applications. It tries to use devbox
@@ -38,6 +61,8 @@ gpg --list-secret-keys --keyid-format=long
 ### Devbox mac apps
 
 By default devbox installs mac apps in a specific folder, so they won't show up in launchpad and other places.
+
+This directory will typically be `$DEVBOX_PACKAGES_DIR/Applications`
 
 To make them appear in there, open the folder where they are installed
 in finder, right click -> make alias -> copy to Applications.
