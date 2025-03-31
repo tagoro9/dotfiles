@@ -3,7 +3,7 @@
 [user]
 	name = Victor Mora
 	email = {{ .email }}
-	signingKey = C1CBC50698701A0871E5535A5A66BD80042E9F3D
+	signingKey = {{ .git.signingKey }}
 [credential "https://github.com"]
 	helper = !gh auth git-credential
 [color]
