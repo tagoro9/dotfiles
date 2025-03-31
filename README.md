@@ -4,7 +4,7 @@
 
 ```shell
 mkdir -p ~/.local/share/chezmoi
-git clone https://github.com/tagoro9/dotfiles ~/.local/share/chezmoi/dotfiles
+git clone https://github.com/tagoro9/dotfiles ~/.local/share/chezmoi
 cd ~/.local/share/chezmoi
 ./script/bootstrap
 ```
