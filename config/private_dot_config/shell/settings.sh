@@ -54,7 +54,6 @@ PROFILE_DIR="${HOME}/.tagoro9/profile"
 # if the directory PROFILE_DIR exists, source of the files in it
 # this allows to load into the shell files that can't be part of git
 if [ -d "$PROFILE_DIR" ]; then
-    # for all files in $TURO_PROFILE_DIR source the contents
     for file in "$PROFILE_DIR"/*; do
         source "$file"
     done
