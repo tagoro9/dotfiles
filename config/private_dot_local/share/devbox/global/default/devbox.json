@@ -25,6 +25,7 @@
     "kubectl@1.32.3",
     "kubectx@0.9.5",
     "lazygit@0.48.0",
+    "mise@2025.3.6",
     "nerdfonts@3.2.1",
     "pinentry_mac@1.1.1.1",
     "pre-commit@4.0.1",

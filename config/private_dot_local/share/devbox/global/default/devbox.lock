@@ -1376,6 +1376,54 @@
         }
       }
     },
+    "mise@2025.3.6": {
+      "last_modified": "2025-03-23T05:31:05Z",
+      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#mise",
+      "source": "devbox-search",
+      "version": "2025.3.6",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4k2avjz8y449p2kwnkg0pwhj5azqravd-mise-2025.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4k2avjz8y449p2kwnkg0pwhj5azqravd-mise-2025.3.6"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7yz66jszjc1nf92fikj1zz3768zx1gkk-mise-2025.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7yz66jszjc1nf92fikj1zz3768zx1gkk-mise-2025.3.6"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i1g7hig11kc6hwk9jmamk9c1mp1z5r49-mise-2025.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/i1g7hig11kc6hwk9jmamk9c1mp1z5r49-mise-2025.3.6"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kg1v0njxhmlmyqzqydrxanxj64mk3flq-mise-2025.3.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kg1v0njxhmlmyqzqydrxanxj64mk3flq-mise-2025.3.6"
+        }
+      }
+    },
     "nerdfonts@3.2.1": {
       "last_modified": "2024-11-16T04:25:12Z",
       "resolved": "github:NixOS/nixpkgs/34a626458d686f1b58139620a8b2793e9e123bba#nerdfonts",
