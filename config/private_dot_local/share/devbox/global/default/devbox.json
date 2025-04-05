@@ -24,6 +24,8 @@
     "k9s@0.40.10",
     "kubectl@1.32.3",
     "kubectx@0.9.5",
+    "kubernetes-helm@3.17.2",
+    "kustomize@5.6.0",
     "lazygit@0.48.0",
     "mise@2025.3.6",
     "nerdfonts@3.2.1",
