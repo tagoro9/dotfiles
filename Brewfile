@@ -1,3 +1,4 @@
 cask "1password"
 cask "arc"
+cask "tailscale"
 cask "ghostty"
