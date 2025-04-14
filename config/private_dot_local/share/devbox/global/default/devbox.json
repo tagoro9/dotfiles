@@ -39,6 +39,7 @@
     "starship@1.22.1",
     "teller@2.0.7",
     "terraform-docs@0.19.0",
+    "terraform-ls@0.36.4",
     "tfswitch@1.4.2",
     "typescript-language-server@4.3.3",
     "vscode-langservers-extracted@4.10.0",

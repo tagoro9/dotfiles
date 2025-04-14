@@ -10,3 +10,5 @@ chmod 644 ~/.local/share/devbox/global/default/devbox.json
 # This scripts makes it easy to import the changes into chezmoi.
 chezmoi add ~/.local/share/devbox/global/default/devbox.json
 chezmoi add ~/.local/share/devbox/global/default/devbox.lock
+
+pre-commit run prettier --files config/private_dot_local/share/devbox/global/default/devbox.json
