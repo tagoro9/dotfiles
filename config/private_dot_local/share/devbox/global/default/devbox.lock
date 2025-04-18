@@ -1708,34 +1708,6 @@
         }
       }
     },
-    "raycast@1.94.0": {
-      "last_modified": "2025-03-23T05:31:05Z",
-      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#raycast",
-      "source": "devbox-search",
-      "version": "1.94.0",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/2ix8hqz4f6g1kg2fghnqryfpf49nfn23-raycast-1.94.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/2ix8hqz4f6g1kg2fghnqryfpf49nfn23-raycast-1.94.0"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/685k0yviq5ax5xnkg2c49ja3rlxil8jg-raycast-1.94.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/685k0yviq5ax5xnkg2c49ja3rlxil8jg-raycast-1.94.0"
-        }
-      }
-    },
     "ripgrep@14.1.1": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#ripgrep",
