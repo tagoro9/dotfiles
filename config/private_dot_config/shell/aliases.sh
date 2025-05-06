@@ -13,8 +13,8 @@ alias cat='bat'
 
 # Use eza for ls
 alias ls='eza --icons -F -H --group-directories-first --git -1'
-alias l='eza -lh --group-directories-first --color=auto --git --icons --no-permissions --no-user'
-alias ll='eza -lahF --group-directories-first --color=auto --git --icons'
+alias l='ls -lh --group-directories-first --color=auto --git --icons --no-permissions --no-user'
+alias ll='ls -lahF --group-directories-first --color=auto --git --icons'
 # Full recursive directory listing
 alias lr='eza -T'
 
