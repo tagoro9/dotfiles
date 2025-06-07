@@ -1,0 +1,112 @@
+[
+  {
+    "key": "alt+f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "alt+f8",
+    "command": "-editor.action.marker.next",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
+  },
+  {
+    "key": "ctrl+f12",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider"
+  },
+  {
+    "key": "cmd+-",
+    "command": "editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "alt+cmd+[",
+    "command": "-editor.fold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+cmd+]",
+    "command": "-editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+cmd+p",
+    "command": "-projectManager.listProjects"
+  },
+  {
+    "key": "alt+cmd+p",
+    "command": "projectManager.listProjectsNewWindow"
+  },
+  {
+    "key": "shift+cmd+f12",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        "workbench.action.closeSidebar",
+        "workbench.action.minimizeOtherEditors"
+      ]
+    }
+  },
+  {
+    "key": "cmd+r cmd+up",
+    "command": "-workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "cmd+r cmd+down",
+    "command": "-workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "cmd+r cmd+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "cmd+r cmd+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.switchWindow"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+b j",
+    "command": "workbench.action.focusAboveGroup"
+  },
+  {
+    "key": "ctrl+b k",
+    "command": "workbench.action.focusBelowGroup"
+  },
+  {
+    "key": "ctrl+b h",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+b l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.switchWindow"
+  }
+]
