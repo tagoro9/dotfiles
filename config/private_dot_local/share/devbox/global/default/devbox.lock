@@ -1568,6 +1568,70 @@
         }
       }
     },
+    "mysql84@8.4.5": {
+      "last_modified": "2025-05-16T20:19:48Z",
+      "resolved": "github:NixOS/nixpkgs/12a55407652e04dcf2309436eb06fef0d3713ef3#mysql84",
+      "source": "devbox-search",
+      "version": "8.4.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/axcy309qnh2yc95accmi2qpszq38a214-mysql-8.4.5",
+              "default": true
+            },
+            {
+              "name": "static",
+              "path": "/nix/store/1gafy09b1k7vvy4dhcbzz1dymmqjsizn-mysql-8.4.5-static"
+            }
+          ],
+          "store_path": "/nix/store/axcy309qnh2yc95accmi2qpszq38a214-mysql-8.4.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/r2nldyprdkmw64khmg0z2kcfhddxhwrg-mysql-8.4.5",
+              "default": true
+            },
+            {
+              "name": "static",
+              "path": "/nix/store/vh0296jxwja8lh9zhadxlhzf1h2r7sjh-mysql-8.4.5-static"
+            }
+          ],
+          "store_path": "/nix/store/r2nldyprdkmw64khmg0z2kcfhddxhwrg-mysql-8.4.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4i4rc0k41aldfiaayfnwxw3ihvp54kq5-mysql-8.4.5",
+              "default": true
+            },
+            {
+              "name": "static",
+              "path": "/nix/store/h4ny5m6rycrn1abbadrpnkr7440h3dh2-mysql-8.4.5-static"
+            }
+          ],
+          "store_path": "/nix/store/4i4rc0k41aldfiaayfnwxw3ihvp54kq5-mysql-8.4.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nrghdrj2sn6d8hngzmaix78mvydz3mrz-mysql-8.4.5",
+              "default": true
+            },
+            {
+              "name": "static",
+              "path": "/nix/store/8prxzr3k4ji8fkcyg5a06435wzvbjil7-mysql-8.4.5-static"
+            }
+          ],
+          "store_path": "/nix/store/nrghdrj2sn6d8hngzmaix78mvydz3mrz-mysql-8.4.5"
+        }
+      }
+    },
     "nerdfonts@3.2.1": {
       "last_modified": "2024-11-16T04:25:12Z",
       "resolved": "github:NixOS/nixpkgs/34a626458d686f1b58139620a8b2793e9e123bba#nerdfonts",
@@ -2193,6 +2257,54 @@
             }
           ],
           "store_path": "/nix/store/gkkp2x9r38kk6irwp1xrx3g030rhjav9-typescript-language-server-4.3.3"
+        }
+      }
+    },
+    "uv@0.7.8": {
+      "last_modified": "2025-05-24T21:46:02Z",
+      "resolved": "github:NixOS/nixpkgs/edb3633f9100d9277d1c9af245a4e9337a980c07#uv",
+      "source": "devbox-search",
+      "version": "0.7.8",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/14fx9ajm7isc8rkr4jgf98pm9y1nmv2v-uv-0.7.8",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/14fx9ajm7isc8rkr4jgf98pm9y1nmv2v-uv-0.7.8"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/qqwziiwldw73d4cj82pc9gi1zc594m89-uv-0.7.8",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/qqwziiwldw73d4cj82pc9gi1zc594m89-uv-0.7.8"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/1bwfrca14w02rzq8bl72xffn9vsdshnm-uv-0.7.8",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/1bwfrca14w02rzq8bl72xffn9vsdshnm-uv-0.7.8"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7nmrwl4kz78cjgwykrngkj68sx3ry79i-uv-0.7.8",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/7nmrwl4kz78cjgwykrngkj68sx3ry79i-uv-0.7.8"
         }
       }
     },
