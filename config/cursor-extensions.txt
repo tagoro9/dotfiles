@@ -1,4 +1,6 @@
 alefragnani.project-manager
+anthropic.claude-code
+buenon.scratchpads
 christian-kohler.npm-intellisense
 dbaeumer.vscode-eslint
 docker.docker
@@ -13,6 +15,8 @@ graphql.vscode-graphql-syntax
 hashicorp.terraform
 kdl-org.kdl
 mathiasfrohlich.kotlin
+mechatroner.rainbow-csv
+mermaidchart.vscode-mermaid-chart
 ms-azuretools.vscode-containers
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
@@ -20,4 +24,5 @@ ms-vscode-remote.remote-containers
 orta.vscode-jest
 redhat.vscode-yaml
 rogalmic.bash-debug
+vitest.explorer
 vscodevim.vim
