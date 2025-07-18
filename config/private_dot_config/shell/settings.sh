@@ -21,8 +21,7 @@ export GPG_TTY=$(tty)
 eval "$(devbox global shellenv)"
 
 # Default editor
-if type hx > /dev/null 2>&1;
-then
+if type hx >/dev/null 2>&1; then
   export EDITOR=hx
 else
   export EDITOR=vim
@@ -54,7 +53,7 @@ PROFILE_DIR="${HOME}/.tagoro9/profile"
 # if the directory PROFILE_DIR exists, source of the files in it
 # this allows to load into the shell files that can't be part of git
 if [ -d "$PROFILE_DIR" ]; then
-    for file in "$PROFILE_DIR"/*; do
-        source "$file"
-    done
+  for file in "$PROFILE_DIR"/*; do
+    source "$file"
+  done
 fi
