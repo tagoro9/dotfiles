@@ -46,7 +46,7 @@
     rb = rebase
     rbc = rebase --continue
     rba = rebase --abort
-    lg = "log --oneline -n"
+    lg = "!git log --pretty=format:'%C(yellow)%h %C(cyan)%ad %C(green)%an %C(reset)%s' --date=format-local:'%Y-%m-%d %H:%M' --color=always -n"
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     type = cat-file -t
     dump = cat-file -p
