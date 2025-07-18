@@ -1776,6 +1776,54 @@
         }
       }
     },
+    "otel-cli@0.4.5": {
+      "last_modified": "2025-07-13T22:45:35Z",
+      "resolved": "github:NixOS/nixpkgs/a421ac6595024edcfbb1ef950a3712b89161c359#otel-cli",
+      "source": "devbox-search",
+      "version": "0.4.5",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3g91n5xzmh8hv7i7b4kljw4xkvn2sxc8-otel-cli-0.4.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3g91n5xzmh8hv7i7b4kljw4xkvn2sxc8-otel-cli-0.4.5"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fb2bi8hpj21y6fxhvxgypv4zgi31dgk8-otel-cli-0.4.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fb2bi8hpj21y6fxhvxgypv4zgi31dgk8-otel-cli-0.4.5"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/liwjwrywj9j8fw13c584m4fza5yyk0x4-otel-cli-0.4.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/liwjwrywj9j8fw13c584m4fza5yyk0x4-otel-cli-0.4.5"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pyqfl0y8s8cxg8c0ay0a4b8h3246fy9i-otel-cli-0.4.5",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/pyqfl0y8s8cxg8c0ay0a4b8h3246fy9i-otel-cli-0.4.5"
+        }
+      }
+    },
     "pinentry_mac@1.1.1.1": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#pinentry_mac",
