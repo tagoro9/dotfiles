@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew:*)",
+      "Bash(awk:*)",
+      "Bash(docker:*)",
+      "Bash(cat:*)",
+      "Bash(echo:*)",
+      "Bash(find:*)",
+      "Bash(find:*)",
+      "Bash(fotingo:*)",
+      "Bash(git add:*)",
+      "Bash(git cherry-pick:*)",
+      "Bash(git commit:*)",
+      "Bash(git rebase:*)",
+      "Bash(git reset)",
+      "Bash(git reset:*)",
+      "Bash(git rm:*)",
+      "Bash(git stash:*)",
+      "Bash(grep:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(mmdc:*)",
+      "Bash(mv:*)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(pre-commit:*)",
+      "Bash(rg:*)",
+      "Bash(rm:*)",
+      "Bash(sed:*)",
+      "Bash(yarn:*)",
+      "WebFetch(domain:github.com)"
+    ],
+    "deny": []
+  },
+  "env": {{ toPrettyJson .claude.env }}
+}
