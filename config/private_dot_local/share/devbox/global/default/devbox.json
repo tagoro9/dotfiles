@@ -7,6 +7,7 @@
     "bat@0.25.0",
     "chatgpt@1.2025.063",
     "chezmoi@2.60.1",
+    "claude-code@1.0.72",
     "code-cursor@0.45.14",
     "delta@0.18.2",
     "doppler@3.73.0",
