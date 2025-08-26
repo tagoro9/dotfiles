@@ -5,6 +5,7 @@
     "awscli@1.37.21",
     "bash@5.2p37",
     "bat@0.25.0",
+    "caddy@2.10.0",
     "chatgpt@1.2025.063",
     "chezmoi@2.60.1",
     "claude-code@1.0.72",
