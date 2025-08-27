@@ -32,7 +32,7 @@
     "kubernetes-helm@3.17.2",
     "kustomize@5.6.0",
     "lazygit@0.48.0",
-    "mise@2025.3.6",
+    "mise@2025.8.6",
     "mysql84@8.4.5",
     "nerdfonts@3.2.1",
     "otel-cli@0.4.5",
