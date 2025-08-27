@@ -1713,51 +1713,51 @@
         }
       }
     },
-    "mise@2025.3.6": {
-      "last_modified": "2025-03-23T05:31:05Z",
-      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#mise",
+    "mise@2025.8.6": {
+      "last_modified": "2025-08-08T08:05:48Z",
+      "resolved": "github:NixOS/nixpkgs/a3f3e3f2c983e957af6b07a1db98bafd1f87b7a1#mise",
       "source": "devbox-search",
-      "version": "2025.3.6",
+      "version": "2025.8.6",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/4k2avjz8y449p2kwnkg0pwhj5azqravd-mise-2025.3.6",
+              "path": "/nix/store/nnhr9arv6p3whvdzc7xvkifi9zvkj2d8-mise-2025.8.6",
               "default": true
             }
           ],
-          "store_path": "/nix/store/4k2avjz8y449p2kwnkg0pwhj5azqravd-mise-2025.3.6"
+          "store_path": "/nix/store/nnhr9arv6p3whvdzc7xvkifi9zvkj2d8-mise-2025.8.6"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/7yz66jszjc1nf92fikj1zz3768zx1gkk-mise-2025.3.6",
+              "path": "/nix/store/szp56d7i8360b8r0s64fskb052vkr6wm-mise-2025.8.6",
               "default": true
             }
           ],
-          "store_path": "/nix/store/7yz66jszjc1nf92fikj1zz3768zx1gkk-mise-2025.3.6"
+          "store_path": "/nix/store/szp56d7i8360b8r0s64fskb052vkr6wm-mise-2025.8.6"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/i1g7hig11kc6hwk9jmamk9c1mp1z5r49-mise-2025.3.6",
+              "path": "/nix/store/skik69gqc1kadavrd3hkhja8qmwl6n2f-mise-2025.8.6",
               "default": true
             }
           ],
-          "store_path": "/nix/store/i1g7hig11kc6hwk9jmamk9c1mp1z5r49-mise-2025.3.6"
+          "store_path": "/nix/store/skik69gqc1kadavrd3hkhja8qmwl6n2f-mise-2025.8.6"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/kg1v0njxhmlmyqzqydrxanxj64mk3flq-mise-2025.3.6",
+              "path": "/nix/store/7kxwlzg2dn4pa6ngif1hl7lcxsjpvibq-mise-2025.8.6",
               "default": true
             }
           ],
-          "store_path": "/nix/store/kg1v0njxhmlmyqzqydrxanxj64mk3flq-mise-2025.3.6"
+          "store_path": "/nix/store/7kxwlzg2dn4pa6ngif1hl7lcxsjpvibq-mise-2025.8.6"
         }
       }
     },
