@@ -1,3 +1,6 @@
 [settings]
 idiomatic_version_file = true
 idiomatic_version_file_enable_tools = ["java", "node", "terraform"]
+
+[tools]
+go = "1.24"
