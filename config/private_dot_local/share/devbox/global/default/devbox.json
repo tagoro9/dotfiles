@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
   "packages": [
     "antidote@1.9.7",
+    "ast-grep@0.39.3",
     "awscli@1.37.21",
     "bash@5.2p37",
     "bat@0.25.0",

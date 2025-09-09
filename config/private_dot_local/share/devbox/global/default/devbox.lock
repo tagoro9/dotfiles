@@ -49,6 +49,54 @@
         }
       }
     },
+    "ast-grep@0.39.3": {
+      "last_modified": "2025-08-12T09:17:37Z",
+      "resolved": "github:NixOS/nixpkgs/372d9eeeafa5b15913201e2b92e8e539ac7c64d1#ast-grep",
+      "source": "devbox-search",
+      "version": "0.39.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bi6a518kqfxmhw8ypzpdd4h48p8ixh8y-ast-grep-0.39.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bi6a518kqfxmhw8ypzpdd4h48p8ixh8y-ast-grep-0.39.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/r8zv7dldahr78vrnlgdajb2khn2v4g9j-ast-grep-0.39.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/r8zv7dldahr78vrnlgdajb2khn2v4g9j-ast-grep-0.39.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kcqvx7wdqfd0mzq9hz6qndg2j9a826gw-ast-grep-0.39.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kcqvx7wdqfd0mzq9hz6qndg2j9a826gw-ast-grep-0.39.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nbh0r6my8zlhrs8p44a0wbag2dxzp61m-ast-grep-0.39.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nbh0r6my8zlhrs8p44a0wbag2dxzp61m-ast-grep-0.39.3"
+        }
+      }
+    },
     "awscli@1.37.21": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#awscli",
