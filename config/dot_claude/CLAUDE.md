@@ -24,10 +24,11 @@
 # Linters
 
 - Most of repositories use pre-commit, so if you want to validate if changes are working / valid. Just run pre-commit run -a in the repository
+- NEVER modify or edit a lint config file if you are facing an error. Don't disable rules or tweak how the script is run.
 
 # Dependencies
 
-- Always pin dependencies to a specific version.
+- ALWAYS pin dependencies to a specific version.
 
 # When you need to call tools from the shell, use this rubric:
 
@@ -41,3 +42,9 @@
 - Select among matches: pipe to `fzf`
 - JSON: `jq`
 - YAML/XML: `yq`
+
+# Languages
+
+## Typescript
+
+- Don't use any.
