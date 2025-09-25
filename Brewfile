@@ -1,5 +1,7 @@
 cask "1password"
 cask "arc"
+cask "caffeine"
+cask "charles"
 cask "claude"
 cask "docker"
 cask "google-drive"
