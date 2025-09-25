@@ -458,51 +458,51 @@
         }
       }
     },
-    "claude-code@1.0.72": {
-      "last_modified": "2025-08-09T12:28:43Z",
-      "resolved": "github:NixOS/nixpkgs/f86999f8bfef9ff57f7f03c1c5deedc2784fc666#claude-code",
+    "claude-code@1.0.119": {
+      "last_modified": "2025-09-19T15:05:15Z",
+      "resolved": "github:NixOS/nixpkgs/90ade7da38aa49c2e2693a04a44662a0e61530e9#claude-code",
       "source": "devbox-search",
-      "version": "1.0.72",
+      "version": "1.0.119",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/hbcrz6drip9lds3wv31hn4w94xkq3r0h-claude-code-1.0.72",
+              "path": "/nix/store/r32qsmd0qhfy2iydx30fjmlnzqah3nmf-claude-code-1.0.119",
               "default": true
             }
           ],
-          "store_path": "/nix/store/hbcrz6drip9lds3wv31hn4w94xkq3r0h-claude-code-1.0.72"
+          "store_path": "/nix/store/r32qsmd0qhfy2iydx30fjmlnzqah3nmf-claude-code-1.0.119"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/v4jmh6a82gyrp74i8js3yw2g6bsz25jp-claude-code-1.0.72",
+              "path": "/nix/store/3bix44aafi9r94zsgm4bg8gg4x6bxlb7-claude-code-1.0.119",
               "default": true
             }
           ],
-          "store_path": "/nix/store/v4jmh6a82gyrp74i8js3yw2g6bsz25jp-claude-code-1.0.72"
+          "store_path": "/nix/store/3bix44aafi9r94zsgm4bg8gg4x6bxlb7-claude-code-1.0.119"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/cdsqa260ag7aml4a80ikr6r4a8cc85lx-claude-code-1.0.72",
+              "path": "/nix/store/pry25fmj0yh0cyfyaj0w8gq35cxm9gyd-claude-code-1.0.119",
               "default": true
             }
           ],
-          "store_path": "/nix/store/cdsqa260ag7aml4a80ikr6r4a8cc85lx-claude-code-1.0.72"
+          "store_path": "/nix/store/pry25fmj0yh0cyfyaj0w8gq35cxm9gyd-claude-code-1.0.119"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/cg2dz65fgxzz5dx8jsxyabi6i8zw9bkc-claude-code-1.0.72",
+              "path": "/nix/store/94qr7pbnzdnk23y4waxzhliwc24hkr8y-claude-code-1.0.119",
               "default": true
             }
           ],
-          "store_path": "/nix/store/cg2dz65fgxzz5dx8jsxyabi6i8zw9bkc-claude-code-1.0.72"
+          "store_path": "/nix/store/94qr7pbnzdnk23y4waxzhliwc24hkr8y-claude-code-1.0.119"
         }
       }
     },
@@ -1662,6 +1662,54 @@
             }
           ],
           "store_path": "/nix/store/0lhjm5b1k49rsirsrvsqasbrv1im6w6j-kubernetes-helm-3.17.2"
+        }
+      }
+    },
+    "kubeseal@0.30.0": {
+      "last_modified": "2025-07-28T17:09:23Z",
+      "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#kubeseal",
+      "source": "devbox-search",
+      "version": "0.30.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bjrzni4xi4hcj1432w602nx33m1krf41-kubeseal-0.30.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bjrzni4xi4hcj1432w602nx33m1krf41-kubeseal-0.30.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y0vl303cgnv46gxh8f3dhwm7qdai4rr9-kubeseal-0.30.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/y0vl303cgnv46gxh8f3dhwm7qdai4rr9-kubeseal-0.30.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nngywnsdf1403yh0c0b0m4079dlwqllk-kubeseal-0.30.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nngywnsdf1403yh0c0b0m4079dlwqllk-kubeseal-0.30.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wk6ghd4ppf0hvdgwizg0r0yg5smcsg99-kubeseal-0.30.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wk6ghd4ppf0hvdgwizg0r0yg5smcsg99-kubeseal-0.30.0"
         }
       }
     },
