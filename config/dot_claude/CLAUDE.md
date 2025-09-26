@@ -45,6 +45,8 @@
 
 # Languages
 
+- I use `mise` to manage my languages. If a specific language tool is not available, you can run `mise up`. If that doesn't install the language, make sure there is a language version file in the folder (e.g `.node-version`, `.terraform-version`, ...).
+
 ## Typescript
 
 - Don't use any.
