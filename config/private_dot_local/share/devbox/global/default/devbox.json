@@ -37,6 +37,7 @@
     "mise@2025.8.6",
     "mysql84@8.4.5",
     "nerdfonts@3.2.1",
+    "ngrok@3.25.0",
     "otel-cli@0.4.5",
     "pinentry_mac@1.1.1.1",
     "pkg-config@0.29.2",

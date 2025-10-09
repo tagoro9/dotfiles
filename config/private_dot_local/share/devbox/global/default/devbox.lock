@@ -1969,6 +1969,54 @@
         }
       }
     },
+    "ngrok@3.25.0": {
+      "last_modified": "2025-09-18T16:33:27Z",
+      "resolved": "github:NixOS/nixpkgs/f4b140d5b253f5e2a1ff4e5506edbf8267724bde#ngrok",
+      "source": "devbox-search",
+      "version": "3.25.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yh37jz94xh0vl960a71bclbmhk60yfg6-ngrok-3.25.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/yh37jz94xh0vl960a71bclbmhk60yfg6-ngrok-3.25.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2fy4caab83yzrvhx8lalj0bgpq35g67l-ngrok-3.25.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2fy4caab83yzrvhx8lalj0bgpq35g67l-ngrok-3.25.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/a8a40wf80l551ykg34nsq4qwvvvxwgvi-ngrok-3.25.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/a8a40wf80l551ykg34nsq4qwvvvxwgvi-ngrok-3.25.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8gmxd766d5f59vhmami5k46v8cqmjwkd-ngrok-3.25.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8gmxd766d5f59vhmami5k46v8cqmjwkd-ngrok-3.25.0"
+        }
+      }
+    },
     "otel-cli@0.4.5": {
       "last_modified": "2025-07-13T22:45:35Z",
       "resolved": "github:NixOS/nixpkgs/a421ac6595024edcfbb1ef950a3712b89161c359#otel-cli",
