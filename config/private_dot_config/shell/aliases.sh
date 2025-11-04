@@ -62,6 +62,7 @@ alias showBlocked='sudo ipfw list'
 
 # Fotingo aliases
 alias f='fotingo'
+alias fb='fotin-go open branch'
 alias fr='fotin-go open repo'
 alias fpr='fotin-go open pr'
 alias fis='fotin-go open issue'
