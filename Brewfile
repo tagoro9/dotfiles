@@ -1,5 +1,6 @@
 cask "1password"
 cask "arc"
+cask "bazecor"
 cask "caffeine"
 cask "charles"
 cask "claude"
