@@ -46,7 +46,7 @@
     rb = rebase
     rbc = rebase --continue
     rba = rebase --abort
-    lg = "!git log --pretty=format:'%C(yellow)%h %C(cyan)%ad %C(green)%an %C(reset)%s' --date=format-local:'%Y-%m-%d %H:%M' --color=always -n"
+    lg = "!f() { git log --pretty=format:'%C(yellow)%h %C(cyan)%ad %C(green)%an %C(reset)%s' --date=format-local:'%Y-%m-%d %H:%M' --shortstat --color=always -n \"${1:-10}\" | awk '/^.*[0-9a-f]{7,}/ { if (NR>1) printf \" \\033[32m+%d\\033[0m \\033[31m-%d\\033[0m\\n\", add, del; add=del=0; printf \"%s\", $0 } /insertions?/ { add=$4 } /deletions?/ { del=$6 } END { printf \" \\033[32m+%d\\033[0m \\033[31m-%d\\033[0m\\n\", add, del }'; }; f"
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
     type = cat-file -t
     dump = cat-file -p
