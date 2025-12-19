@@ -24,8 +24,6 @@ wintermi/zsh-mise
 ohmyzsh/ohmyzsh path:plugins/node
 ohmyzsh/ohmyzsh path:plugins/npm
 ohmyzsh/ohmyzsh path:plugins/nvm kind:defer
-https://gitlab.com/riverglide/zsh-goenv kind:defer
-mattberther/zsh-pyenv kind:defer
 ohmyzsh/ohmyzsh path:plugins/terraform
 ohmyzsh/ohmyzsh path:plugins/macos
 

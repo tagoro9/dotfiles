@@ -4,3 +4,4 @@ idiomatic_version_file_enable_tools = ["java", "node", "terraform"]
 
 [tools]
 go = "1.24"
+python = "3.14.2"
