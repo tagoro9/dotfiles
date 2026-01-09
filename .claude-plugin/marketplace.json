@@ -1,0 +1,13 @@
+{
+  "name": "claude-code-plugins",
+  "owner": {
+    "name": "Victor"
+  },
+  "plugins": [
+    {
+      "name": "spring-boot",
+      "source": "./claude/plugins/spring-boot",
+      "description": "Spring boot agents and commands"
+    }
+  ]
+}
