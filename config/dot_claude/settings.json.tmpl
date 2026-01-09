@@ -1,6 +1,13 @@
 {
   "alwaysThinkingEnabled": true,
-  "env": {{ toPrettyJson .claude.env }},
+  "enabledPlugins": {
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "env": {{ toPrettyJson .claude.env
+    | replace "\r\n" "\n"
+    | trimSuffix "\n"
+    | replace "\n" "\n  " -}},
+  "model": "opus",
   "permissions": {
     "allow": [
       "Bash(./gradlew:*)",
@@ -16,6 +23,7 @@
       "Bash(git add:*)",
       "Bash(git cherry-pick:*)",
       "Bash(git commit:*)",
+      "Bash(git ls:*)",
       "Bash(git rebase:*)",
       "Bash(git reset)",
       "Bash(git reset:*)",
@@ -47,9 +55,5 @@
       "WebSearch"
     ],
     "deny": []
-  },
-  "alwaysThinkingEnabled": true,
-  "enabledPlugins": {
-    "typescript-lsp@claude-plugins-official": true
   }
 }
