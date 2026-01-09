@@ -1,13 +1,8 @@
 {
-  "alwaysThinkingEnabled": true,
-  "enabledPlugins": {
-    "typescript-lsp@claude-plugins-official": true
-  },
   "env": {{ toPrettyJson .claude.env
     | replace "\r\n" "\n"
     | trimSuffix "\n"
     | replace "\n" "\n  " -}},
-  "model": "opus",
   "permissions": {
     "allow": [
       "Bash(./gradlew:*)",
@@ -55,5 +50,11 @@
       "WebSearch"
     ],
     "deny": []
-  }
+  },
+  "model": "opus",
+  "enabledPlugins": {
+    "code-simplifier@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true
 }
