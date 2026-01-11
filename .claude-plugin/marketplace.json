@@ -8,6 +8,11 @@
       "name": "spring-boot",
       "source": "./claude/plugins/spring-boot",
       "description": "Spring boot agents and commands"
+    },
+    {
+      "name": "go",
+      "source": "./claude/plugins/go",
+      "description": "Go agents and commands"
     }
   ]
 }
