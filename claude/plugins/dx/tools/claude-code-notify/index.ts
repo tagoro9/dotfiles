@@ -15,10 +15,32 @@ interface EventData {
   message?: string;
 }
 
-const validEvents = ["UserPromptSubmit", "Stop", "Notification"];
+const validEvents = ["Stop", "Notification"];
 type EventName = (typeof validEvents)[number];
 
-class ClaudeNotifier {
+export class ClaudeNotifier {
+  private readonly eventName: EventName;
+  private readonly data: EventData;
+
+  constructor(eventName: string | undefined, data: unknown) {
+    if (!this.isValidEventName(eventName)) {
+      throw new Error(`Invalid hook type: ${eventName}`);
+    }
+
+    this.validateInputData(data, eventName);
+
+    this.eventName = eventName;
+    this.data = data;
+  }
+
+  notify(): void {
+    if (this.eventName === "Stop") {
+      this.handleStop();
+    } else if (this.eventName === "Notification") {
+      this.handleNotification();
+    }
+  }
+
   private getProjectName(cwd?: string): string {
     if (!cwd) return "Claude Code";
     return cwd.split("/").filter(Boolean).pop() || "Claude Code";
@@ -64,38 +86,25 @@ class ClaudeNotifier {
         stdio: "ignore",
       });
     } catch (err) {
-      // Silently fail if terminal-notifier is not available
+      console.error(err);
+      process.exit(1);
     }
   }
 
-  handleUserPromptSubmit(data: EventData): void {
-    const projectName = this.getProjectName(data.cwd);
-    const prompt = data.prompt || "New task";
-    const truncatedPrompt =
-      prompt.length > 100 ? prompt.slice(0, 97) + "..." : prompt;
-
-    this.sendNotification(
-      `${projectName} - Task Started`,
-      `Starting: ${truncatedPrompt}`,
-      this.formatTime(),
-      data.cwd,
-    );
-  }
-
-  handleStop(data: EventData): void {
-    const projectName = this.getProjectName(data.cwd);
+  private handleStop(): void {
+    const projectName = this.getProjectName(this.data.cwd);
 
     this.sendNotification(
       `${projectName} - Task Complete`,
       "Claude has finished working",
       this.formatTime(),
-      data.cwd,
+      this.data.cwd,
     );
   }
 
-  handleNotification(data: EventData): void {
-    const projectName = this.getProjectName(data.cwd);
-    const message = data.message || "";
+  private handleNotification(): void {
+    const projectName = this.getProjectName(this.data.cwd);
+    const message = this.data.message || "";
     const messageLower = message.toLowerCase();
 
     let subtitle: string;
@@ -131,64 +140,63 @@ class ClaudeNotifier {
       `${projectName} - ${subtitle}`,
       notificationMessage,
       this.formatTime(),
-      data.cwd,
+      this.data.cwd,
     );
   }
-}
+  private validateInputData(
+    data: any,
+    expectedEventName: EventName,
+  ): asserts data is EventData {
+    const requiredFields: Record<EventName, string[]> = {
+      UserPromptSubmit: ["session_id", "hook_event_name"],
+      Stop: ["session_id", "hook_event_name"],
+      Notification: ["session_id", "hook_event_name", "message"],
+    };
 
-function validateInputData(
-  data: any,
-  expectedEventName: EventName,
-): asserts data is EventData {
-  const requiredFields: Record<EventName, string[]> = {
-    UserPromptSubmit: ["session_id", "hook_event_name"],
-    Stop: ["session_id", "hook_event_name"],
-    Notification: ["session_id", "hook_event_name", "message"],
-  };
+    if (!(expectedEventName in requiredFields)) {
+      throw new Error(`Unknown event type: ${expectedEventName}`);
+    }
 
-  if (!(expectedEventName in requiredFields)) {
-    throw new Error(`Unknown event type: ${expectedEventName}`);
-  }
+    if (data.hook_event_name !== expectedEventName) {
+      throw new Error(
+        `Event name mismatch: expected ${expectedEventName}, got ${data.hook_event_name}`,
+      );
+    }
 
-  if (data.hook_event_name !== expectedEventName) {
-    throw new Error(
-      `Event name mismatch: expected ${expectedEventName}, got ${data.hook_event_name}`,
-    );
-  }
+    const missingFields: string[] = [];
+    for (const field of requiredFields[expectedEventName] || []) {
+      if (
+        !(field in data) ||
+        data[field] === null ||
+        data[field] === undefined
+      ) {
+        missingFields.push(field);
+      }
+    }
 
-  const missingFields: string[] = [];
-  for (const field of requiredFields[expectedEventName] || []) {
-    if (!(field in data) || data[field] === null || data[field] === undefined) {
-      missingFields.push(field);
+    if (missingFields.length > 0) {
+      throw new Error(
+        `Missing required fields for ${expectedEventName}: ${missingFields.join(
+          ", ",
+        )}`,
+      );
     }
   }
 
-  if (missingFields.length > 0) {
-    throw new Error(
-      `Missing required fields for ${expectedEventName}: ${missingFields.join(
-        ", ",
-      )}`,
-    );
+  private isValidEventName(
+    eventName: string | undefined,
+  ): eventName is EventName {
+    return eventName != undefined && validEvents.includes(eventName);
   }
 }
 
-function validateEventName(
-  eventName: string | undefined,
-): eventName is EventName {
-  return eventName != undefined && validEvents.includes(eventName);
-}
-
-async function main() {
+export async function main() {
   try {
     if (process.argv.length < 3) {
       console.log("ok");
       return;
     }
     const eventName = process.argv[2];
-    if (!validateEventName(eventName)) {
-      console.error(`Invalid hook type: ${eventName}`);
-      process.exit(1);
-    }
 
     const inputData = await Bun.stdin.text();
     if (!inputData.trim()) {
@@ -197,17 +205,9 @@ async function main() {
     }
 
     const data = JSON.parse(inputData);
-    validateInputData(data, eventName);
 
-    const notifier = new ClaudeNotifier();
-
-    if (eventName === "UserPromptSubmit") {
-      notifier.handleUserPromptSubmit(data);
-    } else if (eventName === "Stop") {
-      notifier.handleStop(data);
-    } else if (eventName === "Notification") {
-      notifier.handleNotification(data);
-    }
+    const notifier = new ClaudeNotifier(eventName, data);
+    notifier.notify();
   } catch (err) {
     if (err instanceof SyntaxError) {
       console.error(`JSON decode error: ${err.message}`);
@@ -222,4 +222,6 @@ async function main() {
   }
 }
 
-main();
+if (import.meta.main) {
+  main();
+}
