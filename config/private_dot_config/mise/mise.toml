@@ -3,6 +3,7 @@ idiomatic_version_file = true
 idiomatic_version_file_enable_tools = ["java", "node", "terraform"]
 
 [tools]
+bun = "1.3.0"
 node = "22"
 go = "1.24"
 python = "3.14.2"
