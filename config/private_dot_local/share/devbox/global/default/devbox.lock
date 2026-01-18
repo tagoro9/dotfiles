@@ -554,6 +554,54 @@
         }
       }
     },
+    "codex@0.80.0": {
+      "last_modified": "2026-01-11T16:44:50Z",
+      "resolved": "github:NixOS/nixpkgs/4d113fe1f7bb454435a5cabae6cd283e64191bb7#codex",
+      "source": "devbox-search",
+      "version": "0.80.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/q934pnqbda0rhckhd3cmrmvn5ad7rhhr-codex-0.80.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/q934pnqbda0rhckhd3cmrmvn5ad7rhhr-codex-0.80.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4lx2hxrbncy53mlqg3c6b6sfg7lxlg6p-codex-0.80.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4lx2hxrbncy53mlqg3c6b6sfg7lxlg6p-codex-0.80.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/icaw5ppclcs1jaqj8ams1yypc4y81gd5-codex-0.80.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/icaw5ppclcs1jaqj8ams1yypc4y81gd5-codex-0.80.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/aiyqdsn916ns28f59fad04y2wiljak7r-codex-0.80.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/aiyqdsn916ns28f59fad04y2wiljak7r-codex-0.80.0"
+        }
+      }
+    },
     "delta@0.18.2": {
       "last_modified": "2025-03-11T17:52:14Z",
       "resolved": "github:NixOS/nixpkgs/0d534853a55b5d02a4ababa1d71921ce8f0aee4c#delta",
@@ -2771,6 +2819,34 @@
             }
           ],
           "store_path": "/nix/store/9ssz9ywlwr182cf2x5sa2kicjsrgq7nw-teller-2.0.7"
+        }
+      }
+    },
+    "terminal-notifier@2.0.0": {
+      "last_modified": "2026-01-09T13:41:53Z",
+      "resolved": "github:NixOS/nixpkgs/5f02c91314c8ba4afe83b256b023756412218535#terminal-notifier",
+      "source": "devbox-search",
+      "version": "2.0.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/cgkd6l9v6ys2vlf76bjg96z75nzciqrn-terminal-notifier-2.0.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/cgkd6l9v6ys2vlf76bjg96z75nzciqrn-terminal-notifier-2.0.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gdlcv580i34d7xh1sxz03wwyrsvzl1hj-terminal-notifier-2.0.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gdlcv580i34d7xh1sxz03wwyrsvzl1hj-terminal-notifier-2.0.0"
         }
       }
     },
