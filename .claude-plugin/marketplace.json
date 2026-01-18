@@ -5,14 +5,14 @@
   },
   "plugins": [
     {
-      "name": "spring-boot",
-      "source": "./claude/plugins/spring-boot",
-      "description": "Spring boot agents and commands"
+      "name": "code",
+      "source": "./claude/plugins/code",
+      "description": "Coding agents and commands"
     },
     {
-      "name": "go",
-      "source": "./claude/plugins/go",
-      "description": "Go agents and commands"
+      "name": "dx",
+      "source": "./claude/plugins/dx",
+      "description": "Developer Experience utilities"
     }
   ]
 }
