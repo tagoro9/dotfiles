@@ -1,7 +1,8 @@
 #!/bin/zsh
 
 # Theme
-dracula/zsh
+{{- $theme := index .theme .theme.variant }}
+{{ $theme.zsh_plugin }}
 
 # Init
 mafredri/zsh-async path:async.zsh

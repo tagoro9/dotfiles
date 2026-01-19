@@ -1,3 +1,24 @@
 email = "1235917+tagoro9@users.noreply.github.com"
 git.signingKey = "C1CBC50698701A0871E5535A5A66BD80042E9F3D"
 code.folders = ["~/code"]
+
+[theme]
+variant = "dark"
+
+[theme.dark]
+ghostty = "dracula"
+zellij = "dracula"
+helix = "dracula"
+yazi = "dracula"
+zsh_plugin = "dracula/zsh"
+exa_colors = "uu=36:gu=37:sn=32:sb=32:da=34:ur=34:uw=35:ux=36:ue=36:gr=34:gw=35:gx=36:tr=34:tw=35:tx=36:"
+fzf="--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4"
+
+[theme.light]
+ghostty = "Catppuccin Latte"
+zellij = "catppuccin-latte"
+helix = "catppuccin_latte"
+yazi = "catppuccin-latte"
+zsh_plugin = "dracula/zsh"
+exa_colors = ""
+fzf="--color=bg+:#CCD0DA,bg:#EFF1F5,spinner:#DC8A78,hl:#D20F39 --color=fg:#4C4F69,header:#D20F39,info:#8839EF,pointer:#DC8A78 --color=marker:#7287FD,fg+:#4C4F69,prompt:#8839EF,hl+:#D20F39 --color=selected-bg:#BCC0CC --color=border:#9CA0B0,label:#4C4F69"

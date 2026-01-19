@@ -10,6 +10,7 @@ autoload -Uz compinit && compinit
 [[ ! -f ~/.config/shell/completions.zsh ]] || source ~/.config/shell/completions.zsh
 
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
+zstyle ':fzf-tab:*' use-fzf-default-opts yes
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"

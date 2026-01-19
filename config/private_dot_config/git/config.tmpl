@@ -158,6 +158,8 @@
 [delta]
     features = line-numbers decorations
     whitespace-error-style = 22 reverse
+    dark = {{ if eq .theme.variant "dark" }}true{{ else }}false{{ end }}
+    light = {{ if eq .theme.variant "light" }}true{{ else }}false{{ end }}
 [delta "decorations"]
     commit-decoration-style = bold yellow box ul
     file-style = bold yellow ul

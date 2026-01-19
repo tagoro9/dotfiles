@@ -1,3 +1,4 @@
+{{- $theme := index .theme .theme.variant -}}
 # Increase node memory by default
 export NODE_OPTIONS='--max-old-space-size=3096'
 
@@ -28,25 +29,14 @@ else
 fi
 
 export FZF_PATH="$DEVBOX_PACKAGES_DIR/share/fzf"
+export FZF_COLOR_SCHEME="{{ $theme.fzf }}"
 
-# Dracula theme for exa
-# https://draculatheme.com/exa
-export EXA_COLORS="\
-uu=36:\
-gu=37:\
-sn=32:\
-sb=32:\
-da=34:\
-ur=34:\
-uw=35:\
-ux=36:\
-ue=36:\
-gr=34:\
-gw=35:\
-gx=36:\
-tr=34:\
-tw=35:\
-tx=36:"
+# Theme for exa
+{{ if $theme.exa_colors }}
+export EXA_COLORS="{{ $theme.exa_colors }}"
+{{ else }}
+unset EXA_COLORS
+{{ end }}
 
 PROFILE_DIR="${HOME}/.tagoro9/profile"
 

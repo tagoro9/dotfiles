@@ -1,4 +1,5 @@
-theme = "dracula"
+{{- $theme := index .theme .theme.variant -}}
+theme = "{{ $theme.helix }}"
 
 [editor]
 bufferline = "multiple"
