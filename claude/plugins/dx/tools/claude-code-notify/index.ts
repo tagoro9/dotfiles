@@ -2,7 +2,21 @@
 
 /**
  * Claude Code Notify
- * Sends rich macOS notifications for Claude Code events
+ * Sends rich macOS notifications for Claude Code hook events.
+ *
+ * This tool is invoked by Claude Code hooks with the event name passed
+ * as argv[2] and the hook payload JSON provided on stdin.
+ *
+ * Usage:
+ *   bun index.ts <EventName> < input.json
+ *
+ * Supported events:
+ *   - Stop: requires session_id, hook_event_name (cwd optional)
+ *   - Notification: requires session_id, hook_event_name, message (cwd optional)
+ *
+ * Requirements:
+ *   - terminal-notifier must be in PATH
+ *   - /usr/local/bin/code is used for the notification action when cwd is set
  */
 
 import { spawnSync } from "child_process";

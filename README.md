@@ -37,6 +37,21 @@ sudo chmod 755 "$DEVBOX_PACKAGES_DIR/share/fzf/fzf.zsh"
 This repository uses [devbox](https://www.jetify.com/devbox) and [brew](https://brew.sh/) to manage applications. It tries to use devbox
 as much as possible, but there are some applications that are not supported by devbox yet.
 
+### Claude Plugins
+
+The `claude/plugins` directory contains specialized [Claude Code](https://code.claude.com/) integrations. These plugins extend Claude's capabilities with custom agents, automation hooks, and developer tools.
+
+- **[Code](./claude/plugins/code)**: Specialized coding agents and workflow definitions.
+- **[DX](./claude/plugins/dx)**: Developer Experience utilities, including notifications and lifecycle hooks.
+
+To install the plugins, run:
+
+```
+/plugin marketplace add tagoro9/dotfiles
+/plugin install dx@tagoro9
+/plugin install code@tagoro9
+```
+
 ### Git signing key
 
 To generate a git signing key, run:
