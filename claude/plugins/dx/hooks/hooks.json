@@ -1,15 +1,5 @@
 {
   "hooks": {
-    "UserPromptSubmit": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/tools/claude-code-notify/index.ts UserPromptSubmit"
-          }
-        ]
-      }
-    ],
     "Stop": [
       {
         "hooks": [
