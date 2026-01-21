@@ -1,3 +1,5 @@
+tap "jetbrains/utils"
+brew "JetBrains/utils/kotlin-lsp"
 cask "1password"
 cask "arc"
 cask "bazecor"
