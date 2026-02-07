@@ -20,7 +20,7 @@
     "gnupg@2.4.7",
     "go-mockery@2.53.3",
     "go-swag@1.16.4",
-    "golangci-lint@2.0.0",
+    "golangci-lint@2.8.0",
     "gomarkdoc@1.1.0",
     "google-cloud-sdk@552.0.0",
     "helix@25.01.1",
