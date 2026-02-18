@@ -8,6 +8,7 @@
 - Use conventional commits convention when writing commit messages.
 - The commit title should not be longer than 100 characters.
 - Write bodies that are concise but explain what is happening.
+- Never use git -C. Instead run git commands directly in the project directory. If you are working with multiple git repos at the same time, then cd first and then run git commands.
 
 # Working on Issues rules
 
