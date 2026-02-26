@@ -458,51 +458,51 @@
         }
       }
     },
-    "code-cursor@0.45.14": {
-      "last_modified": "2025-03-23T05:31:05Z",
-      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#code-cursor",
+    "code-cursor@2.5.17": {
+      "last_modified": "2026-02-23T15:40:43Z",
+      "resolved": "github:NixOS/nixpkgs/80d901ec0377e19ac3f7bb8c035201e2e098cc97#code-cursor",
       "source": "devbox-search",
-      "version": "0.45.14",
+      "version": "2.5.17",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/slb9l7m61801vpklmrcf4y9jb3fj9yh7-cursor-0.45.14",
+              "path": "/nix/store/9lr547n50w3irlb4ppgp8mfm0my6b08w-cursor-2.5.17",
               "default": true
             }
           ],
-          "store_path": "/nix/store/slb9l7m61801vpklmrcf4y9jb3fj9yh7-cursor-0.45.14"
+          "store_path": "/nix/store/9lr547n50w3irlb4ppgp8mfm0my6b08w-cursor-2.5.17"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/60g93gq0zi0ny309y4m0lywyk6v0w7d5-cursor-0.45.14",
+              "path": "/nix/store/jx2lfrpclh2amcgdzcp03d1js5yq8dg9-cursor-2.5.17",
               "default": true
             }
           ],
-          "store_path": "/nix/store/60g93gq0zi0ny309y4m0lywyk6v0w7d5-cursor-0.45.14"
+          "store_path": "/nix/store/jx2lfrpclh2amcgdzcp03d1js5yq8dg9-cursor-2.5.17"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/74dx5wvam188sqppmgj60w7n04nkp9pw-cursor-0.45.14",
+              "path": "/nix/store/pacsbamsqr3jmx623ljgs2cg2yvwnd7l-cursor-2.5.17",
               "default": true
             }
           ],
-          "store_path": "/nix/store/74dx5wvam188sqppmgj60w7n04nkp9pw-cursor-0.45.14"
+          "store_path": "/nix/store/pacsbamsqr3jmx623ljgs2cg2yvwnd7l-cursor-2.5.17"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mz2cgxjr0rpg83wyp17zx24jh1y02kg4-cursor-0.45.14",
+              "path": "/nix/store/j2f7zcksdh6sjdxzwr9aqv3qmlfa07s4-cursor-2.5.17",
               "default": true
             }
           ],
-          "store_path": "/nix/store/mz2cgxjr0rpg83wyp17zx24jh1y02kg4-cursor-0.45.14"
+          "store_path": "/nix/store/j2f7zcksdh6sjdxzwr9aqv3qmlfa07s4-cursor-2.5.17"
         }
       }
     },
