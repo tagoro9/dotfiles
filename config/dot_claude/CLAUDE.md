@@ -1,14 +1,13 @@
 # Git and VCS rules
 
 - MUST use conventional commits for commit messages
+- NEVER use git -C. Instead MUST run git commands directly in the project directory. If you are working with multiple git repos at the same time, then cd first and then run git commands.
 - MUST Create atomical commits that are independent
 - MUST Commit frequently, you can rebase code once things are ready and organize commits better
 - The commit message body MUST NOT have superfluous content
 - The commit message MUST NOT reference any ai tool used or co authors of commits
-- Use conventional commits convention when writing commit messages.
 - The commit title should not be longer than 100 characters.
 - Write bodies that are concise but explain what is happening.
-- Never use git -C. Instead run git commands directly in the project directory. If you are working with multiple git repos at the same time, then cd first and then run git commands.
 
 # Working on Issues rules
 
