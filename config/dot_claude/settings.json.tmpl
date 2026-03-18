@@ -63,19 +63,32 @@
     ],
     "deny": []
   },
-  "model": "opus",
+  "model": "opus[1m]",
   "enabledPlugins": {
+    "claude-hud@claude-hud": true
     "code-simplifier@claude-plugins-official": true,
     "code@tagoro9": true,
-    "dx@tagoro9": true,
+    "dx@turo": true,
     "kotlin-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "typescript-lsp@claude-plugins-official": true,
   },
   "extraKnownMarketplaces": {
+    "claude-hud": {
+      "source": {
+        "source": "github",
+        "repo": "jarrodwatts/claude-hud"
+      }
+    },
     "tagoro9": {
       "source": {
         "source": "github",
         "repo": "tagoro9/dotfiles"
+      }
+    },
+    "turo": {
+      "source": {
+        "source": "directory",
+        "path": "/Users/victormora/turo/dev-ai-tooling"
       }
     }
   },
