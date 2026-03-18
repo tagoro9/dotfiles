@@ -458,51 +458,51 @@
         }
       }
     },
-    "codex@0.92.0": {
-      "last_modified": "2026-02-23T15:40:43Z",
-      "resolved": "github:NixOS/nixpkgs/80d901ec0377e19ac3f7bb8c035201e2e098cc97#codex",
+    "codex@0.114.0": {
+      "last_modified": "2026-03-12T22:11:02Z",
+      "resolved": "github:NixOS/nixpkgs/24f4544180242cd80bb2492ce6907243bc716e08#codex",
       "source": "devbox-search",
-      "version": "0.92.0",
+      "version": "0.114.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/79azhj3rykb8b6d7mnc7aq5pm61q0rwb-codex-0.92.0",
+              "path": "/nix/store/gxgj1p5vzvh6i4nc4889ilicayd48pmp-codex-0.114.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/79azhj3rykb8b6d7mnc7aq5pm61q0rwb-codex-0.92.0"
+          "store_path": "/nix/store/gxgj1p5vzvh6i4nc4889ilicayd48pmp-codex-0.114.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/27xzy574i78c31ldqg6nvscpc26cqj89-codex-0.92.0",
+              "path": "/nix/store/nx23i0g5wm2xz82lm30rqbjfxr4a3mwh-codex-0.114.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/27xzy574i78c31ldqg6nvscpc26cqj89-codex-0.92.0"
+          "store_path": "/nix/store/nx23i0g5wm2xz82lm30rqbjfxr4a3mwh-codex-0.114.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/1j094d64hvmbmb6c8jdbz3rv03iixifm-codex-0.92.0",
+              "path": "/nix/store/d08rz011aff7yymdh56ry0fqxh3k25v0-codex-0.114.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/1j094d64hvmbmb6c8jdbz3rv03iixifm-codex-0.92.0"
+          "store_path": "/nix/store/d08rz011aff7yymdh56ry0fqxh3k25v0-codex-0.114.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/b7hjazxzl94pzz5a8zq3as7fimm7y6im-codex-0.92.0",
+              "path": "/nix/store/qkrcgbz0x4dhgrn20dbvalzzllsy9xz9-codex-0.114.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/b7hjazxzl94pzz5a8zq3as7fimm7y6im-codex-0.92.0"
+          "store_path": "/nix/store/qkrcgbz0x4dhgrn20dbvalzzllsy9xz9-codex-0.114.0"
         }
       }
     },
