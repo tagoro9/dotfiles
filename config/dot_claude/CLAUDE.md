@@ -8,9 +8,10 @@
 - The commit title should not be longer than 100 characters.
 - Write bodies that are concise but explain what is happening.
 
-# Working on Issues rules
+# Fotingo
 
-- Use fotingo when I ask you to work on issues as the preferred tool
+- ALWAYS use fotingo for creating pull requests, starting to work on issues or talking to Jira unless specified otherwise.
+- When using fotingo, always use the fotingo skill.
 
 # Github
 
