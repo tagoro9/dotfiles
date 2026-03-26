@@ -124,7 +124,7 @@ keybinds {
     bind "Esc" { UndoRenamePane; SwitchToMode "Pane"; }
   }
   session {
-    bind "Ctrl o" { SwitchToMode "Normal"; }
+    bind "Ctrl w" { SwitchToMode "Normal"; }
     bind "Ctrl s" { SwitchToMode "Scroll"; }
     bind "d" { Detach; }
     bind "w" {
@@ -185,6 +185,12 @@ keybinds {
         quick_jump true
       }
     }
+    bind "Alt y" {
+      LaunchOrFocusPlugin "zellij-pane-picker" {
+        floating true
+        move_to_focused_tab true
+      }
+    }
   }
   shared_except "normal" "locked" {
     bind "Enter" "Esc" { SwitchToMode "Normal"; }
@@ -199,7 +205,7 @@ keybinds {
     bind "Ctrl s" { SwitchToMode "Scroll"; }
   }
   shared_except "session" "locked" {
-    bind "Ctrl o" { SwitchToMode "Session"; }
+    bind "Ctrl w" { SwitchToMode "Session"; }
   }
   shared_except "tab" "locked" {
     bind "Ctrl t" { SwitchToMode "Tab"; }
@@ -210,6 +216,10 @@ keybinds {
   shared_except "tmux" "locked" {
     bind "Ctrl b" { SwitchToMode "Tmux"; }
   }
+}
+
+load_plugins {
+  zellij-pane-picker
 }
 
 plugins {
@@ -227,4 +237,13 @@ plugins {
   configuration location="zellij:configuration"
   plugin-manager location="zellij:plugin-manager"
   about location="zellij:about"
+  zellij-pane-picker location="file:~/.config/zellij/plugins/zellij-pane-picker.wasm" {
+    list_panes "Alt y"
+    navigate_back "Alt u"
+    toggle_star "Alt s"
+    next_star "Alt d"
+    previous_star "Alt a"
+    plugin_select_down "Ctrl n"
+    plugin_select_up "Ctrl p"
+  }
 }
