@@ -18,7 +18,7 @@
     "gh@2.69.0",
     "git@2.48.1",
     "gnupg@2.4.7",
-    "go-mockery@2.53.3",
+    "go-mockery@3.5.5",
     "go-swag@1.16.4",
     "golangci-lint@2.8.0",
     "gomarkdoc@1.1.0",
