@@ -25,6 +25,7 @@
     "google-cloud-sdk@552.0.0",
     "goreleaser@2.13.3",
     "helix@25.01.1",
+    "hexyl@0.17.0",
     "htop@3.4.0",
     "httpie@3.2.4",
     "imagemagick@7.1.1-45",
@@ -57,8 +58,8 @@
     "typescript-language-server@4.3.3",
     "uv@0.7.8",
     "vscode-langservers-extracted@4.10.0",
-    "yazi@25.3.2",
-    "zellij@0.42.1",
+    "yazi@26.1.22",
+    "zellij@0.42.2",
     "zoxide@0.9.7",
     "zsh@5.9"
   ],

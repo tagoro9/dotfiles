@@ -37,6 +37,75 @@ sudo chmod 755 "$DEVBOX_PACKAGES_DIR/share/fzf/fzf.zsh"
 This repository uses [devbox](https://www.jetify.com/devbox) and [brew](https://brew.sh/) to manage applications. It tries to use devbox
 as much as possible, but there are some applications that are not supported by devbox yet.
 
+### Dev Workflow
+
+The default terminal setup is a Claude-Code-first IDE built on zellij + helix + yazi + lazygit.
+
+#### Layout
+
+The default zellij layout (`tagoro9`) starts with:
+
+- **Main terminal** (60%) — for Claude Code, shell commands
+- **Sidebar** (40%) — yazi (file browser), lazygit, and a shell stacked vertically
+
+Three swap layouts rearrange the tiled panes:
+
+| Layout      | Description                             |
+| ----------- | --------------------------------------- |
+| **Default** | 65/35 vertical split                    |
+| **Focus**   | Large pane (75%) + small terminal below |
+| **Split**   | Equal 50/50 vertical split              |
+
+#### Key Bindings
+
+| Key               | Action                                       |
+| ----------------- | -------------------------------------------- |
+| `Alt [` / `Alt ]` | Cycle swap layouts (Default / Focus / Split) |
+| `Alt y`           | Pane picker (jump to any pane by name)       |
+| `Alt u`           | Jump back to previous pane                   |
+| `Alt s`           | Star/unstar a pane for quick access          |
+| `Ctrl w`          | Session mode                                 |
+
+#### Project Launcher (`zp`)
+
+Fuzzy-pick a project and open it in zellij:
+
+```bash
+zp
+```
+
+Scans `~/code`, `~/turo`, and `~/open-turo` for project directories. Inside zellij it opens a new tab; outside it starts a new session.
+
+#### Typical Workflow
+
+1. `zp` to open a project
+2. Use the main pane for Claude Code
+3. Use the side pane for helix, yazi, lazygit, or tests
+4. `Alt [` / `Alt ]` to switch layouts as needed
+
+#### Yazi
+
+Yazi plugins are declared in `~/.config/yazi/package.toml` and installed with `ya pack -i` (run automatically by `./script/bootstrap`).
+
+| Key       | Action                                                     |
+| --------- | ---------------------------------------------------------- |
+| `l`       | Enter directory (skips single-child) or open file in helix |
+| `F`       | Smart filter (continuous, auto-enter)                      |
+| `Ctrl-d`  | Diff selected with hovered file                            |
+| `~`       | Chmod selected files                                       |
+| `p`       | Paste into hovered dir or CWD                              |
+| `T`       | Toggle preview pane                                        |
+| `t` / `d` | Add / remove macOS tags                                    |
+| `1-9`     | Start vim-style relative motion (e.g. `3j`, `5k`)          |
+
+Preview enhancements (via piper):
+
+- Markdown files rendered with glow
+- Directories shown as eza tree
+- CSV highlighted with bat
+- Tarballs listed with tar
+- Unknown binaries shown with hexyl
+
 ### Claude Plugins
 
 The `claude/plugins` directory contains specialized [Claude Code](https://code.claude.com/) integrations. These plugins extend Claude's capabilities with custom agents, automation hooks, and developer tools.

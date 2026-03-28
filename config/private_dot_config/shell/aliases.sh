@@ -60,6 +60,9 @@ alias openPorts='sudo lsof -i | grep LISTEN'
 # All ipfw rules inc/ blocked IPs
 alias showBlocked='sudo ipfw list'
 
+# Zellij aliases
+alias zj='zellij'
+
 # Fotingo aliases
 alias f='fotingo'
 alias fb='fotingo open branch'

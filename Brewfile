@@ -1,3 +1,5 @@
+brew "glow"
+brew "tag"
 tap "jetbrains/utils"
 brew "JetBrains/utils/kotlin-lsp"
 brew "pandoc"

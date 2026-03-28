@@ -8,62 +8,27 @@ layout {
       hide_frame_for_single_pane false
       border_enabled false
       border_char "─"
-      border_format "#[fg=$surface1]{char}"
+      border_format "#[fg=#6C7086]{char}"
       border_position "top"
 
-      format_hide_on_overlength "true"
-      format_precedence "lrc"
-
-      // Color aliases
-      color_blue "#89B4FA"
-      color_green "#A6E3A1"
-      color_peach "#FAB387"
-      color_red "#F38BA8"
-      color_mauve "#CBA6F7"
-      color_yellow "#F9E2AF"
-      color_overlay0 "#6C7086"
-      color_overlay1 "#7F849C"
-      color_surface1 "#45475A"
-      color_subtext0 "#9399B2"
-
-      format_left  "{mode}#[fg=$blue,bold] {session} #[fg=$overlay0]│ {command_git_branch}"
+      format_left  "{mode}#[fg=#89B4FA,bold] {session}"
       format_center "{tabs}"
-      format_right "{swap_layout} {datetime}"
+      format_right "{datetime}"
       format_space ""
 
-      mode_normal          "#[bg=#89B4FA] "
-      mode_locked          "#[bg=#F38BA8] "
-      mode_resize          "#[bg=#F9E2AF] "
-      mode_pane            "#[bg=#A6E3A1] "
-      mode_tab             "#[bg=#CBA6F7] "
-      mode_scroll          "#[bg=#FAB387] "
-      mode_enter_search    "#[bg=#FAB387] "
-      mode_search          "#[bg=#FAB387] "
-      mode_rename_tab      "#[bg=#CBA6F7] "
-      mode_rename_pane     "#[bg=#A6E3A1] "
-      mode_session         "#[bg=#F9E2AF] "
-      mode_move            "#[bg=#F9E2AF] "
-      mode_tmux            "#[bg=#FAB387] "
+      mode_normal          "#[bg=blue] "
+      mode_tmux            "#[bg=#ffc387] "
       mode_default_to_mode "tmux"
 
-      tab_normal               "#[fg=$overlay0] {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
-      tab_active               "#[fg=$subtext0,bold,italic] {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
-      tab_separator            "#[fg=$surface1] │ "
+      tab_normal               "#[fg=#6C7086] {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
+      tab_active               "#[fg=#9399B2,bold,italic] {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
       tab_fullscreen_indicator "□ "
       tab_sync_indicator       "  "
       tab_floating_indicator   "󰉈 "
 
-      swap_layout_format       "#[fg=$overlay0] {name}"
-      swap_layout_hide_if_empty "true"
-
-      datetime          "#[fg=$subtext0] {format} "
+      datetime          "#[fg=#9399B2] {format} "
       datetime_format   "%A, %d %b %Y %H:%M"
       datetime_timezone "America/Los_Angeles"
-
-      command_git_branch_command "git rev-parse --abbrev-ref HEAD"
-      command_git_branch_format "#[fg=$green] {stdout}"
-      command_git_branch_interval "5"
-      command_git_branch_rendermode "static"
     }
   }
 }

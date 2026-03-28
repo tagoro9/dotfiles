@@ -23,3 +23,8 @@ if [ -f "Brewfile" ] && [ "$(uname -s)" = "Darwin" ]; then
 fi
 
 devbox global install
+
+# Install yazi plugins
+if command -v ya 2>&1 >/dev/null; then
+  ya pack -i
+fi

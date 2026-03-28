@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# zp - fuzzy project picker for zellij
+# Opens a new zellij tab (or session) in the selected project directory
+
+set -euo pipefail
+
+if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
+  cat <<'USAGE'
+zp - fuzzy project picker for zellij
+
+Usage: zp [filter]
+
+Scans ~/code, ~/turo, and ~/open-turo for project directories and
+presents them via fzf. Opens the project as a new tab in the current
+zellij session. If no session exists, starts a new one.
+
+If a filter is provided, fzf starts with that query pre-filled.
+USAGE
+  exit 0
+fi
+
+selection=$(fd --maxdepth 1 --type d . ~/code ~/turo ~/open-turo 2>/dev/null \
+  | fzf --delimiter='/' --with-nth=-2.. \
+        --preview 'eza --icons -F --group-directories-first --git -1 {}' \
+        --prompt='project > ' \
+        --query="${1:-}")
+
+[[ -z "$selection" ]] && exit 0
+
+project_name=$(basename "$selection")
+
+if [[ -n "${ZELLIJ:-}" ]]; then
+  zellij action new-tab --layout dev --cwd "$selection" --name "$project_name"
+else
+  existing_session=$(zellij list-sessions --no-formatting --short 2>/dev/null | grep -v EXITED | head -1)
+  if [[ -n "$existing_session" ]]; then
+    cd "$selection" && zellij --session "$existing_session" --layout dev
+  else
+    cd "$selection" && zellij --layout dev --session "$project_name"
+  fi
+fi

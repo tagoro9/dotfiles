@@ -1,0 +1,41 @@
+layout {
+  tab cwd="." {
+    pane split_direction="vertical" {
+      pane command="yazi" close_on_exit=false size="20%"
+      pane split_direction="horizontal" size="60%" {
+        pane size="75%"
+        pane size="25%"
+      }
+      pane command="lazygit" close_on_exit=false size="20%"
+    }
+
+    pane size=1 borderless=true {
+      plugin location="file:$HOME/.config/zellij/plugins/zjstatus.wasm" {
+        hide_frame_for_single_pane false
+        border_enabled false
+        border_char "─"
+        border_format "#[fg=#6C7086]{char}"
+        border_position "top"
+
+        format_left  "{mode}#[fg=#89B4FA,bold] {session}"
+        format_center "{tabs}"
+        format_right "{datetime}"
+        format_space ""
+
+        mode_normal          "#[bg=blue] "
+        mode_tmux            "#[bg=#ffc387] "
+        mode_default_to_mode "tmux"
+
+        tab_normal               "#[fg=#6C7086] {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
+        tab_active               "#[fg=#9399B2,bold,italic] {name} {fullscreen_indicator}{sync_indicator}{floating_indicator}"
+        tab_fullscreen_indicator "□ "
+        tab_sync_indicator       "  "
+        tab_floating_indicator   "󰉈 "
+
+        datetime          "#[fg=#9399B2] {format} "
+        datetime_format   "%A, %d %b %Y %H:%M"
+        datetime_timezone "America/Los_Angeles"
+      }
+    }
+  }
+}
