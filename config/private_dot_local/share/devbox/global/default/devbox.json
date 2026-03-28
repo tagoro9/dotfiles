@@ -45,7 +45,7 @@
     "pkg-config@0.29.2",
     "postgresql@17.5",
     "pre-commit@4.5.1",
-    "ripgrep@14.1.1",
+    "ripgrep@15.1.0",
     "shellcheck@0.10.0",
     "shfmt@3.11.0",
     "starship@1.22.1",
