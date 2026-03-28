@@ -55,7 +55,7 @@
     "terraform-docs@0.19.0",
     "terraform-ls@0.36.4",
     "tfswitch@1.4.2",
-    "typescript-language-server@4.3.3",
+    "typescript-language-server@5.1.3",
     "uv@0.7.8",
     "vscode-langservers-extracted@4.10.0",
     "yazi@26.1.22",
