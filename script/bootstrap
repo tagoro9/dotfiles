@@ -26,5 +26,5 @@ devbox global install
 
 # Install yazi plugins
 if command -v ya 2>&1 >/dev/null; then
-  ya pack -i
+  ya pkg install
 fi
