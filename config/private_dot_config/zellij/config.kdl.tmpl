@@ -161,6 +161,7 @@ keybinds {
   shared_except "locked" {
     bind "Ctrl g" { SwitchToMode "Locked"; }
     bind "Ctrl q" { Quit; }
+    bind "Alt m" { ToggleMouseMode; }
     bind "Alt n" { NewPane; }
     bind "Alt i" { MoveTab "Left"; }
     bind "Alt o" { MoveTab "Right"; }
@@ -237,7 +238,7 @@ plugins {
   configuration location="zellij:configuration"
   plugin-manager location="zellij:plugin-manager"
   about location="zellij:about"
-  zellij-pane-picker location="file:~/.config/zellij/plugins/zellij-pane-picker.wasm" {
+  zellij-pane-picker location="file:~/.config/zellij/plugins/zellij-pane-picker-v0.6.0.wasm" {
     list_panes "Alt y"
     navigate_back "Alt u"
     toggle_star "Alt s"
