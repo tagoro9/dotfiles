@@ -10,7 +10,7 @@ edit = [
 [open]
 rules = [
   { mime = "text/*", use = "edit" },
-  { name = "*.{md,kdl,toml,yaml,yml,json,sh,ts,tsx,js,jsx,go,py,rs,kt,tf}", use = "edit" },
+  { url = "*.{md,kdl,toml,yaml,yml,json,sh,ts,tsx,js,jsx,go,py,rs,kt,tf}", use = "edit" },
 ]
 
 # Piper previewers
