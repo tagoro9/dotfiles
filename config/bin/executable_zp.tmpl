@@ -10,7 +10,7 @@ zp - fuzzy project picker for zellij
 
 Usage: zp [filter]
 
-Scans ~/code, ~/turo, and ~/open-turo for project directories and
+Scans ~/code and configured extra folders for project directories and
 presents them via fzf. Opens the project as a new tab in the current
 zellij session. If no session exists, starts a new one.
 
@@ -19,7 +19,7 @@ USAGE
   exit 0
 fi
 
-selection=$(fd --maxdepth 1 --type d . ~/code ~/turo ~/open-turo 2>/dev/null \
+selection=$(fd --maxdepth 1 --type d . ~/code{{ range .zp.extraFolders }} {{ . }}{{ end }} 2>/dev/null \
   | fzf --delimiter='/' --with-nth=-2.. \
         --preview 'eza --icons -F --group-directories-first --git -1 {}' \
         --prompt='project > ' \
