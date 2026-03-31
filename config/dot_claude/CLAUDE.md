@@ -7,6 +7,7 @@
 - The commit message body MUST NOT have superfluous content
 - The commit title should not be longer than 100 characters.
 - Write bodies that are concise but explain what is happening.
+- When referencing issues on the commit footer, use this format: Fixes #ISSUE-123, #ISUE-234, ...
 
 # Fotingo
 
