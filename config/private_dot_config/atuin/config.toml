@@ -1,0 +1,24 @@
+auto_sync = false
+exit_mode = "return-original"
+enter_accept = false
+filter_mode = "session"
+filter_mode_shell_up_key_binding = "session"
+inline_height = 16
+invert = false
+keymap_mode = "emacs"
+search_mode = "fuzzy"
+show_help = false
+show_preview = false
+show_tabs = false
+style = "auto"
+workspaces = true
+ctrl_n_shortcuts = true
+
+[keys]
+scroll_exits = true
+
+[search]
+filters = ["session", "directory", "workspace", "global", "host"]
+
+[theme]
+name = "marine"

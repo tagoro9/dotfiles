@@ -97,6 +97,54 @@
         }
       }
     },
+    "atuin@18.13.6": {
+      "last_modified": "2026-03-28T12:40:58Z",
+      "resolved": "github:NixOS/nixpkgs/b63fe7f000adcfa269967eeff72c64cafecbbebe#atuin",
+      "source": "devbox-search",
+      "version": "18.13.6",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2a5l0krify8am68kkvb8bwcsqrgvcna0-atuin-18.13.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/2a5l0krify8am68kkvb8bwcsqrgvcna0-atuin-18.13.6"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0nvs934yjv9alfj3vk8v14qsir6mclcb-atuin-18.13.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0nvs934yjv9alfj3vk8v14qsir6mclcb-atuin-18.13.6"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3nckswgr5mci3frw10pxrlv3mmbyg4ds-atuin-18.13.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3nckswgr5mci3frw10pxrlv3mmbyg4ds-atuin-18.13.6"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/waiaqczd54fgdwx7v7773ixpw03jp6ng-atuin-18.13.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/waiaqczd54fgdwx7v7773ixpw03jp6ng-atuin-18.13.6"
+        }
+      }
+    },
     "awscli@1.44.21": {
       "last_modified": "2026-03-21T07:29:51Z",
       "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#awscli",
