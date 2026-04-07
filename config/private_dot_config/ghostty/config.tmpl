@@ -1,13 +1,6 @@
 {{- $theme := index .theme .theme.variant -}}
 theme = {{ $theme.ghostty }}
 minimum-contrast = 1.1
-{{- if eq .theme.variant "dark" }}
-selection-background = #8be9fd
-selection-foreground = #282a36
-{{- else }}
-selection-background = #7287fd
-selection-foreground = #eff1f5
-{{- end }}
-mouse-shift-capture = never
+mouse-shift-capture = always
 copy-on-select = clipboard
 keybind = shift+enter=text:\x1b\r
