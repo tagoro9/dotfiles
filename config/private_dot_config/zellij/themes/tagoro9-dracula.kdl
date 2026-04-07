@@ -1,5 +1,5 @@
 themes {
-  dracula {
+  tagoro9-dracula {
     text_unselected {
       base 248 248 242
       background 40 42 54
@@ -9,8 +9,8 @@ themes {
       emphasis_3 255 121 198
     }
     text_selected {
-      base 248 248 242
-      background 98 114 164
+      base 40 42 54
+      background 139 233 253
       emphasis_0 255 184 108
       emphasis_1 139 233 253
       emphasis_2 80 250 123
@@ -41,8 +41,8 @@ themes {
       emphasis_3 255 121 198
     }
     table_cell_selected {
-      base 248 248 242
-      background 98 114 164
+      base 40 42 54
+      background 139 233 253
       emphasis_0 255 184 108
       emphasis_1 139 233 253
       emphasis_2 80 250 123
@@ -57,8 +57,8 @@ themes {
       emphasis_3 255 121 198
     }
     list_selected {
-      base 248 248 242
-      background 98 114 164
+      base 40 42 54
+      background 139 233 253
       emphasis_0 255 184 108
       emphasis_1 139 233 253
       emphasis_2 80 250 123

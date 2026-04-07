@@ -8,7 +8,7 @@ variant = "dark"
 
 [theme.dark]
 ghostty = "dracula"
-zellij = "dracula"
+zellij = "tagoro9-dracula"
 helix = "dracula"
 yazi = "dracula"
 zsh_plugin = "dracula/zsh"
