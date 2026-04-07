@@ -1,5 +1,6 @@
 brew "glow"
 brew "tag"
+brew "xcodegen"
 tap "jetbrains/utils"
 brew "JetBrains/utils/kotlin-lsp"
 brew "pandoc"
