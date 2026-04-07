@@ -2,6 +2,8 @@ email = "1235917+tagoro9@users.noreply.github.com"
 git.signingKey = "C1CBC50698701A0871E5535A5A66BD80042E9F3D"
 code.folders = ["~/code"]
 zp.extraFolders = []
+claude.extraPermissions = []
+claude.extraPlugins = []
 
 [theme]
 variant = "dark"
