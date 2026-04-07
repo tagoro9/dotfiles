@@ -5,8 +5,8 @@ license: MIT
 compatibility: Requires fotingo CLI.
 metadata:
   author: fotingo
-  version: "1.2.0"
-  generatedBy: "5.2.2-SNAPSHOT-7946e16"
+  version: "1.6.0"
+  generatedBy: "5.2.2-SNAPSHOT-409e375"
 ---
 
 # Fotingo Workflow Skill
@@ -45,6 +45,12 @@ Create and start a new issue:
 fotingo start -p PROJ -k Task -t "Improve checkout decline error handling" -d "Problem: payment declines are hard to diagnose. Goal: clear user-facing messaging plus actionable logs. Acceptance criteria: improved copy, telemetry events, and regression tests for decline paths." -y
 ```
 
+Create the branch in a sibling worktree and capture the machine-readable path:
+
+```bash
+fotingo start PROJ-123 --worktree -y --json
+```
+
 ## Review Workflows
 
 Resolve reviewers, assignees, and labels before review:
@@ -59,6 +65,12 @@ Create a pull request with defaults:
 
 ```bash
 fotingo review -y
+```
+
+Create a pull request against a non-default base branch:
+
+```bash
+fotingo review -y --branch release/2026.04
 ```
 
 Create with reviewers/assignees:
@@ -79,22 +91,35 @@ Replace the entire PR body from stdin when you need full control:
 printf '## Summary\n\nImprove checkout decline handling\n\n## Description\n\nDetailed reviewer notes.\n' | fotingo review -y --description -
 ```
 
+Refresh fotingo-managed sections on an existing pull request:
+
+```bash
+fotingo review sync -y
+```
+
 ## Supporting Commands
 
-- `fotingo open issue` to open current-branch issue URL.
+- `fotingo open issue` to open the Jira issue linked to the current branch context.
 - `fotingo open pr` to open current-branch PR URL.
 
 ## Workflow Guide
 
 - Start from `fotingo inspect --json` when branch or issue context is unclear.
+- `fotingo inspect --json` returns branch context, linked issue context, commit history, and `pullRequest` metadata including title, description, and URL when the inspected branch already has an open PR.
 - Use `fotingo start ... -y` to begin work from an existing issue or a newly created issue.
+- Use `fotingo start --worktree ... --json` when you want an isolated sibling checkout; automation should read `branch.name` and `branch.worktreePath` from the JSON result.
 - Prefer non-interactive flags (`-y`, `--json`) in automated runs.
 - Use explicit flags rather than prompts in non-interactive environments.
 - For reviewers, assignees, and labels, run `fotingo search ... --json` first and pass the resolved values into `fotingo review`.
 - Prefer `fotingo review -y` for the standard Jira-backed flow. Use `fotingo review -y --simple` only when you intentionally want a GitHub-only PR flow.
+- Use `fotingo review --branch ...` when the pull request should target a non-default base branch.
 - Prefer `--template-summary` and `--template-description` because they keep the default PR layout while filling the `Summary` and `Description` sections. `--template-description` expands escaped `\n`, `\r\n`, and `\t`.
+- Use `fotingo review sync -y` after follow-up commits to refresh fotingo-managed sections while preserving manual edits outside the managed placeholders.
+- Use `fotingo review sync --section ...` to limit which managed sections are rewritten. `--template-summary` and `--template-description` only apply when those sections are included in the sync.
+- Use `fotingo review sync --sync-title` to recompute the PR title, or `fotingo review sync --title "..."` when you need an explicit title update.
 - Use `--description -` when you need to replace the entire PR body instead of filling template placeholders.
 - Use `--title` only when the generated PR title is wrong or incomplete.
+- Use `fotingo open issue` when you need the linked Jira URL for the current branch context. Interactive runs can disambiguate between multiple linked issues; automation should prefer `--json` and handle ambiguity errors that list the candidate issue IDs.
 - Use `fotingo --help` (and `<command> --help`) to discover additional workflow actions.
 - If required data is missing, run inspect and retry with explicit values.
 
