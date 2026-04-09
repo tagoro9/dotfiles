@@ -3,8 +3,6 @@
 # Uncomment this and the zprof line to enable profiling
 # zmodload zsh/zprof
 
-autoload -Uz compinit && compinit
-
 [[ ! -f ~/.config/shell/common.sh ]] || source ~/.config/shell/common.sh
 [[ ! -f ~/.config/shell/history.zsh ]] || source ~/.config/shell/history.zsh
 [[ ! -f ~/.config/shell/antidote.zsh ]] || source ~/.config/shell/antidote.zsh
