@@ -1,3 +1,12 @@
+# Delegate to ./gradlew so zsh completion can discover tasks
+gradlew() {
+  if [[ -x ./gradlew ]]; then
+    ./gradlew "$@"
+  else
+    command gradlew "$@"
+  fi
+}
+
 # Extract most archives with the same command
 extract () {
   if [ -f $1 ] ; then
