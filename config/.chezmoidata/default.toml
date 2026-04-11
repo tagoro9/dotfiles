@@ -4,6 +4,7 @@ code.folders = ["~/code"]
 zp.extraFolders = []
 claude.extraPermissions = []
 claude.extraPlugins = []
+claude.extraMarketplaces = []
 
 [theme]
 variant = "dark"
