@@ -25,6 +25,8 @@
     added = yellow
     changed = green
     untracked = cyan
+[branch]
+    sort = refname
 [alias]
     co = checkout
     chp = cherry-pick
@@ -42,6 +44,9 @@
     cian = commit --amend --no-edit
     st = status
     br = branch
+    # Local branch dashboard, with worktree paths when checked out.
+    branches = "!f() { git for-each-ref --sort=refname --format='%(if)%(HEAD)%(then)*%(else) %(end)%09%(refname:short)%09%(objectname:short)%09%(if)%(upstream)%(then)%(upstream:short)%(if)%(upstream:trackshort)%(then) %(upstream:trackshort)%(end)%(else)-%(end)%09%(committerdate:relative)%09%(if)%(worktreepath)%(then)%(worktreepath)%(else)-%(end)%09%(contents:subject)' refs/heads | awk -F '\\t' 'BEGIN { esc=sprintf(\"%c\", 27); reset=esc \"[0m\"; bold=esc \"[1m\"; yellow=esc \"[33m\"; cyan=esc \"[36m\"; blue=esc \"[34m\"; green=esc \"[32m\"; magenta=esc \"[35m\"; add(\" \", \"branch\", \"sha\", \"upstream\", \"updated\", \"worktree\", \"subject\") } function add(m,b,s,u,d,w,j) { n++; marker[n]=m; branch[n]=b; sha[n]=s; upstream[n]=u; updated[n]=d; worktree[n]=w; subject[n]=j; if (length(branch[n]) > wb) wb=length(branch[n]); if (length(sha[n]) > ws) ws=length(sha[n]); if (length(upstream[n]) > wu) wu=length(upstream[n]); if (length(updated[n]) > wd) wd=length(updated[n]); if (length(worktree[n]) > ww) ww=length(worktree[n]) } { add($1, $2, $3, $4, $5, $6, $7) } END { for (i=1; i<=n; i++) { h=(i==1); printf \"%s  %s%-*s%s  %s%-*s%s  %s%-*s%s  %s%-*s%s  %s%-*s%s  %s\\n\", marker[i], h ? bold : yellow, wb, branch[i], reset, h ? bold : cyan, ws, sha[i], reset, h ? bold : blue, wu, upstream[i], reset, h ? bold : green, wd, updated[i], reset, h ? bold : magenta, ww, worktree[i], reset, subject[i] } }'; }; f"
+    bl = branches
     rhd = reset HEAD .
     rb = rebase
     rbc = rebase --continue
