@@ -135,6 +135,8 @@
     # See also: https://gist.github.com/robmiller/5133264
     delete-merged-branches = "!git co $(git default-branch) && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
     find = "!f(){ git branch -ra | grep $1; }; f"
+    # List all worktrees
+    wtl = worktree list
 
     update-submodules = submodule update --init --recursive
 [merge]

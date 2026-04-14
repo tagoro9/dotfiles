@@ -7,6 +7,18 @@ gradlew() {
   fi
 }
 
+# cd into a git worktree whose path matches the given pattern
+wt() {
+  local dir
+  dir=$(git worktree list --porcelain | grep '^worktree ' | sed 's/^worktree //' | grep -m 1 "$1")
+  if [[ -n "$dir" ]]; then
+    cd "$dir"
+  else
+    echo "No worktree matching '$1'" >&2
+    return 1
+  fi
+}
+
 # Extract most archives with the same command
 extract () {
   if [ -f $1 ] ; then
