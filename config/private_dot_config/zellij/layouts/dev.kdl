@@ -3,11 +3,10 @@ layout {
 
   pane split_direction="vertical" {
     pane command="yazi" close_on_exit=false size="20%"
-    pane split_direction="horizontal" size="60%" {
+    pane split_direction="horizontal" {
       pane size="75%"
-      pane size="25%"
+      pane size="25%" focus=true
     }
-    pane command="lazygit" close_on_exit=false size="20%"
   }
 
   pane size=1 borderless=true {
