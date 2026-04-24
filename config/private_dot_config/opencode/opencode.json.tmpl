@@ -1,0 +1,6 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "{{ .opencode.model }}",
+  "autoupdate": false,
+  "provider": {{ .opencode.provider | toPrettyJson | indent 2 | trim }}
+}

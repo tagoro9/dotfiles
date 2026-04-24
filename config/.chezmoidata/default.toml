@@ -5,6 +5,8 @@ zp.extraFolders = []
 claude.extraPermissions = []
 claude.extraPlugins = []
 claude.extraMarketplaces = []
+opencode.model = ""
+opencode.provider = {}
 
 [theme]
 variant = "dark"

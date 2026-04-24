@@ -2317,6 +2317,44 @@
         }
       }
     },
+    "opencode@1.4.6": {
+      "last_modified": "2026-04-16T08:46:55Z",
+      "resolved": "github:NixOS/nixpkgs/b86751bc4085f48661017fa226dee99fab6c651b#opencode",
+      "source": "devbox-search",
+      "version": "1.4.6",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rnaz29q7npfcb123qkrjdgi8yjyc8gv5-opencode-1.4.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rnaz29q7npfcb123qkrjdgi8yjyc8gv5-opencode-1.4.6"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rbdfr7cg7967igpwadcjr1fkyddxn51x-opencode-1.4.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rbdfr7cg7967igpwadcjr1fkyddxn51x-opencode-1.4.6"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nnb32xwmnvgk81j80h0pzjdwqkj8m2ii-opencode-1.4.6",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nnb32xwmnvgk81j80h0pzjdwqkj8m2ii-opencode-1.4.6"
+        }
+      }
+    },
     "otel-cli@0.4.5": {
       "last_modified": "2025-07-13T22:45:35Z",
       "resolved": "github:NixOS/nixpkgs/a421ac6595024edcfbb1ef950a3712b89161c359#otel-cli",
