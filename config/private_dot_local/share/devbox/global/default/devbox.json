@@ -55,7 +55,7 @@
     "swaks@20240103.0",
     "teller@2.0.7",
     "terminal-notifier@2.0.0",
-    "terraform-docs@0.21.0",
+    "terraform-docs@0.22.0",
     "terraform-ls@0.38.5",
     "tfswitch@1.15.0",
     "typescript-language-server@5.1.3",
