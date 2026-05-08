@@ -307,6 +307,7 @@
   "claude-hud" (dict "source" (dict "repo" "jarrodwatts/claude-hud" "source" "github"))
   "claude-plugins-official" (dict "source" (dict "repo" "anthropics/claude-plugins-official" "source" "github"))
   "tagoro9" (dict "source" (dict "repo" "tagoro9/dotfiles" "source" "github"))
+  "temporal-marketplace" (dict "source" (dict "repo" "temporalio/agent-skills" "source" "github"))
 -}}
 {{- $allMarketplaces := mergeOverwrite (dict) $baseMarketplaces (.claude.extraMarketplaces | default (dict)) -}}
 {
