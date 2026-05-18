@@ -1,6 +1,8 @@
 {{- $theme := index .theme .theme.variant -}}
 theme = {{ $theme.ghostty }}
 minimum-contrast = 1.1
-mouse-shift-capture = always
+mouse-shift-capture = never
+link-url = true
 copy-on-select = clipboard
 keybind = shift+enter=text:\x1b\r
+keybind = cmd+shift+u=copy_url_to_clipboard
