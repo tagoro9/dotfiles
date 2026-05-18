@@ -322,7 +322,8 @@
   },
   "permissions": {
     "allow": {{ toPrettyJson $allPermissions | replace "\r\n" "\n" | trimSuffix "\n" | replace "\n" "\n    " -}},
-    "deny": []
+    "deny": [],
+    "defaultMode": "auto"
   },
   "model": "opus[1m]",
   "statusLine": {
@@ -330,7 +331,36 @@
     "command": "bash -c 'plugin_dir=$(ls -d \"$HOME\"/.claude/plugins/cache/claude-hud/claude-hud/*/ 2>/dev/null || ls -d \"$HOME\"/.claude/plugins/cache/claude-hud/claude-hud/* 2>/dev/null | sort -t. -k1,1n -k2,2n -k3,3n -k4,4n | tail -1); exec \"/Users/victormora/.local/share/mise/installs/bun/1.3.0/bin/bun\" \"${plugin_dir}/src/index.ts\"'"
   },
   "enabledPlugins": {{ toPrettyJson $basePlugins | replace "\r\n" "\n" | trimSuffix "\n" | replace "\n" "\n  " -}},
-  "extraKnownMarketplaces": {{ toPrettyJson $allMarketplaces | replace "\r\n" "\n" | trimSuffix "\n" | replace "\n" "\n  " -}},
+  "extraKnownMarketplaces": {
+{{- $marketplaceNames := keys $allMarketplaces | sortAlpha -}}
+{{- $lastIdx := sub (len $marketplaceNames) 1 -}}
+{{- range $i, $name := $marketplaceNames }}
+{{- $mp := index $allMarketplaces $name -}}
+{{- $src := index $mp "source" -}}
+{{- $srcOtherKeys := list -}}
+{{- range $k, $v := $src -}}
+{{- if ne $k "source" -}}{{- $srcOtherKeys = append $srcOtherKeys $k -}}{{- end -}}
+{{- end -}}
+{{- $srcOtherKeys = sortAlpha $srcOtherKeys -}}
+{{- $mpOtherKeys := list -}}
+{{- range $k, $v := $mp -}}
+{{- if ne $k "source" -}}{{- $mpOtherKeys = append $mpOtherKeys $k -}}{{- end -}}
+{{- end -}}
+{{- $mpOtherKeys = sortAlpha $mpOtherKeys }}
+    "{{ $name }}": {
+      "source": {
+        "source": "{{ index $src "source" }}"
+{{- range $srcOtherKeys }},
+        "{{ . }}": {{ index $src . | toJson }}
+{{- end }}
+      }
+{{- range $mpOtherKeys }},
+      "{{ . }}": {{ index $mp . | toJson }}
+{{- end }}
+    }{{ if ne $i $lastIdx }},{{ end }}
+{{- end }}
+  },
   "alwaysThinkingEnabled": true,
-  "autoUpdatesChannel": "stable"
+  "autoUpdatesChannel": "stable",
+  "skipAutoPermissionPrompt": true
 }
