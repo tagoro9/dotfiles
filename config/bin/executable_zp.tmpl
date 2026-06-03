@@ -15,9 +15,14 @@ presents them via fzf. Opens the project as a new tab in the current
 zellij session. If no session exists, starts a new one.
 
 If a filter is provided, fzf starts with that query pre-filled.
+
+Environment:
+  ZP_LAYOUT  zellij layout to use (default: dev)
 USAGE
   exit 0
 fi
+
+layout="${ZP_LAYOUT:-dev}"
 
 selection=$(fd --maxdepth 1 --type d . ~/code{{ range .zp.extraFolders }} {{ . }}{{ end }} 2>/dev/null \
   | fzf --delimiter='/' --with-nth=-2.. \
@@ -30,12 +35,12 @@ selection=$(fd --maxdepth 1 --type d . ~/code{{ range .zp.extraFolders }} {{ . }
 project_name=$(basename "$selection")
 
 if [[ -n "${ZELLIJ:-}" ]]; then
-  zellij action new-tab --layout dev --cwd "$selection" --name "$project_name"
+  zellij action new-tab --layout "$layout" --cwd "$selection" --name "$project_name"
 else
   existing_session=$(zellij list-sessions --no-formatting --short 2>/dev/null | grep -v EXITED | head -1)
   if [[ -n "$existing_session" ]]; then
-    cd "$selection" && zellij --session "$existing_session" --layout dev
+    cd "$selection" && zellij --session "$existing_session" --layout "$layout"
   else
-    cd "$selection" && zellij --layout dev --session "$project_name"
+    cd "$selection" && zellij --layout "$layout" --session "$project_name"
   fi
 fi

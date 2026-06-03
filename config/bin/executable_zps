@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# zps - like zp, but opens projects with the tagoro9 zellij layout
+exec env ZP_LAYOUT=tagoro9 zp "$@"
