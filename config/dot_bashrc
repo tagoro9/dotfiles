@@ -1,1 +1,2 @@
 source ~/.config/shell/common.sh
+eval "$(zoxide init bash)"
