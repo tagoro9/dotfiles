@@ -24,6 +24,11 @@ fi
 
 devbox global install
 
+# Install Claude Code
+if ! command -v claude 2>&1 >/dev/null; then
+  curl -fsSL https://claude.ai/install.sh | bash
+fi
+
 # Install yazi plugins
 if command -v ya 2>&1 >/dev/null; then
   ya pkg install
