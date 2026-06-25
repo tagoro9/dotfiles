@@ -24,7 +24,7 @@
     "go-swag@1.16.6",
     "golangci-lint@2.11.3",
     "gomarkdoc@1.1.0",
-    "google-cloud-sdk@552.0.0",
+    "google-cloud-sdk@570.0.0",
     "goreleaser@2.14.3",
     "helix@25.01.1",
     "hexyl@0.17.0",
