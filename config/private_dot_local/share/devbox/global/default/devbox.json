@@ -34,7 +34,7 @@
     "k9s@0.50.18",
     "kubectl@1.35.3",
     "kubectx@0.9.5",
-    "kubernetes-helm@3.19.1",
+    "kubernetes-helm@4.2.2",
     "kubeseal@0.36.0",
     "kustomize@5.8.1",
     "lazygit@0.60.0",
