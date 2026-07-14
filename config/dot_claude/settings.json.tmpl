@@ -298,6 +298,7 @@
   "code-simplifier@claude-plugins-official" true
   "code@tagoro9" true
   "kotlin-lsp@claude-plugins-official" true
+  "ponytail@ponytail" true
   "temporal@temporal-marketplace" true
   "typescript-lsp@claude-plugins-official" true
 -}}
@@ -307,6 +308,7 @@
 {{- $baseMarketplaces := dict
   "claude-hud" (dict "source" (dict "repo" "jarrodwatts/claude-hud" "source" "github"))
   "claude-plugins-official" (dict "source" (dict "repo" "anthropics/claude-plugins-official" "source" "github"))
+  "ponytail" (dict "source" (dict "repo" "DietrichGebert/ponytail" "source" "github"))
   "tagoro9" (dict "source" (dict "repo" "tagoro9/dotfiles" "source" "github"))
   "temporal-marketplace" (dict "source" (dict "repo" "temporalio/agent-skills" "source" "github"))
 -}}
@@ -325,7 +327,7 @@
     "deny": [],
     "defaultMode": "auto"
   },
-  "model": "opus[1m]",
+  "model": "sonnet",
   "statusLine": {
     "type": "command",
     "command": "bash -c 'plugin_dir=$(ls -d \"$HOME\"/.claude/plugins/cache/claude-hud/claude-hud/*/ 2>/dev/null || ls -d \"$HOME\"/.claude/plugins/cache/claude-hud/claude-hud/* 2>/dev/null | sort -t. -k1,1n -k2,2n -k3,3n -k4,4n | tail -1); exec \"/Users/victormora/.local/share/mise/installs/bun/1.3.0/bin/bun\" \"${plugin_dir}/src/index.ts\"'"
@@ -363,5 +365,11 @@
   "alwaysThinkingEnabled": true,
   "autoUpdatesChannel": "latest",
   "editorMode": "vim",
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "disableBundledSkills": true,
+  "disableRemoteControl": true,
+  "disableWorkflows": true,
+  "disableClaudeAiConnectors": true,
+  "disableArtifact": true,
+  "tui": "default"
 }
