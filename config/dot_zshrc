@@ -12,7 +12,6 @@ zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 zstyle ':fzf-tab:*' use-fzf-default-opts yes
 
 eval "$(starship init zsh)"
-eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 bindkey -M emacs '^[[A' atuin-up-search
 bindkey -M viins '^[[A' atuin-up-search-viins
@@ -20,5 +19,6 @@ bindkey -M vicmd '^[[A' atuin-up-search-vicmd
 bindkey -M emacs '^[OA' atuin-up-search
 bindkey -M viins '^[OA' atuin-up-search-viins
 bindkey -M vicmd '^[OA' atuin-up-search-vicmd
+eval "$(zoxide init zsh)"
 
 # zprof
