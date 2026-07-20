@@ -19,6 +19,10 @@ alias ll='ls -lahF --group-directories-first --color=auto --git --icons'
 alias lr='eza -T'
 
 # Use zoxide for cd
+# ponytail: Claude Code's shell snapshot only dumps function bodies, not the
+# chpwd_functions/precmd_functions array registration zoxide init does, so its
+# doctor always false-positives inside Claude sessions. Silence it there only.
+[[ -z "$CLAUDECODE" ]] || export _ZO_DOCTOR=0
 alias cd='z'
 
 # Navigation aliases
