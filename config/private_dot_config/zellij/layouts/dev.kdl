@@ -2,7 +2,9 @@ layout {
   cwd "."
 
   pane split_direction="vertical" {
-    pane command="yazi" close_on_exit=false size="20%"
+    pane command="hunk" close_on_exit=false size="25%" {
+      args "diff" "--watch"
+    }
     pane split_direction="horizontal" {
       pane size="75%"
       pane size="25%" focus=true
