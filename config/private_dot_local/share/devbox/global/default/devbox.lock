@@ -416,34 +416,6 @@
         }
       }
     },
-    "chatgpt@1.2025.063": {
-      "last_modified": "2025-03-23T05:31:05Z",
-      "resolved": "github:NixOS/nixpkgs/dd613136ee91f67e5dba3f3f41ac99ae89c5406b#chatgpt",
-      "source": "devbox-search",
-      "version": "1.2025.063",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/03iv676v97h28cpdbn009s089jj1a6s0-chatgpt-1.2025.063",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/03iv676v97h28cpdbn009s089jj1a6s0-chatgpt-1.2025.063"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/qcl48ag5cs4yzqf6lscvsfif20krcgid-chatgpt-1.2025.063",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/qcl48ag5cs4yzqf6lscvsfif20krcgid-chatgpt-1.2025.063"
-        }
-      }
-    },
     "chezmoi@2.69.4": {
       "last_modified": "2026-03-21T07:29:51Z",
       "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#chezmoi",
@@ -2386,6 +2358,54 @@
             }
           ],
           "store_path": "/nix/store/pyqfl0y8s8cxg8c0ay0a4b8h3246fy9i-otel-cli-0.4.5"
+        }
+      }
+    },
+    "pi-coding-agent@0.80.3": {
+      "last_modified": "2026-07-08T21:13:06Z",
+      "resolved": "github:NixOS/nixpkgs/389ed85304b281ca7f306cf8a1eb4378651ca44e#pi-coding-agent",
+      "source": "devbox-search",
+      "version": "0.80.3",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8k7ji4pi3cz4s8ciq338ji10k7qc5pyv-pi-coding-agent-0.80.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8k7ji4pi3cz4s8ciq338ji10k7qc5pyv-pi-coding-agent-0.80.3"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bc91pszyhkd7qhv0mmgy3l0zvigh7la8-pi-coding-agent-0.80.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bc91pszyhkd7qhv0mmgy3l0zvigh7la8-pi-coding-agent-0.80.3"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bpy26nq1iyc52iymz4j3r5lcqsvn0g6s-pi-coding-agent-0.80.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bpy26nq1iyc52iymz4j3r5lcqsvn0g6s-pi-coding-agent-0.80.3"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/q3wdl1l1lhm4nl7l2047q8ch0wdigv3f-pi-coding-agent-0.80.3",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/q3wdl1l1lhm4nl7l2047q8ch0wdigv3f-pi-coding-agent-0.80.3"
         }
       }
     },
