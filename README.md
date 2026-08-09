@@ -74,7 +74,7 @@ Fuzzy-pick a project and open it in zellij:
 zp
 ```
 
-Scans `~/code`, `~/turo`, and `~/open-turo` for project directories. Inside zellij it opens a new tab; outside it starts a new session.
+Scans project directories. Inside zellij it opens a new tab; outside it starts a new session.
 
 #### Typical Workflow
 
