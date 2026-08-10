@@ -118,6 +118,3 @@ themes {
     }
   }
 }
-
-// mkdir -p ~/.config/zellij/plugins && \
-//  curl -L "https://github.com/rvcas/room/releases/latest/download/room.wasm" -o ~/zellij/plugins/room.wasm

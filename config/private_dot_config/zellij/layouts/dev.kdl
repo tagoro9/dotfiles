@@ -12,7 +12,7 @@ layout {
   }
 
   pane size=1 borderless=true {
-    plugin location="file:~/.config/zellij/plugins/zjstatus-v0.22.0.wasm" {
+    plugin location="file:~/.config/zellij/plugins/zjstatus-v0.24.0.wasm" {
       hide_frame_for_single_pane false
       border_enabled false
       border_char "─"
