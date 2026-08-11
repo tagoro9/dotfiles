@@ -5,6 +5,7 @@
     "showTodos": true,
     "showDuration": true,
     "showConfigCounts": true,
-    "showSessionName": true
+    "showSessionName": true,
+    "showCost": true
   }
 }
