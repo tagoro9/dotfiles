@@ -444,6 +444,54 @@
         }
       }
     },
+    "cspell@9.7.0": {
+      "last_modified": "2026-08-01T16:34:20Z",
+      "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#cspell",
+      "source": "devbox-search",
+      "version": "9.7.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/al9bvhnqp1ghyfvh64p4jmlii1xkvrya-cspell-9.7.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/al9bvhnqp1ghyfvh64p4jmlii1xkvrya-cspell-9.7.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/arpmzrsj7r7b01cbb446v9kwwmq0r7vy-cspell-9.7.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/arpmzrsj7r7b01cbb446v9kwwmq0r7vy-cspell-9.7.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4267yfcydxf572j6ip8s4071g5b7bkb2-cspell-9.7.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4267yfcydxf572j6ip8s4071g5b7bkb2-cspell-9.7.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vrhk8hqdn9g1am6vzriq039ja1dlqh6z-cspell-9.7.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vrhk8hqdn9g1am6vzriq039ja1dlqh6z-cspell-9.7.0"
+        }
+      }
+    },
     "delta@0.19.2": {
       "last_modified": "2026-08-01T16:34:20Z",
       "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#delta",
