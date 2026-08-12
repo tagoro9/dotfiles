@@ -7,6 +7,12 @@ gradlew() {
   fi
 }
 
+# za - like zp, but cd's into the project in the current shell instead of opening a zellij tab
+za() {
+  local dir
+  dir=$(ZP_CD_ONLY=1 zp "$@") && [[ -n "$dir" ]] && cd "$dir"
+}
+
 # cd into a git worktree whose path matches the given pattern
 wt() {
   local dir

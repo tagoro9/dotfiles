@@ -17,7 +17,8 @@ zellij session. If no session exists, starts a new one.
 If a filter is provided, fzf starts with that query pre-filled.
 
 Environment:
-  ZP_LAYOUT  zellij layout to use (default: dev)
+  ZP_LAYOUT   zellij layout to use (default: dev)
+  ZP_CD_ONLY  if set, print the selected project path instead of opening zellij
 USAGE
   exit 0
 fi
@@ -31,6 +32,11 @@ selection=$(fd --maxdepth 1 --type d . ~/code{{ range .zp.extraFolders }} {{ . }
         --query="${1:-}")
 
 [[ -z "$selection" ]] && exit 0
+
+if [[ -n "${ZP_CD_ONLY:-}" ]]; then
+  echo "$selection"
+  exit 0
+fi
 
 project_name=$(basename "$selection")
 
