@@ -31,6 +31,7 @@
     untracked = cyan
 [branch]
     sort = refname
+    autoSetupMerge = simple
 [alias]
     co = checkout
     chp = cherry-pick
@@ -148,7 +149,8 @@
 [rerere]
 	enabled = 1
 [push]
-	default = upstream
+	default = simple
+	autoSetupRemote = true
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
