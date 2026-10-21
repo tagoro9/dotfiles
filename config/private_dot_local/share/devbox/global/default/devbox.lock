@@ -349,7 +349,7 @@
     },
     "caddy@2.11.4": {
       "last_modified": "2026-08-01T16:34:20Z",
-      "plugin_version": "0.0.3",
+      "plugin_version": "0.0.4",
       "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#caddy",
       "source": "devbox-search",
       "version": "2.11.4",
@@ -914,6 +914,34 @@
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "resolved": "github:NixOS/nixpkgs/573c650e8a14b2faa0041645ab18aed7e60f0c9a?lastModified=1741865919&narHash=sha256-4thdbnP6dlbdq%2BqZWTsm4ffAwoS8Tiq1YResB%2BRP6WE%3D"
+    },
+    "glibcLocales@latest": {
+      "last_modified": "2026-10-19T15:20:57Z",
+      "resolved": "github:NixOS/nixpkgs/682ba80136e2c8dacd6b8900f578a72329458901#glibcLocales",
+      "source": "devbox-search",
+      "version": "2.44-57",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kqvd53a6rn68iq5kvwr7h0a07gx9j6g7-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kqvd53a6rn68iq5kvwr7h0a07gx9j6g7-glibc-locales-2.44-57"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fdp9x7rhsspyj0xjv0cczj08fhj6z92y-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fdp9x7rhsspyj0xjv0cczj08fhj6z92y-glibc-locales-2.44-57"
+        }
+      }
     },
     "gnupg@2.4.9": {
       "last_modified": "2026-03-23T05:26:49Z",
@@ -2926,31 +2954,21 @@
         }
       }
     },
-    "terminal-notifier@2.0.0": {
-      "last_modified": "2026-01-09T13:41:53Z",
-      "resolved": "github:NixOS/nixpkgs/5f02c91314c8ba4afe83b256b023756412218535#terminal-notifier",
+    "terminal-notifier@3.1.0": {
+      "last_modified": "2026-10-19T05:39:33Z",
+      "resolved": "github:NixOS/nixpkgs/f3a77a0c9b182bf55b71c8f22f99725f38b69a3e#terminal-notifier",
       "source": "devbox-search",
-      "version": "2.0.0",
+      "version": "3.1.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/cgkd6l9v6ys2vlf76bjg96z75nzciqrn-terminal-notifier-2.0.0",
+              "path": "/nix/store/ql0jx6d6rlga0m9fmjnqcmc44fa6fdbc-terminal-notifier-3.1.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/cgkd6l9v6ys2vlf76bjg96z75nzciqrn-terminal-notifier-2.0.0"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/gdlcv580i34d7xh1sxz03wwyrsvzl1hj-terminal-notifier-2.0.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/gdlcv580i34d7xh1sxz03wwyrsvzl1hj-terminal-notifier-2.0.0"
+          "store_path": "/nix/store/ql0jx6d6rlga0m9fmjnqcmc44fa6fdbc-terminal-notifier-3.1.0"
         }
       }
     },
