@@ -349,7 +349,7 @@
     },
     "caddy@2.11.4": {
       "last_modified": "2026-08-01T16:34:20Z",
-      "plugin_version": "0.0.3",
+      "plugin_version": "0.0.4",
       "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#caddy",
       "source": "devbox-search",
       "version": "2.11.4",
@@ -914,6 +914,34 @@
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "resolved": "github:NixOS/nixpkgs/573c650e8a14b2faa0041645ab18aed7e60f0c9a?lastModified=1741865919&narHash=sha256-4thdbnP6dlbdq%2BqZWTsm4ffAwoS8Tiq1YResB%2BRP6WE%3D"
+    },
+    "glibcLocales@latest": {
+      "last_modified": "2026-10-27T21:33:45Z",
+      "resolved": "github:NixOS/nixpkgs/f05535a0efcb2134c478d1e88434fadf486d42b5#glibcLocales",
+      "source": "devbox-search",
+      "version": "2.44-57",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kqvd53a6rn68iq5kvwr7h0a07gx9j6g7-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kqvd53a6rn68iq5kvwr7h0a07gx9j6g7-glibc-locales-2.44-57"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fdp9x7rhsspyj0xjv0cczj08fhj6z92y-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fdp9x7rhsspyj0xjv0cczj08fhj6z92y-glibc-locales-2.44-57"
+        }
+      }
     },
     "gnupg@2.4.9": {
       "last_modified": "2026-03-23T05:26:49Z",
@@ -2232,41 +2260,41 @@
         }
       }
     },
-    "pi-coding-agent@0.83.0": {
-      "last_modified": "2026-08-01T16:34:20Z",
-      "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#pi-coding-agent",
+    "pi-coding-agent@1.4.0": {
+      "last_modified": "2026-10-27T21:33:45Z",
+      "resolved": "github:NixOS/nixpkgs/f05535a0efcb2134c478d1e88434fadf486d42b5#pi-coding-agent",
       "source": "devbox-search",
-      "version": "0.83.0",
+      "version": "1.4.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/wyl807gm822xrb3r4izbph3xvjlkwdp4-pi-coding-agent-0.83.0",
+              "path": "/nix/store/zh4ybfar6v4j7n4f87z44zc39ry0yl4k-pi-coding-agent-1.4.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/wyl807gm822xrb3r4izbph3xvjlkwdp4-pi-coding-agent-0.83.0"
+          "store_path": "/nix/store/zh4ybfar6v4j7n4f87z44zc39ry0yl4k-pi-coding-agent-1.4.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/f0n08dwlqgxl4bjhkr4089zqxxvvlg2n-pi-coding-agent-0.83.0",
+              "path": "/nix/store/8d213wszizbas8yg46n2073xsjjb3772-pi-coding-agent-1.4.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/f0n08dwlqgxl4bjhkr4089zqxxvvlg2n-pi-coding-agent-0.83.0"
+          "store_path": "/nix/store/8d213wszizbas8yg46n2073xsjjb3772-pi-coding-agent-1.4.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/fwr5bycylca4fcyb7rlh9g1935jimcrw-pi-coding-agent-0.83.0",
+              "path": "/nix/store/isaxx2q4ka0ra8fs0fdq337431slzd37-pi-coding-agent-1.4.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/fwr5bycylca4fcyb7rlh9g1935jimcrw-pi-coding-agent-0.83.0"
+          "store_path": "/nix/store/isaxx2q4ka0ra8fs0fdq337431slzd37-pi-coding-agent-1.4.0"
         }
       }
     },
