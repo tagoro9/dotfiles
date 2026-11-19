@@ -349,7 +349,7 @@
     },
     "caddy@2.11.4": {
       "last_modified": "2026-08-01T16:34:20Z",
-      "plugin_version": "0.0.3",
+      "plugin_version": "0.0.4",
       "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#caddy",
       "source": "devbox-search",
       "version": "2.11.4",
@@ -914,6 +914,34 @@
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "resolved": "github:NixOS/nixpkgs/573c650e8a14b2faa0041645ab18aed7e60f0c9a?lastModified=1741865919&narHash=sha256-4thdbnP6dlbdq%2BqZWTsm4ffAwoS8Tiq1YResB%2BRP6WE%3D"
+    },
+    "glibcLocales@latest": {
+      "last_modified": "2026-11-16T14:48:49Z",
+      "resolved": "github:NixOS/nixpkgs/e21fec321d73511849707a7585e4ea155ee4bf40#glibcLocales",
+      "source": "devbox-search",
+      "version": "2.44-57",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m2qq5ix2bsqrp935i1s20dcyxfgk31dl-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/m2qq5ix2bsqrp935i1s20dcyxfgk31dl-glibc-locales-2.44-57"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/57v3qb3a5ldwp0vddj1lr8xhvlw8473h-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/57v3qb3a5ldwp0vddj1lr8xhvlw8473h-glibc-locales-2.44-57"
+        }
+      }
     },
     "gnupg@2.4.9": {
       "last_modified": "2026-03-23T05:26:49Z",
@@ -3156,51 +3184,41 @@
         }
       }
     },
-    "typescript-language-server@5.3.0": {
-      "last_modified": "2026-08-01T16:34:20Z",
-      "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#typescript-language-server",
+    "typescript-language-server@6.1.0": {
+      "last_modified": "2026-11-16T14:48:49Z",
+      "resolved": "github:NixOS/nixpkgs/e21fec321d73511849707a7585e4ea155ee4bf40#typescript-language-server",
       "source": "devbox-search",
-      "version": "5.3.0",
+      "version": "6.1.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/kyg47fqp6klq5w8kpxc81h8pbh14s9mz-typescript-language-server-5.3.0",
+              "path": "/nix/store/sm45lwddkb2hcihh1m6zkd6c2l8yf617-typescript-language-server-6.1.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/kyg47fqp6klq5w8kpxc81h8pbh14s9mz-typescript-language-server-5.3.0"
+          "store_path": "/nix/store/sm45lwddkb2hcihh1m6zkd6c2l8yf617-typescript-language-server-6.1.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/676zr4p4kmpz0ja26jmfply5ab19dbp9-typescript-language-server-5.3.0",
+              "path": "/nix/store/pyk87s3d3ihw2rxwa4bdh0mz4f5wzf6m-typescript-language-server-6.1.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/676zr4p4kmpz0ja26jmfply5ab19dbp9-typescript-language-server-5.3.0"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/6w64xys9f3hdihnh91lgq60l67jgzw8p-typescript-language-server-5.3.0",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/6w64xys9f3hdihnh91lgq60l67jgzw8p-typescript-language-server-5.3.0"
+          "store_path": "/nix/store/pyk87s3d3ihw2rxwa4bdh0mz4f5wzf6m-typescript-language-server-6.1.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/lqk718ly9a65vwgjyjykvz6z10whr81i-typescript-language-server-5.3.0",
+              "path": "/nix/store/ny2x0n53ysrb2cvjn95k4cwkb1ascx9s-typescript-language-server-6.1.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/lqk718ly9a65vwgjyjykvz6z10whr81i-typescript-language-server-5.3.0"
+          "store_path": "/nix/store/ny2x0n53ysrb2cvjn95k4cwkb1ascx9s-typescript-language-server-6.1.0"
         }
       }
     },
