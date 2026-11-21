@@ -349,7 +349,7 @@
     },
     "caddy@2.11.4": {
       "last_modified": "2026-08-01T16:34:20Z",
-      "plugin_version": "0.0.3",
+      "plugin_version": "0.0.4",
       "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#caddy",
       "source": "devbox-search",
       "version": "2.11.4",
@@ -914,6 +914,34 @@
     },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "resolved": "github:NixOS/nixpkgs/573c650e8a14b2faa0041645ab18aed7e60f0c9a?lastModified=1741865919&narHash=sha256-4thdbnP6dlbdq%2BqZWTsm4ffAwoS8Tiq1YResB%2BRP6WE%3D"
+    },
+    "glibcLocales@latest": {
+      "last_modified": "2026-11-19T13:46:25Z",
+      "resolved": "github:NixOS/nixpkgs/19cfded70b91ca0981373973c5b1efffdd4d6647#glibcLocales",
+      "source": "devbox-search",
+      "version": "2.44-57",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m2qq5ix2bsqrp935i1s20dcyxfgk31dl-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/m2qq5ix2bsqrp935i1s20dcyxfgk31dl-glibc-locales-2.44-57"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/57v3qb3a5ldwp0vddj1lr8xhvlw8473h-glibc-locales-2.44-57",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/57v3qb3a5ldwp0vddj1lr8xhvlw8473h-glibc-locales-2.44-57"
+        }
+      }
     },
     "gnupg@2.4.9": {
       "last_modified": "2026-03-23T05:26:49Z",
@@ -2146,41 +2174,41 @@
         }
       }
     },
-    "openspec@1.7.0": {
-      "last_modified": "2026-08-01T16:34:20Z",
-      "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#openspec",
+    "openspec@2.0.0": {
+      "last_modified": "2026-11-19T13:46:25Z",
+      "resolved": "github:NixOS/nixpkgs/19cfded70b91ca0981373973c5b1efffdd4d6647#openspec",
       "source": "devbox-search",
-      "version": "1.7.0",
+      "version": "2.0.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/633ws1bxnblp6kwjw6b1ix4yw5k4k8qn-openspec-1.7.0",
+              "path": "/nix/store/vhghjl7q5fdfda6vai4ysnv7yq879nl3-openspec-2.0.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/633ws1bxnblp6kwjw6b1ix4yw5k4k8qn-openspec-1.7.0"
+          "store_path": "/nix/store/vhghjl7q5fdfda6vai4ysnv7yq879nl3-openspec-2.0.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/d7ryi8bdp708dcyvj213cci858npsvrl-openspec-1.7.0",
+              "path": "/nix/store/8rv01pq4592fpsqv5abikcldlk9c1hxd-openspec-2.0.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/d7ryi8bdp708dcyvj213cci858npsvrl-openspec-1.7.0"
+          "store_path": "/nix/store/8rv01pq4592fpsqv5abikcldlk9c1hxd-openspec-2.0.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/xmikam0l3r5lww2n4gl1lkfcff3rjjqv-openspec-1.7.0",
+              "path": "/nix/store/6xd1bmzj1lwgfkmxqymplccsa4yn0w6f-openspec-2.0.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/xmikam0l3r5lww2n4gl1lkfcff3rjjqv-openspec-1.7.0"
+          "store_path": "/nix/store/6xd1bmzj1lwgfkmxqymplccsa4yn0w6f-openspec-2.0.0"
         }
       }
     },
